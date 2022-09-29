@@ -1,0 +1,6 @@
+#requirements.txt
+
+pip
+gym==0.10.5
+tensorflow==1.8
+numpy
