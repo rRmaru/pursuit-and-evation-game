@@ -75,7 +75,7 @@ def get_trainers(env, num_adversaries, obs_shape_n, arglist):
             "agent_%d" % i, model, obs_shape_n, env.action_space, i, arglist,
             local_q_func=(arglist.good_policy=='ddpg')))
     return trainers
-#%%
+
 def train(arglist):
     with U.single_threaded_session():
         # Create environment
