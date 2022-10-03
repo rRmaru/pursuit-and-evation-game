@@ -1,3 +1,4 @@
+#%%
 import argparse
 import numpy as np
 import tensorflow as tf
@@ -7,6 +8,7 @@ import pickle
 import maddpg.common.tf_util as U
 from maddpg.trainer.maddpg import MADDPGAgentTrainer
 import tensorflow.contrib.layers as layers
+#%%
 
 def parse_args():
     parser = argparse.ArgumentParser("Reinforcement Learning experiments for multiagent environments")
@@ -34,7 +36,7 @@ def parse_args():
     parser.add_argument("--benchmark-iters", type=int, default=100000, help="number of iterations run for benchmarking")
     parser.add_argument("--benchmark-dir", type=str, default="./benchmark_files/", help="directory where benchmark data is saved")
     parser.add_argument("--plots-dir", type=str, default="./learning_curves/", help="directory where plot data is saved")
-    return parser.parse_args()
+    return parser.parse_args(args=[])
 
 def mlp_model(input, num_outputs, scope, reuse=False, num_units=64, rnn_cell=None):
     # This model takes as input an observation and returns values of all actions
@@ -73,8 +75,7 @@ def get_trainers(env, num_adversaries, obs_shape_n, arglist):
             "agent_%d" % i, model, obs_shape_n, env.action_space, i, arglist,
             local_q_func=(arglist.good_policy=='ddpg')))
     return trainers
-
-
+#%%
 def train(arglist):
     with U.single_threaded_session():
         # Create environment
@@ -187,7 +188,10 @@ def train(arglist):
                     pickle.dump(final_ep_ag_rewards, fp)
                 print('...Finished total of {} episodes.'.format(len(episode_rewards)))
                 break
+#%%
 
 if __name__ == '__main__':
     arglist = parse_args()
     train(arglist)
+
+# %%
