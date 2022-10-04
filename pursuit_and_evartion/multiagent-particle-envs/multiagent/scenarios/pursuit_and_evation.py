@@ -119,7 +119,7 @@ class Scenario(BaseScenario):
         shape = False
         agents = self.good_agents(world)
         adversaries = self.adversaries(world)
-        if shape:  # reward can optionally be shaped (decreased reward for increased distance from agents)
+        if shape:  # reward can optionally be shaped (decreased reward for increased distance from agents)  #good_agentとの距離によって報酬を受け取れるように設定できる
             for adv in adversaries:
                 rew -= 0.1 * min([np.sqrt(np.sum(np.square(a.state.p_pos - adv.state.p_pos))) for a in agents])
         if agent.collide:
@@ -129,7 +129,7 @@ class Scenario(BaseScenario):
                         rew += 10
         return rew
 
-    def observation(self, agent, world):
+    def observation(self, agent, world):            #ちょっとわからない
         # get positions of all entities in this agent's reference frame
         entity_pos = []
         for entity in world.landmarks:
