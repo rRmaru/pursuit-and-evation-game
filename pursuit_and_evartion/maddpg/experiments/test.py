@@ -1,14 +1,16 @@
 #%%
-import gym
-env = gym.make("MountainCar-v0")
+import matplotlib.pyplot as plt
+import pickle
+
 
 # %%
-from gym import envs
-envids = [spec.id for spec in envs.registry.all()]
-
-observation = env.reset()
-
+with open("learning_curves/None_rewards.pkl", mode="rb") as f:
+    hoge=pickle.load(f)
+#%%
+print(hoge)
 # %%
-env.render()
-env.close()
+x=range(0,20000,1000)
+plt.plot(x, hoge, label="test")
+plt.legend()
+plt.show()
 # %%
