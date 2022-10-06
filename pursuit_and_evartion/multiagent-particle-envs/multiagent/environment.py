@@ -105,7 +105,7 @@ class MultiAgentEnv(gym.Env):
 
     def reset(self):
         # reset world
-        self.reset_callback(self.world)
+        self.reset_callback(self.world)  #scenarioのreset_worldを持ってきている
         # reset renderer
         self._reset_render()
         # record observations for each agent
