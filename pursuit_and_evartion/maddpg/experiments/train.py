@@ -89,7 +89,7 @@ def train(arglist):
         U.initialize()      #初期化？
 
         # Load previous results, if necessary
-        if arglist.load_dir == "":              #locate save point
+        if arglist.load_dir == "":               #locate save point
             arglist.load_dir = arglist.save_dir
         if arglist.display or arglist.restore or arglist.benchmark:
             print('Loading previous state...')
