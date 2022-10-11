@@ -174,6 +174,11 @@ def train(arglist):
                     agent_pos[i].append(list(agent.state.p_pos))
                 if episode_step == 24:
                     print(agent_pos)
+                    print("collision num:{}".format(env.world.agents[3].collide_num))
+                    for i in range(len(env.world.agents)):
+                        print("agent reward:{}".format(agent_rewards[i][-1]))
+                    for landmark in env.world.landmarks:
+                        print("landmark position:{}".format(landmark.state.p_pos))
                     flag = False
                     agent_pos = [[] for _ in range(len(env.world.agents))]
 
@@ -214,6 +219,8 @@ def train(arglist):
                 print('...Finished total of {} episodes.'.format(len(episode_rewards)))
                 print(save_collision)
                 print("==================")
+                for landmark in env.world.landmarks:
+                    print("landmark position:{}".format(landmark.state.p_pos))
                 
                 break
 #%%
