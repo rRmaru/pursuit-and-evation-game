@@ -4,6 +4,8 @@ import numpy as np
 import tensorflow as tf
 import time
 import pickle
+import matplotlib.pyplot as plt
+
 
 import maddpg.common.tf_util as U
 from maddpg.trainer.maddpg import MADDPGAgentTrainer
@@ -35,7 +37,7 @@ def parse_args():
     parser.add_argument("--benchmark-iters", type=int, default=100000, help="number of iterations run for benchmarking")
     parser.add_argument("--benchmark-dir", type=str, default="./benchmark_files/", help="directory where benchmark data is saved")
     parser.add_argument("--plots-dir", type=str, default="./learning_curves/", help="directory where plot data is saved")
-    return parser.parse_args(args=["--num-episodes", "60000", "--scenario", "pursuit_and_evation"])
+    return parser.parse_args(args=["--num-episodes", "30000", "--scenario", "pursuit_and_evation"])
 
 def mlp_model(input, num_outputs, scope, reuse=False, num_units=64, rnn_cell=None):
     # This model takes as input an observation and returns values of all actions
@@ -105,6 +107,8 @@ def train(arglist):
         episode_step = 0
         train_step = 0
         t_start = time.time()
+        collide_list = []   
+        save_collision = []         #collision回数を記録
 
         print('Starting iterations...')
         while True:
@@ -128,6 +132,12 @@ def train(arglist):
                 obs_n = env.reset()
                 episode_step = 0
                 episode_rewards.append(0)
+                #show number of collision
+                for agent in env.world.agents:
+                    if agent.adversary == False:
+                        collide_list.append(agent.collide_num)
+                        agent.collide_num = 0
+                #end
                 for a in agent_rewards:
                     a.append(0)
                 agent_info.append([[]])
@@ -167,10 +177,12 @@ def train(arglist):
                 if num_adversaries == 0:
                     print("steps: {}, episodes: {}, mean episode reward: {}, time: {}".format(
                         train_step, len(episode_rewards), np.mean(episode_rewards[-arglist.save_rate:]), round(time.time()-t_start, 3)))
+                    print("the number of collision: {}".format(np.mean(collide_list[-arglist.save_rate:])))     #show number of collision(10/11)
+                    save_collision.append(np.mean(collide_list[-arglist.save_rate:]))
                 else:
                     print("steps: {}, episodes: {}, mean episode reward: {}, agent episode reward: {}, time: {}".format(
                         train_step, len(episode_rewards), np.mean(episode_rewards[-arglist.save_rate:]),
-                        [np.mean(rew[-arglist.save_rate:]) for rew in agent_rewards], round(time.time()-t_start, 3)))
+                        [np.mean(rew[-arglist.save_rate:]) for rew in agent_rewards], round(time.time()-t_start, 3 )))
                 t_start = time.time()
                 # Keep track of final episode reward
                 final_ep_rewards.append(np.mean(episode_rewards[-arglist.save_rate:]))
@@ -186,11 +198,10 @@ def train(arglist):
                 with open(agrew_file_name, 'wb') as fp:
                     pickle.dump(final_ep_ag_rewards, fp)
                 print('...Finished total of {} episodes.'.format(len(episode_rewards)))
+                print(save_collision)
+
                 break
 #%%
-
 if __name__ == '__main__':
     arglist = parse_args()
     train(arglist)
-
-# %%

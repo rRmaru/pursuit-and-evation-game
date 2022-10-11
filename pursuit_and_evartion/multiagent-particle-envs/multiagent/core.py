@@ -77,6 +77,8 @@ class Agent(Entity):
         self.action = Action()
         # script behavior to execute
         self.action_callback = None
+        # the number of collision
+        self.collide_num = 0
 
 # multi-agent world
 class World(object):
