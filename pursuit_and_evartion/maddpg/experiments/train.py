@@ -37,7 +37,7 @@ def parse_args():
     parser.add_argument("--benchmark-iters", type=int, default=100000, help="number of iterations run for benchmarking")
     parser.add_argument("--benchmark-dir", type=str, default="./benchmark_files/", help="directory where benchmark data is saved")
     parser.add_argument("--plots-dir", type=str, default="./learning_curves/", help="directory where plot data is saved")
-    return parser.parse_args(args=["--num-episodes", "1000", "--scenario", "simple"])
+    return parser.parse_args(args=["--num-episodes", "30000", "--scenario", "pursuit_and_evation"])
 
 def mlp_model(input, num_outputs, scope, reuse=False, num_units=64, rnn_cell=None):
     # This model takes as input an observation and returns values of all actions
@@ -109,6 +109,8 @@ def train(arglist):
         t_start = time.time()
         collide_list = []   
         save_collision = []         #collision回数を記録
+        agent_pos = [[] for _ in range(len(env.world.agents))]      #agentのpositionを記録(10/12)
+
 
         print('Starting iterations...')
         while True:
@@ -165,14 +167,15 @@ def train(arglist):
 
             # to display, get position of object
             flag = False
-            if len(episode_rewards) == 1000:
+            if (len(episode_rewards) == 1000) or (len(episode_rewards) == 30000) or (len(episode_rewards) == 10000):
                 flag = True
             if flag:
-                agent_pos = [[] for _ in len(env.world.agents)]
                 for i, agent in  enumerate(env.world.agents):
-                    agent_pos[i].append(agent.state.p_pos)
-                flag = False
-                print(agent_pos)
+                    agent_pos[i].append(list(agent.state.p_pos))
+                if episode_step == 24:
+                    print(agent_pos)
+                    flag = False
+                    agent_pos = [[] for _ in range(len(env.world.agents))]
 
             # update all trainers, if not in display or benchmark mode
             loss = None
@@ -210,7 +213,8 @@ def train(arglist):
                     pickle.dump(final_ep_ag_rewards, fp)
                 print('...Finished total of {} episodes.'.format(len(episode_rewards)))
                 print(save_collision)
-
+                print("==================")
+                
                 break
 #%%
 if __name__ == '__main__':
