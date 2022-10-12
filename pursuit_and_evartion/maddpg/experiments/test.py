@@ -19,8 +19,6 @@ ax1 = fig.add_subplot(111)
 ln1 = ax1.plot(x,good_agent,color='red',label='evation')
 ax2 = fig.add_subplot(111)
 ln2 = ax2.plot(x,adv_agent,color='green',label="pursuit")
-#ax2 = fig.add_subplot(211)
-#ln2 = ax2.plot(x,adv_agent,color='green',label='evasion')
 
 ax3 = ax1.twinx()
 ln3 = ax3.plot(x,list,color='blue',label='collision')
