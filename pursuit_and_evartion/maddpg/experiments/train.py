@@ -15,7 +15,7 @@ def parse_args():
     parser = argparse.ArgumentParser("Reinforcement Learning experiments for multiagent environments")
     # Environment
     parser.add_argument("--scenario", type=str, default="simple", help="name of the scenario script")
-    parser.add_argument("--max-episode-len", type=int, default=25, help="maximum episode length")
+    parser.add_argument("--max-episode-len", type=int, default=100, help="maximum episode length")
     parser.add_argument("--num-episodes", type=int, default=60000, help="number of episodes")
     parser.add_argument("--num-adversaries", type=int, default=0, help="number of adversaries")
     parser.add_argument("--good-policy", type=str, default="maddpg", help="policy for good agents")
@@ -167,12 +167,12 @@ def train(arglist):
 
             # to display, get position of object
             flag = False
-            if (len(episode_rewards) == 1000) or (len(episode_rewards) == 30000) or (len(episode_rewards) == 10000):
+            if (len(episode_rewards) == 1000) or (len(episode_rewards) == 30000) or (len(episode_rewards) == 5000):
                 flag = True
             if flag:
                 for i, agent in  enumerate(env.world.agents):
                     agent_pos[i].append(list(agent.state.p_pos))
-                if episode_step == 24:
+                if episode_step == 99:
                     print(agent_pos)
                     print("collision num:{}".format(env.world.agents[3].collide_num))
                     for i in range(len(env.world.agents)):
@@ -221,6 +221,7 @@ def train(arglist):
                 print("==================")
                 for landmark in env.world.landmarks:
                     print("landmark position:{}".format(landmark.state.p_pos))
+                print(collide_list)
                 
                 break
 #%%
