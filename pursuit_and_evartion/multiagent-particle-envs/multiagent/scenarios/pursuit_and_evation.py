@@ -90,7 +90,7 @@ class Scenario(BaseScenario):
     def agent_reward(self, agent, world):
         # Agents are negatively rewarded if caught by adversaries
         rew = 0
-        shape = False
+        shape = True
         adversaries = self.adversaries(world)
         if shape:  # reward can optionally be shaped (increased reward for increased distance from adversary)　#adversaryとの距離で報酬をもらうことができる
             for adv in adversaries:
@@ -118,7 +118,7 @@ class Scenario(BaseScenario):
     def adversary_reward(self, agent, world):
         # Adversaries are rewarded for collisions with agents
         rew = 0
-        shape = False
+        shape = True
         agents = self.good_agents(world)
         adversaries = self.adversaries(world)
         if shape:  # reward can optionally be shaped (decreased reward for increased distance from agents)  #good_agentとの距離によって報酬を受け取れるように設定できる
@@ -136,15 +136,15 @@ class Scenario(BaseScenario):
         entity_pos = []
         for entity in world.landmarks:
             if not entity.boundary:
-                entity_pos.append(entity.state.p_pos - agent.state.p_pos)
+                entity_pos.append(entity.state.p_pos - agent.state.p_pos)       #landmarkの位置からagentの位置を引く
         # communication of all other agents
         comm = []
         other_pos = []
         other_vel = []
         for other in world.agents:
-            if other is agent: continue
-            comm.append(other.state.c)
-            other_pos.append(other.state.p_pos - agent.state.p_pos)
-            if not other.adversary:
-                other_vel.append(other.state.p_vel)
-        return np.concatenate([agent.state.p_vel] + [agent.state.p_pos] + entity_pos + other_pos + other_vel)
+            if other is agent: continue     #もし今指定されているエージェントがotherと同じならcontinueで次に行く
+            comm.append(other.state.c)      #ほかのエージェントのコミュニケーション内容を格納
+            other_pos.append(other.state.p_pos - agent.state.p_pos)         #ほかのエージェントの場所を格納
+            if not other.adversary:                         #敵ならばベクトルは取得しない！？
+                other_vel.append(other.state.p_vel)         #ほかのエージェントのベクトルを格納（方向のこと？）
+        return np.concatenate([agent.state.p_vel] + [agent.state.p_pos] + entity_pos + other_pos + other_vel)       #すべてのリストをつないで返り値としている

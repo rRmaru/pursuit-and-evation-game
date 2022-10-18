@@ -18,8 +18,8 @@ def parse_args():
     parser.add_argument("--max-episode-len", type=int, default=100, help="maximum episode length")
     parser.add_argument("--num-episodes", type=int, default=60000, help="number of episodes")
     parser.add_argument("--num-adversaries", type=int, default=0, help="number of adversaries")
-    parser.add_argument("--good-policy", type=str, default="ddpg", help="policy for good agents")
-    parser.add_argument("--adv-policy", type=str, default="ddpg", help="policy of adversaries")
+    parser.add_argument("--good-policy", type=str, default="maddpg", help="policy for good agents")
+    parser.add_argument("--adv-policy", type=str, default="maddpg", help="policy of adversaries")
     # Core training parameters
     parser.add_argument("--lr", type=float, default=1e-2, help="learning rate for Adam optimizer")
     parser.add_argument("--gamma", type=float, default=0.95, help="discount factor")
@@ -37,7 +37,7 @@ def parse_args():
     parser.add_argument("--benchmark-iters", type=int, default=100000, help="number of iterations run for benchmarking")
     parser.add_argument("--benchmark-dir", type=str, default="./benchmark_files/", help="directory where benchmark data is saved")
     parser.add_argument("--plots-dir", type=str, default="./learning_curves/", help="directory where plot data is saved")
-    return parser.parse_args(args=["--num-episodes", "30000", "--scenario", "pursuit_and_evation"])
+    return parser.parse_args()
 
 def mlp_model(input, num_outputs, scope, reuse=False, num_units=64, rnn_cell=None):
     # This model takes as input an observation and returns values of all actions
@@ -83,7 +83,7 @@ def train(arglist):
         env = make_env(arglist.scenario, arglist, arglist.benchmark)
         # Create agent trainers
         obs_shape_n = [env.observation_space[i].shape for i in range(env.n)]    #各エージェントの観測値の次元を表す変数
-        num_adversaries = min(env.n, arglist.num_adversaries)                   #敵対者の数（全エージェントと敵対者との小さいほう）
+        num_adversaries = min(env.n, arglist.num_adversaries)                   #敵対者の数（全エージェントと敵対者との小さいほう）自分でarglistのパラメーターを設定しないといけない
         trainers = get_trainers(env, num_adversaries, obs_shape_n, arglist)     #学習trainer
         print('Using good policy {} and adv policy {}'.format(arglist.good_policy, arglist.adv_policy))     #print policy
 
@@ -167,7 +167,7 @@ def train(arglist):
 
             # to display, get position of object
             flag = False
-            if (len(episode_rewards) == 1000) or (len(episode_rewards) == 30000) or (len(episode_rewards) == 5000):
+            if (len(episode_rewards) == 29900) or (len(episode_rewards) == 30000) or (len(episode_rewards) == 5000) or (len(episode_rewards) == 10000):
                 flag = True
             if flag:
                 for i, agent in  enumerate(env.world.agents):
@@ -221,7 +221,6 @@ def train(arglist):
                 print("==================")
                 for landmark in env.world.landmarks:
                     print("landmark position:{}".format(landmark.state.p_pos))
-                
                 break
 #%%
 if __name__ == '__main__':
