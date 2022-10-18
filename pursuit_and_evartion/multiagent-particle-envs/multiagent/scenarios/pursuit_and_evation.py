@@ -148,3 +148,14 @@ class Scenario(BaseScenario):
             if not other.adversary:                         #敵ならばベクトルは取得しない！？
                 other_vel.append(other.state.p_vel)         #ほかのエージェントのベクトルを格納（方向のこと？）
         return np.concatenate([agent.state.p_vel] + [agent.state.p_pos] + entity_pos + other_pos + other_vel)       #すべてのリストをつないで返り値としている
+
+    #make sign to end episode when collision with agent and agent
+    def done(self, agent, world):
+        agents = self.good_agents(world)       
+        adversaries = self.adversaries(world)   
+        if agent.collide:
+            for ag in agents:
+                for adv in adversaries:
+                    if self.is_collision(ag, adv):
+                        return True         #when pursuit and evasion are collided, return True
+        return False

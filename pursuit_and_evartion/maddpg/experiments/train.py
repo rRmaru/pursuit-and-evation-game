@@ -167,7 +167,7 @@ def train(arglist):
 
             # to display, get position of object
             flag = False
-            if (len(episode_rewards) == 29900) or (len(episode_rewards) == 30000) or (len(episode_rewards) == 5000) or (len(episode_rewards) == 10000):
+            if (len(episode_rewards) == 29900) or (len(episode_rewards) == 30000) or (len(episode_rewards) == 29000) or (len(episode_rewards) == 29200):
                 flag = True
             if flag:
                 for i, agent in  enumerate(env.world.agents):
