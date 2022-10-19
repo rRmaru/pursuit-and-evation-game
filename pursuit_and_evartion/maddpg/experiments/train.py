@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow as tf
 import time
 import pickle
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plts
 
 
 import maddpg.common.tf_util as U
@@ -58,9 +58,9 @@ def make_env(scenario_name, arglist, benchmark=False):
     world = scenario.make_world()
     # create multiagent environment
     if benchmark:
-        env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation, scenario.benchmark_data)
+        env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation, scenario.benchmark_data, scenario.done)
     else:
-        env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation)
+        env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation, done_callback=scenario.done)        #done_callback=scenario.doneを追加(10/19)
     return env
 
 def get_trainers(env, num_adversaries, obs_shape_n, arglist):
@@ -110,6 +110,7 @@ def train(arglist):
         collide_list = []   
         save_collision = []         #collision回数を記録
         agent_pos = [[] for _ in range(len(env.world.agents))]      #agentのpositionを記録(10/12)
+        step_len = []            #record episode len(10/19)
 
 
         print('Starting iterations...')
@@ -132,6 +133,8 @@ def train(arglist):
 
             if done or terminal:
                 obs_n = env.reset()
+                #record step len (10/19)
+                step_len.append(episode_step)
                 episode_step = 0
                 episode_rewards.append(0)
                 #show number of collision
@@ -140,6 +143,19 @@ def train(arglist):
                         collide_list.append(agent.collide_num)
                         agent.collide_num = 0
                 #end
+                #show motion(10/19)
+                if flag:
+                    for i, agent in  enumerate(env.world.agents):
+                        agent_pos[i].append(list(agent.state.p_pos))
+                    print(agent_pos)
+                    print("collision num:{}".format(env.world.agents[3].collide_num))
+                    for i in range(len(env.world.agents)):
+                        print("agent reward:{}".format(agent_rewards[i][-1]))
+                    for landmark in env.world.landmarks:
+                        print("landmark position:{}".format(landmark.state.p_pos))
+                    flag = False
+                    agent_pos = [[] for _ in range(len(env.world.agents))]
+                #show motion end
                 for a in agent_rewards:
                     a.append(0)
                 agent_info.append([[]])
@@ -167,7 +183,7 @@ def train(arglist):
 
             # to display, get position of object
             flag = False
-            if (len(episode_rewards) == 29900) or (len(episode_rewards) == 30000) or (len(episode_rewards) == 29000) or (len(episode_rewards) == 29200):
+            if (len(episode_rewards) == 10000) or (len(episode_rewards) == 9999) or (len(episode_rewards) == 9998) or (len(episode_rewards) == 9997):
                 flag = True
             if flag:
                 for i, agent in  enumerate(env.world.agents):
@@ -190,7 +206,7 @@ def train(arglist):
                 loss = agent.update(trainers, train_step)
 
             # save model, display training output
-            if terminal and (len(episode_rewards) % arglist.save_rate == 0):
+            if (terminal or done) and (len(episode_rewards) % arglist.save_rate == 0):
                 U.save_state(arglist.save_dir, saver=saver)
                 # print statement depends on whether or not there are adversaries
                 if num_adversaries == 0:
@@ -219,8 +235,7 @@ def train(arglist):
                 print('...Finished total of {} episodes.'.format(len(episode_rewards)))
                 print(save_collision)
                 print("==================")
-                for landmark in env.world.landmarks:
-                    print("landmark position:{}".format(landmark.state.p_pos))
+                print("step len:{}".format(step_len[::10]))
                 break
 #%%
 if __name__ == '__main__':
