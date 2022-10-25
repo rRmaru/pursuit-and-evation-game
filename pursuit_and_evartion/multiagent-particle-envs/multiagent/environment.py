@@ -142,8 +142,8 @@ class MultiAgentEnv(gym.Env):
 
     # set env action for a particular agent
     def _set_action(self, action, agent, action_space, time=None):
-        agent.action.u = np.zeros(self.world.dim_p)
-        agent.action.c = np.zeros(self.world.dim_c)
+        agent.action.u = np.zeros(self.world.dim_p)     #次元数に合わせて
+        agent.action.c = np.zeros(self.world.dim_c)     #コミュ二ケーション
         # process action
         if isinstance(action_space, MultiDiscrete):
             act = []
@@ -156,7 +156,7 @@ class MultiAgentEnv(gym.Env):
         else:
             action = [action]
 
-        if agent.movable:
+        if agent.movable:           #もし指定したエージェントが動くなら
             # physical action
             if self.discrete_action_input:
                 agent.action.u = np.zeros(self.world.dim_p)

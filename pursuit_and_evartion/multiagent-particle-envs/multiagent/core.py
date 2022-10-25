@@ -143,12 +143,12 @@ class World(object):
 
     # gather physical forces acting on entities
     def apply_environment_force(self, p_force):
-        # simple (but inefficient) collision response
+        # simple (but inefficient) collision response 全探索
         for a,entity_a in enumerate(self.entities):
             for b,entity_b in enumerate(self.entities):
-                if(b <= a): continue
+                if(b <= a): continue    #同じ物体は含まない
                 [f_a, f_b] = self.get_collision_force(entity_a, entity_b)
-                if(f_a is not None):
+                if(f_a is not None):            #exit f_a
                     if(p_force[a] is None): p_force[a] = 0.0
                     p_force[a] = f_a + p_force[a] 
                 if(f_b is not None):
@@ -160,9 +160,9 @@ class World(object):
     def integrate_state(self, p_force):
         for i,entity in enumerate(self.entities):
             if not entity.movable: continue
-            entity.state.p_vel = entity.state.p_vel * (1 - self.damping)
+            entity.state.p_vel = entity.state.p_vel * (1 - self.damping)        #damping = 0.25
             if (p_force[i] is not None):
-                entity.state.p_vel += (p_force[i] / entity.mass) * self.dt
+                entity.state.p_vel += (p_force[i] / entity.mass) * self.dt      #initial_mas = 1.0
             if entity.max_speed is not None:
                 speed = np.sqrt(np.square(entity.state.p_vel[0]) + np.square(entity.state.p_vel[1]))
                 if speed > entity.max_speed:
@@ -180,10 +180,10 @@ class World(object):
 
     # get collision forces for any contact between two entities
     def get_collision_force(self, entity_a, entity_b):
-        if (not entity_a.collide) or (not entity_b.collide):
+        if (not entity_a.collide) or (not entity_b.collide):        #aかbどちらかでもcoollideがFalse
             return [None, None] # not a collider
         if (entity_a is entity_b):
-            return [None, None] # don't collide against itself
+            return [None, None] # don't collide against itself  同じ物体の時
         # compute actual distance between entities
         delta_pos = entity_a.state.p_pos - entity_b.state.p_pos
         dist = np.sqrt(np.sum(np.square(delta_pos)))
@@ -192,7 +192,7 @@ class World(object):
         # softmax penetration
         k = self.contact_margin
         penetration = np.logaddexp(0, -(dist - dist_min)/k)*k
-        force = self.contact_force * delta_pos / dist * penetration
+        force = self.contact_force * delta_pos / dist * penetration #contract_force = 100
         force_a = +force if entity_a.movable else None
         force_b = -force if entity_b.movable else None
         return [force_a, force_b]

@@ -21,9 +21,9 @@ class Scenario(BaseScenario):
             agent.adversary = True if i < num_adversaries else False    #if i is more than 4, agent.adversary is False
             
             agent.size = 0.075 if agent.adversary else 0.05     #adversary is bigger than good_agent
-            agent.accel = 3.0 if agent.adversary else 4.0       #adversary is slower than good_agent
+            agent.accel = 3.0 if agent.adversary else 5.0       #adversary is slower than good_agent
             #agent.accel = 20.0 if agent.adversary else 25.0
-            agent.max_speed = 1.0 if agent.adversary else 1.3   #max_speed 
+            agent.max_speed = 1.0 if agent.adversary else 1.7   #max_speed 
         # add landmarks
         world.landmarks = [Landmark() for i in range(num_landmarks)]
         for i, landmark in enumerate(world.landmarks):
@@ -98,7 +98,7 @@ class Scenario(BaseScenario):
         if agent.collide:
             for a in adversaries:
                 if self.is_collision(a, agent):
-                    rew -= 100
+                    rew -= 50
                     #collide num
                     agent.collide_num += 1
 
@@ -128,7 +128,7 @@ class Scenario(BaseScenario):
             for ag in agents:
                 for adv in adversaries:
                     if self.is_collision(ag, adv):
-                        rew += 100
+                        rew += 50
         return rew
 
     def observation(self, agent, world):            #ちょっとわからない
