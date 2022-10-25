@@ -18,7 +18,7 @@ class Scenario(BaseScenario):
             agent.name = 'agent %d' % i
             agent.collide = True        #collider
             agent.silent = True         #cannot communication
-            agent.adversary = True if i < num_adversaries else False    #if i is more than 4, agent.adversary is False
+            agent.adversary = True if i < num_adversaries else False    #if i is more than 3, agent.adversary is False
             
             agent.size = 0.075 if agent.adversary else 0.05     #adversary is bigger than good_agent
             agent.accel = 3.0 if agent.adversary else 5.0       #adversary is slower than good_agent
@@ -103,15 +103,15 @@ class Scenario(BaseScenario):
                     agent.collide_num += 1
 
         # agents are penalized for exiting the screen, so that they can be caught by the adversaries
-        def bound(x):
+        """def bound(x):
             if x < 0.9:
                 return 0
             if x < 1.0:
                 return (x - 0.9) * 10
-            return min(np.exp(2 * x - 2), 10)
+            return min(np.exp(2 * x - 2), 10)"""
         for p in range(world.dim_p):
             x = abs(agent.state.p_pos[p])
-            rew -= bound(x)
+            """#rew -= bound(x)"""
 
         return rew
 

@@ -128,6 +128,8 @@ class World(object):
         p_force = self.apply_environment_force(p_force)
         # integrate physical state
         self.integrate_state(p_force)
+        # bound entitiy
+        self.bound()
         # update agent state
         for agent in self.agents:
             self.update_agent_state(agent)
@@ -176,7 +178,7 @@ class World(object):
             agent.state.c = np.zeros(self.dim_c)
         else:
             noise = np.random.randn(*agent.action.c.shape) * agent.c_noise if agent.c_noise else 0.0
-            agent.state.c = agent.action.c + noise      
+            agent.state.c = agent.action.c + noise
 
     # get collision forces for any contact between two entities
     def get_collision_force(self, entity_a, entity_b):
@@ -190,9 +192,18 @@ class World(object):
         # minimum allowable distance
         dist_min = entity_a.size + entity_b.size
         # softmax penetration
-        k = self.contact_margin
-        penetration = np.logaddexp(0, -(dist - dist_min)/k)*k
-        force = self.contact_force * delta_pos / dist * penetration #contract_force = 100
+        k = self.contact_margin             #contact_margin = 0.001
+        penetration = np.logaddexp(0, -(dist - dist_min)/k)*k       #基本的に負だが、接触すると急激に大きくなる
+        force = self.contact_force * delta_pos / dist * penetration #contract_force = 100　　ベクトルに変換
         force_a = +force if entity_a.movable else None
         force_b = -force if entity_b.movable else None
         return [force_a, force_b]
+    
+    # bound entity(10/26)
+    def bound(self):
+        for entity in self.entities:
+            for i, pos in enumerate(entity.state.p_pos):
+                if pos < -1:
+                    entity.state.p_pos[i] = -1 - (entity.state.p_pos[i] - (-1))
+                if pos > 1:
+                    entity.state.p_pos[i] = 1 - (entity.state.p_pos[i] - 1)

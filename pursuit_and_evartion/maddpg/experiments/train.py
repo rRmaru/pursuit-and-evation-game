@@ -15,7 +15,7 @@ def parse_args():
     parser = argparse.ArgumentParser("Reinforcement Learning experiments for multiagent environments")
     # Environment
     parser.add_argument("--scenario", type=str, default="pursuit_and_evation", help="name of the scenario script")
-    parser.add_argument("--max-episode-len", type=int, default=200, help="maximum episode length")
+    parser.add_argument("--max-episode-len", type=int, default=100, help="maximum episode length")
     parser.add_argument("--num-episodes", type=int, default=60000, help="number of episodes")
     parser.add_argument("--num-adversaries", type=int, default=0, help="number of adversaries")
     parser.add_argument("--good-policy", type=str, default="maddpg", help="policy for good agents")
@@ -28,7 +28,7 @@ def parse_args():
     # Checkpointing
     parser.add_argument("--exp-name", type=str, default=None, help="name of the experiment")
     parser.add_argument("--save-dir", type=str, default="/tmp/policy/", help="directory in which training state and model should be saved")
-    parser.add_argument("--save-rate", type=int, default=1000, help="save model once every time this many episodes are completed")
+    parser.add_argument("--save-rate", type=int, default=5000, help="save model once every time this many episodes are completed")
     parser.add_argument("--load-dir", type=str, default="", help="directory in which training state and model are loaded")
     # Evaluation
     parser.add_argument("--restore", action="store_true", default=False)
@@ -58,9 +58,9 @@ def make_env(scenario_name, arglist, benchmark=False):
     world = scenario.make_world()
     # create multiagent environment
     if benchmark:
-        env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation, scenario.benchmark_data, scenario.done)
+        env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation, scenario.benchmark_data)
     else:
-        env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation, done_callback=scenario.done)        #done_callback=scenario.doneを追加(10/19)
+        env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation)        #done_callback=scenario.doneを追加(10/19)
     return env
 
 def get_trainers(env, num_adversaries, obs_shape_n, arglist):
@@ -183,7 +183,7 @@ def train(arglist):
 
             # to display, get position of object
             flag = False
-            if (len(episode_rewards) == 10000) or (len(episode_rewards) == 9999) or (len(episode_rewards) == 9998) or (len(episode_rewards) == 9997):
+            if (len(episode_rewards) == 10000) or (len(episode_rewards) == 9999) or (len(episode_rewards) == 4999) or (len(episode_rewards) == 5000):
                 flag = True
             if flag:
                 for i, agent in  enumerate(env.world.agents):
@@ -233,9 +233,7 @@ def train(arglist):
                 with open(agrew_file_name, 'wb') as fp:
                     pickle.dump(final_ep_ag_rewards, fp)
                 print('...Finished total of {} episodes.'.format(len(episode_rewards)))
-                print(save_collision)
-                print("==================")
-                print("step len:{}".format(step_len[::10]))
+                print("the number of collision:{}".format(save_collision))
                 break
 #%%
 if __name__ == '__main__':
