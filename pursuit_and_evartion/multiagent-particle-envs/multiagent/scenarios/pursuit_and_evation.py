@@ -21,9 +21,9 @@ class Scenario(BaseScenario):
             agent.adversary = True if i < num_adversaries else False    #if i is more than 3, agent.adversary is False
             
             agent.size = 0.075 if agent.adversary else 0.05     #adversary is bigger than good_agent
-            agent.accel = 3.0 if agent.adversary else 5.0       #adversary is slower than good_agent
+            agent.accel = 3.0 if agent.adversary else 4.0       #adversary is slower than good_agent
             #agent.accel = 20.0 if agent.adversary else 25.0
-            agent.max_speed = 1.0 if agent.adversary else 1.7   #max_speed 
+            agent.max_speed = 1.0 if agent.adversary else 1.3   #max_speed 
         # add landmarks
         world.landmarks = [Landmark() for i in range(num_landmarks)]
         for i, landmark in enumerate(world.landmarks):
@@ -108,10 +108,10 @@ class Scenario(BaseScenario):
                 return 0
             if x < 1.0:
                 return (x - 0.9) * 10
-            return min(np.exp(2 * x - 2), 10)"""
+            return min(np.exp(2 * x - 2), 10)
         for p in range(world.dim_p):
             x = abs(agent.state.p_pos[p])
-            """#rew -= bound(x)"""
+            rew -= bound(x)"""
 
         return rew
 

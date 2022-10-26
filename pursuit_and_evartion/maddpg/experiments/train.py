@@ -83,7 +83,7 @@ def train(arglist):
         # Create environment
         env = make_env(arglist.scenario, arglist, arglist.benchmark)
         # Create agent trainers
-        obs_shape_n = [env.observation_space[i].shape for i in range(env.n)]    #各エージェントの観測値の次元を表す変数
+        obs_shape_n = [env.observation_space[i].shape for i in range(env.n)]    #各エージェントの観測値の次元を表す変数 #observation_space 観測したshapeの連続値:5
         num_adversaries = min(env.n, arglist.num_adversaries)                   #敵対者の数（全エージェントと敵対者との小さいほう）自分でarglistのパラメーターを設定しないといけない
         trainers = get_trainers(env, num_adversaries, obs_shape_n, arglist)     #学習trainer
         print('Using good policy {} and adv policy {}'.format(arglist.good_policy, arglist.adv_policy))     #print policy
