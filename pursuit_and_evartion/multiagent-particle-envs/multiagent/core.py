@@ -89,7 +89,7 @@ class World(object):
         # communication channel dimensionality
         self.dim_c = 0
         # position dimensionality
-        self.dim_p = 2
+        self.dim_p = 2  #次元数
         # color dimensionality
         self.dim_color = 3
         # simulation timestep
