@@ -26,7 +26,7 @@ def make_update_exp(vals, target_vals):
     return U.function([], [], updates=[expression])
 
 def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad_norm_clipping=None, local_q_func=False, num_units=64, scope="trainer", reuse=None):
-    with tf.variable_scope(scope, reuse=reuse):
+    with tf.variable_scope(scope, reuse=reuse):         #name space
         # create distribtuions
         act_pdtype_n = [make_pdtype(act_space) for act_space in act_space_n]
 
@@ -59,7 +59,7 @@ def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad
 
         # Create callable functions
         train = U.function(inputs=obs_ph_n + act_ph_n, outputs=loss, updates=[optimize_expr])
-        act = U.function(inputs=[obs_ph_n[p_index]], outputs=act_sample)
+        act = U.function(inputs=[obs_ph_n[p_index]], outputs=act_sample)            #この部分がactを与える部分　観測値=input act_sample=output
         p_values = U.function([obs_ph_n[p_index]], p)
 
         # target network
