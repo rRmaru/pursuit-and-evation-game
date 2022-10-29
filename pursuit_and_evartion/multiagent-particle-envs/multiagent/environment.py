@@ -113,7 +113,7 @@ class MultiAgentEnv(gym.Env):
         self.agents = self.world.policy_agents
         for agent in self.agents:
             obs_n.append(self._get_obs(agent))
-        return obs_n
+        return obs_n　
 
     # get info used for benchmarking
     def _get_info(self, agent):
