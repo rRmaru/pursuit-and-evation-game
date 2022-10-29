@@ -288,11 +288,11 @@ def function(inputs, outputs, updates=None, givens=None):
 class _Function(object):
     def __init__(self, inputs, outputs, updates, givens, check_nan=False):
         for inpt in inputs:
-            if not issubclass(type(inpt), TfInput):
+            if not issubclass(type(inpt), TfInput):             #error 処理
                 assert len(inpt.op.inputs) == 0, "inputs should all be placeholders of rl_algs.common.TfInput"
         self.inputs = inputs
-        updates = updates or []
-        self.update_group = tf.group(*updates)
+        updates = updates or []         #updateが設定されていなかったら空のリストを渡す
+        self.update_group = tf.group(*updates)          #create group
         self.outputs_update = list(outputs) + [self.update_group]
         self.givens = {} if givens is None else givens
         self.check_nan = check_nan
