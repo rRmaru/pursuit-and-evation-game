@@ -44,7 +44,7 @@ class PdType(object):
 
 class CategoricalPdType(PdType):
     def __init__(self, ncat):
-        self.ncat = ncat
+        self.ncat = ncat                    #action_space[0] this time 5
     def pdclass(self):
         return CategoricalPd
     def param_shape(self):
@@ -54,7 +54,7 @@ class CategoricalPdType(PdType):
     def sample_dtype(self):
         return tf.int32
 
-class SoftCategoricalPdType(PdType):
+class SoftCategoricalPdType(PdType):            #引数離散地の時の返り値の設定
     def __init__(self, ncat):
         self.ncat = ncat
     def pdclass(self):
@@ -309,13 +309,13 @@ class BernoulliPd(Pd):
 
 def make_pdtype(ac_space):
     from gym import spaces
-    if isinstance(ac_space, spaces.Box):
-        assert len(ac_space.shape) == 1
+    if isinstance(ac_space, spaces.Box):            #引数が連続地の場合
+        assert len(ac_space.shape) == 1             #actionの長さが1の時assertion Erroが出るように設定する
         return DiagGaussianPdType(ac_space.shape[0])
-    elif isinstance(ac_space, spaces.Discrete):
+    elif isinstance(ac_space, spaces.Discrete):     #引数が離散地の場合
         # return CategoricalPdType(ac_space.n)
         return SoftCategoricalPdType(ac_space.n)
-    elif isinstance(ac_space, MultiDiscrete):
+    elif isinstance(ac_space, MultiDiscrete):       #引数がmultiDiscreteの場合
         #return MultiCategoricalPdType(ac_space.low, ac_space.high)
         return SoftMultiCategoricalPdType(ac_space.low, ac_space.high)
     elif isinstance(ac_space, spaces.MultiBinary):
