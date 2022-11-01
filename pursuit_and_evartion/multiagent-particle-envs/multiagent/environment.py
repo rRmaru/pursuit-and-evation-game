@@ -78,9 +78,9 @@ class MultiAgentEnv(gym.Env):
         self._reset_render()
 
     def step(self, action_n):
-        obs_n = []
-        reward_n = []
-        done_n = []
+        obs_n = []          #observation list
+        reward_n = []       #reward list
+        done_n = []         #done list
         info_n = {'n': []}
         self.agents = self.world.policy_agents
         # set action for each agent
@@ -145,7 +145,7 @@ class MultiAgentEnv(gym.Env):
         agent.action.u = np.zeros(self.world.dim_p)     #次元数に合わせて
         agent.action.c = np.zeros(self.world.dim_c)     #コミュ二ケーション
         # process action
-        if isinstance(action_space, MultiDiscrete):
+        if isinstance(action_space, MultiDiscrete):             #multidiscreteの時はactionとcommunicationが存在するとき
             act = []
             size = action_space.high - action_space.low + 1
             index = 0
@@ -158,8 +158,8 @@ class MultiAgentEnv(gym.Env):
 
         if agent.movable:           #もし指定したエージェントが動くなら
             # physical action
-            if self.discrete_action_input:
-                agent.action.u = np.zeros(self.world.dim_p)
+            if self.discrete_action_input:          #actionの入力値がdiscreteの時
+                agent.action.u = np.zeros(self.world.dim_p)         #agent.action.u=physical action
                 # process discrete action
                 if action[0] == 1: agent.action.u[0] = -1.0
                 if action[0] == 2: agent.action.u[0] = +1.0
