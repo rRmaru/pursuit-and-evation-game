@@ -1,4 +1,5 @@
-#%%
+import ipdb as pdb
+
 import argparse
 import numpy as np
 import tensorflow as tf
@@ -10,7 +11,7 @@ import matplotlib.pyplot as plts
 import maddpg.common.tf_util as U
 from maddpg.trainer.maddpg import MADDPGAgentTrainer
 import tensorflow.contrib.layers as layers
-#%%
+
 def parse_args():
     parser = argparse.ArgumentParser("Reinforcement Learning experiments for multiagent environments")
     # Environment
@@ -236,7 +237,9 @@ def train(arglist):
                 print('...Finished total of {} episodes.'.format(len(episode_rewards)))
                 print("the number of collision:{}".format(save_collision))
                 break
-#%%
+
 if __name__ == '__main__':
     arglist = parse_args()
     train(arglist)
+
+# %%
