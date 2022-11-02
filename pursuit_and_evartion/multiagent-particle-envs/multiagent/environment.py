@@ -175,9 +175,9 @@ class MultiAgentEnv(gym.Env):
                     agent.action.u[1] += action[0][3] - action[0][4]
                 else:
                     agent.action.u = action[0]
-            sensitivity = 5.0
+            sensitivity = 5.0           
             if agent.accel is not None:
-                sensitivity = agent.accel
+                sensitivity = agent.accel           #sensitivity→感度　　accelは感度に変換されている　accel→加速度ではない
             agent.action.u *= sensitivity
             action = action[1:]
         if not agent.silent:
