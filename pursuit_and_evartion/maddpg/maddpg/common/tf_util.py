@@ -69,7 +69,7 @@ class PlacholderTfInput(TfInput):
 
 
 class BatchInput(PlacholderTfInput):
-    def __init__(self, shape, dtype=tf.float32, name=None):
+    def __init__(self, shape, dtype=tf.float32, name=None):         #shape = (16,) or (14,)
         """Creates a placeholder for a batch of tensors of a given shape and dtype
 
         Parameters
@@ -81,7 +81,7 @@ class BatchInput(PlacholderTfInput):
         name: str
             name of the underlying placeholder
         """
-        super().__init__(tf.placeholder(dtype, [None] + list(shape), name=name))        #placeholderに[None]+list(shope)を引数で渡す
+        super().__init__(tf.placeholder(dtype, [None] + list(shape), name=name))        #placeholderに[None]+list(shape)を引数で渡す
 
 
 class Uint8Input(PlacholderTfInput):

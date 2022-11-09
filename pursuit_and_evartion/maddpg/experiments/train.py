@@ -70,9 +70,10 @@ def get_trainers(env, num_adversaries, obs_shape_n, arglist):
     trainers = []
     model = mlp_model
     trainer = MADDPGAgentTrainer
+    #pdb.set_trace()
     for i in range(num_adversaries):
         trainers.append(trainer(
-            "agent_%d" % i, model, obs_shape_n, env.action_space, i, arglist,
+            "agent_%d" % i, model, obs_shape_n, env.action_space, i, arglist,                   #env.action_space = [Discrete(5),Discrete(5),Discrete(5),Discrete(5)]   obs_shape=[(16,),(16,),(16,),(14,)
             local_q_func=(arglist.adv_policy=='ddpg')))
     for i in range(num_adversaries, env.n):
         trainers.append(trainer(
@@ -85,7 +86,7 @@ def train(arglist):
         # Create environment
         env = make_env(arglist.scenario, arglist, arglist.benchmark)
         # Create agent trainers
-        obs_shape_n = [env.observation_space[i].shape for i in range(env.n)]    #各エージェントの観測値の次元を表す変数 #observation_space 観測したshapeの連続値:5
+        obs_shape_n = [env.observation_space[i].shape for i in range(env.n)]    #各エージェントの観測値の次元を表す変数 #observation_space 観測したshapeの連続値:16 Box(16,).shape=(16,) evasion has (14,) 
         num_adversaries = min(env.n, arglist.num_adversaries)                   #敵対者の数（全エージェントと敵対者との小さいほう）自分でarglistのパラメーターを設定しないといけない
         trainers = get_trainers(env, num_adversaries, obs_shape_n, arglist)     #学習trainer
         print('Using good policy {} and adv policy {}'.format(arglist.good_policy, arglist.adv_policy))     #print policy

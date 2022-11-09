@@ -110,16 +110,16 @@ def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_cl
         return train, update_target_q, {'q_values': q_values, 'target_q_values': target_q_values}
 
 class MADDPGAgentTrainer(AgentTrainer):
-    def __init__(self, name, model, obs_shape_n, act_space_n, agent_index, args, local_q_func=False):
+    def __init__(self, name, model, obs_shape_n, act_space_n, agent_index, args, local_q_func=False):       #obs_shape_n=[(16,),(16,),(16,),(14,)] act_space_n=[Discrete(5)*4]
         self.name = name
-        self.n = len(obs_shape_n)       #the number of agent  obs_shape_n = [3,5]
+        self.n = len(obs_shape_n)       #the number of agent  obs_shape_n = [(16,),(16,),(16,),(14,)]
         self.agent_index = agent_index  #index = i
         self.args = args                #実行時のコマンドライン引数
         obs_ph_n = []
         for i in range(self.n):
-            obs_ph_n.append(U.BatchInput(obs_shape_n[i], name="observation"+str(i)).get())    #placeholderを渡してる
+            obs_ph_n.append(U.BatchInput(obs_shape_n[i], name="observation"+str(i)).get())    #placeholderを渡してる obs_shape_n[i] = (16,) or (14,) tf.placeholder(dtype, [None,16], name=name)
 
-        # Create all the functions necessary to train the model         ここがわからん
+        # Create all the functions necessary to train the model         わからん
         self.q_train, self.q_update, self.q_debug = q_train(
             scope=self.name,
             make_obs_ph_n=obs_ph_n,
