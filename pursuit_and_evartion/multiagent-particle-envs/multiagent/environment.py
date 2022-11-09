@@ -1,3 +1,5 @@
+import ipdb as pdb
+
 import gym
 from gym import spaces
 from gym.envs.registration import EnvSpec
@@ -66,6 +68,7 @@ class MultiAgentEnv(gym.Env):
                 self.action_space.append(total_action_space[0])
             # observation space
             obs_dim = len(observation_callback(agent, self.world))
+            pdb.set_trace()
             self.observation_space.append(spaces.Box(low=-np.inf, high=+np.inf, shape=(obs_dim,), dtype=np.float32))
             agent.action.c = np.zeros(self.world.dim_c)
 

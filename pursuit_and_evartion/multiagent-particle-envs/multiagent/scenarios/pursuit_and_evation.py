@@ -1,3 +1,5 @@
+import ipdb as pdb
+
 import numpy as np
 from multiagent.core import World, Agent, Landmark
 from multiagent.scenario import BaseScenario
@@ -145,9 +147,10 @@ class Scenario(BaseScenario):
             if other is agent: continue     #もし今指定されているエージェントがotherと同じならcontinueで次に行く
             comm.append(other.state.c)      #ほかのエージェントのコミュニケーション内容を格納
             other_pos.append(other.state.p_pos - agent.state.p_pos)         #ほかのエージェントの場所を格納
-            if not other.adversary:                         #敵ならばベクトルは取得しない！？
+            if not other.adversary:                         #敵ならばベクトルは取得しない！？ここでいう敵とは追跡者の事、逃亡者のベクトルだけ取得
                 other_vel.append(other.state.p_vel)         #ほかのエージェントのベクトルを格納（方向のこと？）
-        return np.concatenate([agent.state.p_vel] + [agent.state.p_pos] + entity_pos + other_pos + other_vel)       #すべてのリストをつないで返り値としている
+        #pdb.set_trace()
+        return np.concatenate([agent.state.p_vel] + [agent.state.p_pos] + entity_pos + other_pos + other_vel)       #すべてのリストをつないで返り値としている  1*16次元の配列
 
     #make sign to end episode when collision with agent and agent
     def done(self, agent, world):
