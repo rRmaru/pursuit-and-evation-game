@@ -28,7 +28,7 @@ def make_update_exp(vals, target_vals):
 def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad_norm_clipping=None, local_q_func=False, num_units=64, scope="trainer", reuse=None):
     with tf.variable_scope(scope, reuse=reuse):         #name space
         # create distribtuions
-        act_pdtype_n = [make_pdtype(act_space) for act_space in act_space_n]
+        act_pdtype_n = [make_pdtype(act_space) for act_space in act_space_n]  #SoftCategoricalPdType(5)　return 
 
         # set up placeholders
         obs_ph_n = make_obs_ph_n

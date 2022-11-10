@@ -47,7 +47,7 @@ def mlp_model(input, num_outputs, scope, reuse=False, num_units=64, rnn_cell=Non
         out = input
         out = layers.fully_connected(out, num_outputs=num_units, activation_fn=tf.nn.relu)
         out = layers.fully_connected(out, num_outputs=num_units, activation_fn=tf.nn.relu)
-        out = layers.fully_connected(out, num_outputs=num_outputs, activation_fn=None)
+        out = layers.fully_connected(out, num_outputs=num_outputs, activation_fn=None)              #出力層　（合計で三層）
         return out
 
 def make_env(scenario_name, arglist, benchmark=False):
@@ -107,7 +107,7 @@ def train(arglist):
         final_ep_ag_rewards = []  # agent rewards for training curve
         agent_info = [[[]]]  # placeholder for benchmarking info
         saver = tf.train.Saver()        #saverを用意している（sarver:学習後のパラメーターを使うため）
-        obs_n = env.reset()
+        obs_n = env.reset()             #最初のobs_nが与えられる
         episode_step = 0
         train_step = 0
         t_start = time.time()
@@ -120,7 +120,7 @@ def train(arglist):
         print('Starting iterations...')
         while True:
             # get action
-            action_n = [agent.action(obs) for agent, obs in zip(trainers,obs_n)]            #何がactionとして与えられているのか？5つの要素を持った一次元配列
+            action_n = [agent.action(obs) for agent, obs in zip(trainers,obs_n)]            #何がactionとして与えられているのか？16つの要素を持った一次元配列
             # environment step
             new_obs_n, rew_n, done_n, info_n = env.step(action_n)
             episode_step += 1
