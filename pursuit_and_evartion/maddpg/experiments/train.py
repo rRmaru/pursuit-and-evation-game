@@ -73,7 +73,7 @@ def get_trainers(env, num_adversaries, obs_shape_n, arglist):
     #pdb.set_trace()
     for i in range(num_adversaries):
         trainers.append(trainer(
-            "agent_%d" % i, model, obs_shape_n, env.action_space, i, arglist,                   #env.action_space = [Discrete(5),Discrete(5),Discrete(5),Discrete(5)]   obs_shape=[(16,),(16,),(16,),(14,)
+            "agent_%d" % i, model, obs_shape_n, env.action_space, i, arglist,  #env.action_space = [Discrete(5),Discrete(5),Discrete(5),Discrete(5)]   obs_shape=[(16,),(16,),(16,),(14,)
             local_q_func=(arglist.adv_policy=='ddpg')))
     for i in range(num_adversaries, env.n):
         trainers.append(trainer(

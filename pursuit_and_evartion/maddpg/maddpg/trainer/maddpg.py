@@ -73,20 +73,20 @@ def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad
         return act, train, update_target_p, {'p_values': p_values, 'target_act': target_act}
 
 def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_clipping=None, local_q_func=False, scope="trainer", reuse=None, num_units=64):
-    with tf.variable_scope(scope, reuse=reuse):     #名前空間
-        # create distribtuions
-        act_pdtype_n = [make_pdtype(act_space) for act_space in act_space_n]
+    with tf.variable_scope(scope, reuse=reuse):     #名前空間→trainer  再利用→None
+        # create distribtuions分布
+        act_pdtype_n = [make_pdtype(act_space) for act_space in act_space_n]   #act_space [Discrete(5)*4]   return SoftCategoricalPdType(5)
 
         # set up placeholders
         obs_ph_n = make_obs_ph_n        #placeholder, BatchInput()
-        act_ph_n = [act_pdtype_n[i].sample_placeholder([None], name="action"+str(i)) for i in range(len(act_space_n))]    #shpe[5,]のplaceholderを返す
-        target_ph = tf.placeholder(tf.float32, [None], name="target")
+        act_ph_n = [act_pdtype_n[i].sample_placeholder([None], name="action"+str(i)) for i in range(len(act_space_n))]    #[Discrete(5)*4] tf.Placeholder(float32, [None, 5], action+i)
+        target_ph = tf.placeholder(tf.float32, [None], name="target")  #None→任意のshapeを割り当てる
 
         q_input = tf.concat(obs_ph_n + act_ph_n, 1)         #obs_ph_n and act_ph_n二個目の要素を結合
         if local_q_func:
             q_input = tf.concat([obs_ph_n[q_index], act_ph_n[q_index]], 1)
-        q = q_func(q_input, 1, scope="q_func", num_units=num_units)[:,0]
-        q_func_vars = U.scope_vars(U.absolute_scope_name("q_func"))
+        q = q_func(q_input, 1, scope="q_func", num_units=num_units)[:,0]        #input mlp
+        q_func_vars = U.scope_vars(U.absolute_scope_name("q_func"))     #absolute_scope_vars = 名前空間の絶対パスを得る scope_vars = ?
 
         q_loss = tf.reduce_mean(tf.square(q - target_ph))       #損失関数の設定　与えられたリストに入っている数値の平均値を求める関数
 
@@ -112,7 +112,7 @@ def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_cl
 class MADDPGAgentTrainer(AgentTrainer):
     def __init__(self, name, model, obs_shape_n, act_space_n, agent_index, args, local_q_func=False):       #obs_shape_n=[(16,),(16,),(16,),(14,)] act_space_n=[Discrete(5)*4]
         self.name = name
-        self.n = len(obs_shape_n)       #the number of agent  obs_shape_n = [(16,),(16,),(16,),(14,)]
+        self.n = len(obs_shape_n)       #the number of agent  obs_shape_n = [(16,),(16,),(16,),(14,)] therefor n = 4
         self.agent_index = agent_index  #index = i
         self.args = args                #実行時のコマンドライン引数
         obs_ph_n = []
@@ -144,7 +144,7 @@ class MADDPGAgentTrainer(AgentTrainer):
             num_units=args.num_units
         )
         # Create experience buffer
-        self.replay_buffer = ReplayBuffer(1e6)          #decide replay bugger big
+        self.replay_buffer = ReplayBuffer(1e6)          #decide replay buffer big
         self.max_replay_buffer_len = args.batch_size * args.max_episode_len
         self.replay_sample_index = None
 
