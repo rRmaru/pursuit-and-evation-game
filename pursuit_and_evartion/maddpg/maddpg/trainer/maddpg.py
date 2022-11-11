@@ -1,3 +1,5 @@
+import ipdb as pdb
+
 import numpy as np
 import random
 import tensorflow as tf
@@ -35,14 +37,15 @@ def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad
         act_ph_n = [act_pdtype_n[i].sample_placeholder([None], name="action"+str(i)) for i in range(len(act_space_n))]
 
         p_input = obs_ph_n[p_index]
+        pdb.set_trace()
 
-        p = p_func(p_input, int(act_pdtype_n[p_index].param_shape()[0]), scope="p_func", num_units=num_units)
+        p = p_func(p_input, int(act_pdtype_n[p_index].param_shape()[0]), scope="p_func", num_units=num_units)       #input mlp  param_shape = 5
         p_func_vars = U.scope_vars(U.absolute_scope_name("p_func"))
 
         # wrap parameters in distribution
-        act_pd = act_pdtype_n[p_index].pdfromflat(p)
+        act_pd = act_pdtype_n[p_index].pdfromflat(p)   #return SoftCategoricalPd(p)
 
-        act_sample = act_pd.sample()
+        act_sample = act_pd.sample()                    #softmax関数を返す
         p_reg = tf.reduce_mean(tf.square(act_pd.flatparam()))
 
         act_input_n = act_ph_n + []
@@ -59,7 +62,7 @@ def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad
 
         # Create callable functions
         train = U.function(inputs=obs_ph_n + act_ph_n, outputs=loss, updates=[optimize_expr])
-        act = U.function(inputs=[obs_ph_n[p_index]], outputs=act_sample)            #この部分がactを与える部分　観測値=input act_sample=output
+        act = U.function(inputs=[obs_ph_n[p_index]], outputs=act_sample)            #この部分がactを与える部分　観測値=input act_sample = softmax関数
         p_values = U.function([obs_ph_n[p_index]], p)
 
         # target network
@@ -85,7 +88,7 @@ def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_cl
         q_input = tf.concat(obs_ph_n + act_ph_n, 1)         #obs_ph_n and act_ph_n二個目の要素を結合
         if local_q_func:
             q_input = tf.concat([obs_ph_n[q_index], act_ph_n[q_index]], 1)
-        q = q_func(q_input, 1, scope="q_func", num_units=num_units)[:,0]        #input mlp
+        q = q_func(q_input, 1, scope="q_func", num_units=num_units)[:,0]        #input mlp  ほかのエージェントの情報も得ている
         q_func_vars = U.scope_vars(U.absolute_scope_name("q_func"))     #absolute_scope_vars = 名前空間の絶対パスを得る scope_vars = ?
 
         q_loss = tf.reduce_mean(tf.square(q - target_ph))       #損失関数の設定　与えられたリストに入っている数値の平均値を求める関数

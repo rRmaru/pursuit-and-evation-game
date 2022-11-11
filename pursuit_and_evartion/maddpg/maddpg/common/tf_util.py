@@ -18,7 +18,7 @@ def min(x, axis=None, keepdims=False):
     return tf.reduce_min(x, axis=None if axis is None else [axis], keep_dims = keepdims)
 def concatenate(arrs, axis=0):
     return tf.concat(axis=axis, values=arrs)
-def argmax(x, axis=None):
+def argmax(x, axis=None):               
     return tf.argmax(x, axis=axis)
 def softmax(x, axis=None):
     return tf.nn.softmax(x, axis=axis)
@@ -281,8 +281,8 @@ def function(inputs, outputs, updates=None, givens=None):
         f = _Function(inputs, outputs.values(), updates, givens=givens)
         return lambda *args, **kwargs: type(outputs)(zip(outputs.keys(), f(*args, **kwargs)))
     else:
-        f = _Function(inputs, [outputs], updates, givens=givens)
-        return lambda *args, **kwargs: f(*args, **kwargs)[0]
+        f = _Function(inputs, [outputs], updates, givens=givens)            #インスタンス化
+        return lambda *args, **kwargs: f(*args, **kwargs)[0]                #__call__メソッド呼び出し
 
 
 class _Function(object):
@@ -303,7 +303,7 @@ class _Function(object):
         elif is_placeholder(inpt):
             feed_dict[inpt] = value
 
-    def __call__(self, *args, **kwargs):
+    def __call__(self, *args, **kwargs):                #__call__インスタンス化したオブジェクトを関数のように呼び出すことで呼び出される特殊なメソッド
         assert len(args) <= len(self.inputs), "Too many arguments provided"
         feed_dict = {}
         # Update the args
