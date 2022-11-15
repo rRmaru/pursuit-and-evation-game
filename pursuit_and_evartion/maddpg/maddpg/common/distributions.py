@@ -39,7 +39,7 @@ class PdType(object):
 
     def param_placeholder(self, prepend_shape, name=None):
         return tf.placeholder(dtype=tf.float32, shape=prepend_shape+self.param_shape(), name=name)
-    def sample_placeholder(self, prepend_shape, name=None):
+    def sample_placeholder(self, prepend_shape, name=None):         #prepend_shape=[None]
         return tf.placeholder(dtype=self.sample_dtype(), shape=prepend_shape+self.sample_shape(), name=name)
 
 class CategoricalPdType(PdType):
@@ -147,7 +147,7 @@ class BernoulliPdType(PdType):
 
 class CategoricalPd(Pd):
     def __init__(self, logits):
-        self.logits = logits
+        self.logits = logits          #<tf.Tensor 'observation0:0' shape=(?, 16) dtype=float32>
     def flatparam(self):
         return self.logits
     def mode(self):
@@ -178,7 +178,7 @@ class CategoricalPd(Pd):
 
 class SoftCategoricalPd(Pd):
     def __init__(self, logits):
-        self.logits = logits
+        self.logits = logits    #<tf.Tensor 'agent_0_1/p_func/fully_connected_2/BiasAdd:0' shape=(?, 5) dtype=float32>
     def flatparam(self):
         return self.logits
     def mode(self):

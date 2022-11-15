@@ -30,16 +30,17 @@ def make_update_exp(vals, target_vals):
 def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad_norm_clipping=None, local_q_func=False, num_units=64, scope="trainer", reuse=None):
     with tf.variable_scope(scope, reuse=reuse):         #name space
         # create distribtuions
-        act_pdtype_n = [make_pdtype(act_space) for act_space in act_space_n]  #SoftCategoricalPdType(5)　return 
+        act_pdtype_n = [make_pdtype(act_space) for act_space in act_space_n]  #[SoftCategoricalPdType(5)*4]　return 
 
         # set up placeholders
-        obs_ph_n = make_obs_ph_n
-        act_ph_n = [act_pdtype_n[i].sample_placeholder([None], name="action"+str(i)) for i in range(len(act_space_n))]
+        obs_ph_n = make_obs_ph_n        #placeholder, BatchInput()
+        act_ph_n = [act_pdtype_n[i].sample_placeholder([None], name="action"+str(i)) for i in range(len(act_space_n))]      #placeholder
 
-        p_input = obs_ph_n[p_index]
+        p_input = obs_ph_n[p_index] #p_index = i BatchInput()shapeがそれぞれで違う
         #pdb.set_trace()
 
-        p = p_func(p_input, int(act_pdtype_n[p_index].param_shape()[0]), scope="p_func", num_units=num_units)       #input mlp  param_shape = 5
+        p = p_func(p_input, int(act_pdtype_n[p_index].param_shape()[0]), scope="p_func", num_units=num_units)       #input mlp  param_shape = 5　入力Placeholder 出力5
+        pdb.set_trace()
         p_func_vars = U.scope_vars(U.absolute_scope_name("p_func"))
 
         # wrap parameters in distribution
