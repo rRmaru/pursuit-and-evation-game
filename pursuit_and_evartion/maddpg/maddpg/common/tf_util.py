@@ -1,3 +1,5 @@
+import ipdb as pdb
+
 import collections
 import numpy as np
 import os
@@ -311,7 +313,8 @@ class _Function(object):
             self._feed_input(feed_dict, inpt, value)
         # Update the kwargs
         kwargs_passed_inpt_names = set()
-        for inpt in self.inputs[len(args):]:
+        pdb.set_trace()
+        for inpt in self.inputs[len(args):]:            #actを決めるときは使わない
             inpt_name = inpt.name.split(':')[0]
             inpt_name = inpt_name.split('/')[-1]
             assert inpt_name not in kwargs_passed_inpt_names, \
@@ -325,7 +328,7 @@ class _Function(object):
         # Update feed dict with givens.
         for inpt in self.givens:
             feed_dict[inpt] = feed_dict.get(inpt, self.givens[inpt])
-        results = get_session().run(self.outputs_update, feed_dict=feed_dict)[:-1]
+        results = get_session().run(self.outputs_update, feed_dict=feed_dict)[:-1]      #actionではソフトマックス関数を計算する
         if self.check_nan:
             if any(np.isnan(r).any() for r in results):
                 raise RuntimeError("Nan detected")

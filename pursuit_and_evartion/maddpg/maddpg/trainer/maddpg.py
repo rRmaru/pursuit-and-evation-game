@@ -37,7 +37,7 @@ def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad
         act_ph_n = [act_pdtype_n[i].sample_placeholder([None], name="action"+str(i)) for i in range(len(act_space_n))]
 
         p_input = obs_ph_n[p_index]
-        pdb.set_trace()
+        #pdb.set_trace()
 
         p = p_func(p_input, int(act_pdtype_n[p_index].param_shape()[0]), scope="p_func", num_units=num_units)       #input mlp  param_shape = 5
         p_func_vars = U.scope_vars(U.absolute_scope_name("p_func"))
