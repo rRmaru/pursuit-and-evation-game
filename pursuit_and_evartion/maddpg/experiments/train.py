@@ -119,7 +119,7 @@ def train(arglist):
 
         print('Starting iterations...')
         while True:
-            # get action
+            # get action    任意のエージェントの観測値を渡してactionを受け取る
             action_n = [agent.action(obs) for agent, obs in zip(trainers,obs_n)]            #何がactionとして与えられているのか？16つの要素を持った一次元配列
             # environment step
             new_obs_n, rew_n, done_n, info_n = env.step(action_n)
