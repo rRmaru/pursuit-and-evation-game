@@ -123,13 +123,14 @@ def train(arglist):
             action_n = [agent.action(obs) for agent, obs in zip(trainers,obs_n)]            #何がactionとして与えられているのか？16つの要素を持った一次元配列
             # environment step
             new_obs_n, rew_n, done_n, info_n = env.step(action_n)
+            #pdb.set_trace()
             episode_step += 1
             done = all(done_n)
             #pdb.set_trace()
             terminal = (episode_step >= arglist.max_episode_len)
             # collect experience
             for i, agent in enumerate(trainers):
-                agent.experience(obs_n[i], action_n[i], rew_n[i], new_obs_n[i], done_n[i], terminal)
+                agent.experience(obs_n[i], action_n[i], rew_n[i], new_obs_n[i], done_n[i], terminal)    #Dに格納
             obs_n = new_obs_n
 
             for i, rew in enumerate(rew_n):

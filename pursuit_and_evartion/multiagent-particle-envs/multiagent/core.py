@@ -16,7 +16,7 @@ class AgentState(EntityState):
         self.c = None
 
 # action of the agent
-class Action(object):
+class Action(object):       #set when step
     def __init__(self):
         # physical action
         self.u = None
@@ -116,12 +116,12 @@ class World(object):
         return [agent for agent in self.agents if agent.action_callback is not None]
 
     # update state of the world
-    def step(self):
+    def step(self):     #どれぐらい移動するか決定する
         # set actions for scripted agents 
-        for agent in self.scripted_agents:
+        for agent in self.scripted_agents:      #これは今回は関係ない？
             agent.action = agent.action_callback(agent, self)
         # gather forces applied to entities
-        p_force = [None] * len(self.entities)
+        p_force = [None] * len(self.entities)       #agents and landmarks sum number  [None]のリストを作成
         # apply agent physical controls
         p_force = self.apply_action_force(p_force)
         # apply environment forces
@@ -138,18 +138,18 @@ class World(object):
     def apply_action_force(self, p_force):
         # set applied forces
         for i,agent in enumerate(self.agents):
-            if agent.movable:
-                noise = np.random.randn(*agent.action.u.shape) * agent.u_noise if agent.u_noise else 0.0            #ここでaction.uを用いる
+            if agent.movable:           # add noise 
+                noise = np.random.randn(*agent.action.u.shape) * agent.u_noise if agent.u_noise else 0.0            #ここでaction.u（stepでせっていした）を用いる
                 p_force[i] = agent.action.u + noise                
         return p_force
 
-    # gather physical forces acting on entities
+    # gather physical forces acting on entities  環境から受ける力
     def apply_environment_force(self, p_force):
         # simple (but inefficient) collision response 全探索
-        for a,entity_a in enumerate(self.entities):
+        for a,entity_a in enumerate(self.entities):  #all entities(agents and landmarks)
             for b,entity_b in enumerate(self.entities):
                 if(b <= a): continue    #同じ物体は含まない
-                [f_a, f_b] = self.get_collision_force(entity_a, entity_b)
+                [f_a, f_b] = self.get_collision_force(entity_a, entity_b)         #衝突時の力を受ける
                 if(f_a is not None):            #exit f_a
                     if(p_force[a] is None): p_force[a] = 0.0
                     p_force[a] = f_a + p_force[a] 
@@ -160,17 +160,17 @@ class World(object):
 
     # integrate physical state
     def integrate_state(self, p_force):
-        for i,entity in enumerate(self.entities):
-            if not entity.movable: continue
+        for i,entity in enumerate(self.entities):      #all entities (agents and landmarks)
+            if not entity.movable: continue            # movable is False continue
             entity.state.p_vel = entity.state.p_vel * (1 - self.damping)        #damping = 0.25
             if (p_force[i] is not None):
                 entity.state.p_vel += (p_force[i] / entity.mass) * self.dt      #initial_mas = 1.0
             if entity.max_speed is not None:
-                speed = np.sqrt(np.square(entity.state.p_vel[0]) + np.square(entity.state.p_vel[1]))
-                if speed > entity.max_speed:
+                speed = np.sqrt(np.square(entity.state.p_vel[0]) + np.square(entity.state.p_vel[1]))        #p_vel(ベクトル)を計算
+                if speed > entity.max_speed:            #speed がmax_speedを超えていたら
                     entity.state.p_vel = entity.state.p_vel / np.sqrt(np.square(entity.state.p_vel[0]) +
-                                                                  np.square(entity.state.p_vel[1])) * entity.max_speed
-            entity.state.p_pos += entity.state.p_vel * self.dt
+                                                                  np.square(entity.state.p_vel[1])) * entity.max_speed      #ベクトルをベクトルの絶対値（speed）でわる（正規化？）×max_speed
+            entity.state.p_pos += entity.state.p_vel * self.dt          #ベクトル×時間 = 距離なのでagentの距離を算出できる
 
     def update_agent_state(self, agent):
         # set communication state (directly for now)

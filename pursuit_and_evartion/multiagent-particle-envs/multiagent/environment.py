@@ -85,10 +85,10 @@ class MultiAgentEnv(gym.Env):
         reward_n = []       #reward list
         done_n = []         #done list
         info_n = {'n': []}
-        self.agents = self.world.policy_agents
+        self.agents = self.world.policy_agents          #agent.action_callback is None
         # set action for each agent
         for i, agent in enumerate(self.agents):
-            self._set_action(action_n[i], agent, self.action_space[i])
+            self._set_action(action_n[i], agent, self.action_space[i])      #action_nは五つの要素を持つリスト　　action_space is Discrete(5)
         # advance world state
         self.world.step()
         # record observation for each agent
@@ -144,7 +144,8 @@ class MultiAgentEnv(gym.Env):
         return self.reward_callback(agent, self.world)
 
     # set env action for a particular agent
-    def _set_action(self, action, agent, action_space, time=None):
+    # いわゆる力の方向を決める
+    def _set_action(self, action, agent, action_space, time=None):  #action is list has 5 elements   action_space is Discrete(5)
         agent.action.u = np.zeros(self.world.dim_p)     #次元数に合わせて
         agent.action.c = np.zeros(self.world.dim_c)     #コミュ二ケーション
         # process action
@@ -183,7 +184,7 @@ class MultiAgentEnv(gym.Env):
                 sensitivity = agent.accel           #sensitivity→感度　　accelは感度に変換されている　accel→加速度ではない
             agent.action.u *= sensitivity
             action = action[1:]
-        if not agent.silent:
+        if not agent.silent:                #今回は関係ない
             # communication action
             if self.discrete_action_input:
                 agent.action.c = np.zeros(self.world.dim_c)
