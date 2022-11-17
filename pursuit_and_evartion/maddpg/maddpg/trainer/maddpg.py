@@ -62,16 +62,16 @@ def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad
         optimize_expr = U.minimize_and_clip(optimizer, loss, p_func_vars, grad_norm_clipping)
 
         # Create callable functions
-        train = U.function(inputs=obs_ph_n + act_ph_n, outputs=loss, updates=[optimize_expr])
+        train = U.function(inputs=obs_ph_n + act_ph_n, outputs=loss, updates=[optimize_expr])       #loss(損失関数)を計算
         act = U.function(inputs=[obs_ph_n[p_index]], outputs=act_sample)            #この部分がactを与える部分　観測値=input act_sample = softmax関数
         p_values = U.function([obs_ph_n[p_index]], p)
 
         # target network
-        target_p = p_func(p_input, int(act_pdtype_n[p_index].param_shape()[0]), scope="target_p_func", num_units=num_units)
+        target_p = p_func(p_input, int(act_pdtype_n[p_index].param_shape()[0]), scope="target_p_func", num_units=num_units)         #action算出と一緒
         target_p_func_vars = U.scope_vars(U.absolute_scope_name("target_p_func"))
         update_target_p = make_update_exp(p_func_vars, target_p_func_vars)
 
-        target_act_sample = act_pdtype_n[p_index].pdfromflat(target_p).sample()
+        target_act_sample = act_pdtype_n[p_index].pdfromflat(target_p).sample()         #softmax関数　　action算出と一緒
         target_act = U.function(inputs=[obs_ph_n[p_index]], outputs=target_act_sample)
 
         return act, train, update_target_p, {'p_values': p_values, 'target_act': target_act}
