@@ -22,19 +22,19 @@ class ReplayBuffer(object):
         self._storage = []
         self._next_idx = 0
 
-    def add(self, obs_t, action, reward, obs_tp1, done):
-        data = (obs_t, action, reward, obs_tp1, done)
+    def add(self, obs_t, action, reward, obs_tp1, done):           #obs, action, reward, obs_next, done
+        data = (obs_t, action, reward, obs_tp1, done)       #tupleを作成
 
-        if self._next_idx >= len(self._storage):
+        if self._next_idx >= len(self._storage):        #_next_indexの大きさがstorageの大きさと同じかそれ以上
             self._storage.append(data)
         else:
             self._storage[self._next_idx] = data
-        self._next_idx = (self._next_idx + 1) % self._maxsize
+        self._next_idx = (self._next_idx + 1) % self._maxsize       #indexをひとつ追加するまた、maxsizeを超えると二週目を開始する
 
-    def _encode_sample(self, idxes):
+    def _encode_sample(self, idxes):                #sample indexで呼び出される関数
         obses_t, actions, rewards, obses_tp1, dones = [], [], [], [], []
         for i in idxes:
-            data = self._storage[i]
+            data = self._storage[i]        #random番目のデータを取り出す
             obs_t, action, reward, obs_tp1, done = data
             obses_t.append(np.array(obs_t, copy=False))
             actions.append(np.array(action, copy=False))
@@ -43,7 +43,7 @@ class ReplayBuffer(object):
             dones.append(done)
         return np.array(obses_t), np.array(actions), np.array(rewards), np.array(obses_tp1), np.array(dones)
 
-    def make_index(self, batch_size):
+    def make_index(self, batch_size):       #randomにバッファの中から取り出す（バッチサイズの数だけ）
         return [random.randint(0, len(self._storage) - 1) for _ in range(batch_size)]
 
     def make_latest_index(self, batch_size):

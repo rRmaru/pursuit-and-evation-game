@@ -133,7 +133,7 @@ def train(arglist):
                 agent.experience(obs_n[i], action_n[i], rew_n[i], new_obs_n[i], done_n[i], terminal)    #Dに格納
             obs_n = new_obs_n
 
-            for i, rew in enumerate(rew_n):
+            for i, rew in enumerate(rew_n):     #報酬地の格納
                 episode_rewards[-1] += rew
                 agent_rewards[i][-1] += rew
 
@@ -207,9 +207,9 @@ def train(arglist):
             # update all trainers, if not in display or benchmark mode
             loss = None
             for agent in trainers:
-                agent.preupdate()
+                agent.preupdate()           #replay_sample_indexをNoneにするだけ
             for agent in trainers:
-                loss = agent.update(trainers, train_step)
+                loss = agent.update(trainers, train_step)       #give one agent and step
 
             # save model, display training output
             if (terminal or done) and (len(episode_rewards) % arglist.save_rate == 0):

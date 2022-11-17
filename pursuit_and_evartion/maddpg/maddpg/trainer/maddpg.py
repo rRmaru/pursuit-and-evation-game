@@ -162,10 +162,10 @@ class MADDPGAgentTrainer(AgentTrainer):
     def preupdate(self):
         self.replay_sample_index = None
 
-    def update(self, agents, t):
+    def update(self, agents, t):        #main train part
         if len(self.replay_buffer) < self.max_replay_buffer_len: # replay buffer is not large enough
             return
-        if not t % 100 == 0:  # only update every 100 steps
+        if not t % 100 == 0:  # only update every 100 steps  100ごとにupdateする
             return
 
         self.replay_sample_index = self.replay_buffer.make_index(self.args.batch_size)
