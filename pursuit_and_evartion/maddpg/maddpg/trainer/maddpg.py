@@ -79,24 +79,25 @@ def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad
 def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_clipping=None, local_q_func=False, scope="trainer", reuse=None, num_units=64):
     with tf.variable_scope(scope, reuse=reuse):     #名前空間→trainer  再利用→None
         # create distribtuions分布
-        act_pdtype_n = [make_pdtype(act_space) for act_space in act_space_n]   #act_space [Discrete(5)*4]   return SoftCategoricalPdType(5)
+        act_pdtype_n = [make_pdtype(act_space) for act_space in act_space_n]   #act_space [Discrete(5)*4]   return SoftCategoricalPdType(5)*4
 
         # set up placeholders
         obs_ph_n = make_obs_ph_n        #placeholder, BatchInput()
         act_ph_n = [act_pdtype_n[i].sample_placeholder([None], name="action"+str(i)) for i in range(len(act_space_n))]    #[Discrete(5)*4] tf.Placeholder(float32, [None, 5], action+i)
         target_ph = tf.placeholder(tf.float32, [None], name="target")  #None→任意のshapeを割り当てる
 
-        q_input = tf.concat(obs_ph_n + act_ph_n, 1)         #obs_ph_n and act_ph_n二個目の要素を結合
-        if local_q_func:
+        q_input = tf.concat(obs_ph_n + act_ph_n, 1)         #obs_ph_n and act_ph_n二個目の要素を結合　ほかのエージェントの観測値も使用している
+        if local_q_func:        #DDPGの場合MADDPGでは使用しない
             q_input = tf.concat([obs_ph_n[q_index], act_ph_n[q_index]], 1)
-        q = q_func(q_input, 1, scope="q_func", num_units=num_units)[:,0]        #input mlp  ほかのエージェントの情報も得ている
+        #pdb.set_trace()
+        q = q_func(q_input, 1, scope="q_func", num_units=num_units)[:,0]        #input mlp  ほかのエージェントの情報も得ている out_put = 1?
         q_func_vars = U.scope_vars(U.absolute_scope_name("q_func"))     #absolute_scope_vars = 名前空間の絶対パスを得る scope_vars = ?
 
-        q_loss = tf.reduce_mean(tf.square(q - target_ph))       #損失関数の設定　与えられたリストに入っている数値の平均値を求める関数
+        q_loss = tf.reduce_mean(tf.square(q - target_ph))       #損失関数の設定　与えられたリストに入っている数値の平均値を求める関数 二乗平均誤差
 
         # viscosity solution to Bellman differential equation in place of an initial condition
         q_reg = tf.reduce_mean(tf.square(q))
-        loss = q_loss #+ 1e-3 * q_reg
+        loss = q_loss #+ 1e-3 * q_reg       損失関数
 
         optimize_expr = U.minimize_and_clip(optimizer, loss, q_func_vars, grad_norm_clipping)
 
@@ -182,12 +183,12 @@ class MADDPGAgentTrainer(AgentTrainer):
         obs, act, rew, obs_next, done = self.replay_buffer.sample_index(index)          #dont know(これいる？)
 
         # train q network
-        num_sample = 1
+        num_sample = 1      #sample数
         target_q = 0.0
         for i in range(num_sample):
-            target_act_next_n = [agents[i].p_debug['target_act'](obs_next_n[i]) for i in range(self.n)]
-            target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))
-            target_q += rew + self.args.gamma * (1.0 - done) * target_q_next
+            target_act_next_n = [agents[i].p_debug['target_act'](obs_next_n[i]) for i in range(self.n)]     #self.act(obs[None])[0]と同じ
+            target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))   #次の行動と次の観測
+            target_q += rew + self.args.gamma * (1.0 - done) * target_q_next            #Q値の計算
         target_q /= num_sample
         q_loss = self.q_train(*(obs_n + act_n + [target_q]))
 
