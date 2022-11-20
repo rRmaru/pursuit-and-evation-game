@@ -25,7 +25,7 @@ def make_update_exp(vals, target_vals):     #これが謎
     for var, var_target in zip(sorted(vals, key=lambda v: v.name), sorted(target_vals, key=lambda v: v.name)):
         expression.append(var_target.assign(polyak * var_target + (1.0-polyak) * var))
     expression = tf.group(*expression)
-    pdb.set_trace()
+    #pdb.set_trace()
     return U.function([], [], updates=[expression])
 
 def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad_norm_clipping=None, local_q_func=False, num_units=64, scope="trainer", reuse=None):
@@ -113,7 +113,8 @@ def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_cl
         target_q_func_vars = U.scope_vars(U.absolute_scope_name("target_q_func"))
         update_target_q = make_update_exp(q_func_vars, target_q_func_vars)
 
-        target_q_values = U.function(obs_ph_n + act_ph_n, target_q)
+        target_q_values = U.function(obs_ph_n + act_ph_n, target_q)         #すべての観測値と行動のセットとtarget_qを引数として入力
+        pdb.set_trace()
 
         return train, update_target_q, {'q_values': q_values, 'target_q_values': target_q_values}
 
