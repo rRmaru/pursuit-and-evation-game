@@ -19,12 +19,13 @@ def discount_with_dones(rewards, dones, gamma):
         discounted.append(r)
     return discounted[::-1]
 
-def make_update_exp(vals, target_vals):
+def make_update_exp(vals, target_vals):     #これが謎
     polyak = 1.0 - 1e-2
     expression = []
     for var, var_target in zip(sorted(vals, key=lambda v: v.name), sorted(target_vals, key=lambda v: v.name)):
         expression.append(var_target.assign(polyak * var_target + (1.0-polyak) * var))
     expression = tf.group(*expression)
+    pdb.set_trace()
     return U.function([], [], updates=[expression])
 
 def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad_norm_clipping=None, local_q_func=False, num_units=64, scope="trainer", reuse=None):
@@ -70,8 +71,9 @@ def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad
         target_p = p_func(p_input, int(act_pdtype_n[p_index].param_shape()[0]), scope="target_p_func", num_units=num_units)         #action算出と一緒
         target_p_func_vars = U.scope_vars(U.absolute_scope_name("target_p_func"))
         update_target_p = make_update_exp(p_func_vars, target_p_func_vars)
+        #pdb.set_trace()
 
-        target_act_sample = act_pdtype_n[p_index].pdfromflat(target_p).sample()         #softmax関数　　action算出と一緒
+        target_act_sample = act_pdtype_n[p_index].pdfromflat(target_p).sample()         #softmax関数　　action算出と一緒nnを用いてる
         target_act = U.function(inputs=[obs_ph_n[p_index]], outputs=target_act_sample)
 
         return act, train, update_target_p, {'p_values': p_values, 'target_act': target_act}
@@ -91,6 +93,7 @@ def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_cl
             q_input = tf.concat([obs_ph_n[q_index], act_ph_n[q_index]], 1)
         #pdb.set_trace()
         q = q_func(q_input, 1, scope="q_func", num_units=num_units)[:,0]        #input mlp  ほかのエージェントの情報も得ている out_put = 1?
+        #pdb.set_trace()
         q_func_vars = U.scope_vars(U.absolute_scope_name("q_func"))     #absolute_scope_vars = 名前空間の絶対パスを得る scope_vars = ?
 
         q_loss = tf.reduce_mean(tf.square(q - target_ph))       #損失関数の設定　与えられたリストに入っている数値の平均値を求める関数 二乗平均誤差
@@ -106,7 +109,7 @@ def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_cl
         q_values = U.function(obs_ph_n + act_ph_n, q)
 
         # target network
-        target_q = q_func(q_input, 1, scope="target_q_func", num_units=num_units)[:,0]
+        target_q = q_func(q_input, 1, scope="target_q_func", num_units=num_units)[:,0]      #q_input = obs_ph_n + act_ph_n  qと同じ
         target_q_func_vars = U.scope_vars(U.absolute_scope_name("target_q_func"))
         update_target_q = make_update_exp(q_func_vars, target_q_func_vars)
 

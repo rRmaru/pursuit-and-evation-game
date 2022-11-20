@@ -142,7 +142,7 @@ def minimize_and_clip(optimizer, objective, var_list, clip_val=10):
     variable is clipped to `clip_val`
     """    
     if clip_val is None:
-        return optimizer.minimize(objective, var_list=var_list)
+        return optimizer.minimize(objective, var_list=var_list)   #最小化する
     else:
         gradients = optimizer.compute_gradients(objective, var_list=var_list)
         for i, (grad, var) in enumerate(gradients):
