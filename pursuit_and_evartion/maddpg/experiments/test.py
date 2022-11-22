@@ -4,14 +4,16 @@ import matplotlib.pyplot as plt
 import pickle
 import random
 # %%
-x=range(0,30000,1000)
+x=range(0,10000,1000)
 with open("learning_curves/None_agrewards.pkl", mode="rb") as f2:
     hoge2=pickle.load(f2)
 
-good_agent = hoge2[3::4]
-adv_agent=hoge2[::4]
+print(hoge2)
+good_agent = hoge2[2::3]
+adv_agent=hoge2[::3]
+#%%
 
-list=[0.6426426426426426, 2.099, 18.624, 16.088, 14.118, 10.602, 12.506, 13.528, 14.613, 9.672, 7.245, 6.489, 5.436, 5.473, 6.451, 6.449, 7.077, 6.874, 6.641, 7.118, 7.05, 6.444, 5.733, 5.428, 6.835, 6.164, 6.9, 6.528, 6.595, 6.729]
+list=[0.6736736736736737, 6.217, 10.739, 7.487, 7.511, 6.413, 5.276, 5.62, 5.473, 5.69]
 fig = plt.figure()
 ax1 = fig.add_subplot(111)
 ln1 = ax1.plot(x,good_agent,color='red',label='evation')
@@ -27,7 +29,7 @@ ax1.legend(h1+h3,l1+l3)
 
 ax1.set_xlabel('episodes')
 ax1.set_ylabel('reward')
-ax1.set_ylim(-300, 300)
+ax1.set_ylim(-500, 500)
 ax1.grid(True)
 ax3.set_ylabel('num')
 ax3.set_ylim(0.0,18.0)
