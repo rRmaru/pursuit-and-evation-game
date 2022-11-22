@@ -114,7 +114,7 @@ def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_cl
         update_target_q = make_update_exp(q_func_vars, target_q_func_vars)
 
         target_q_values = U.function(obs_ph_n + act_ph_n, target_q)         #すべての観測値と行動のセットとtarget_qを引数として入力
-        pdb.set_trace()
+        #pdb.set_trace()
 
         return train, update_target_q, {'q_values': q_values, 'target_q_values': target_q_values}
 
