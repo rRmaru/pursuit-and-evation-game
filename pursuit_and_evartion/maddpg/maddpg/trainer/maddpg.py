@@ -48,14 +48,14 @@ def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad
         act_pd = act_pdtype_n[p_index].pdfromflat(p)   #return SoftCategoricalPd(p)
 
         act_sample = act_pd.sample()                    #softmax関数を返す
-        p_reg = tf.reduce_mean(tf.square(act_pd.flatparam()))
+        p_reg = tf.reduce_mean(tf.square(act_pd.flatparam()))  #政策の勾配方向
 
         act_input_n = act_ph_n + []
         act_input_n[p_index] = act_pd.sample()
         q_input = tf.concat(obs_ph_n + act_input_n, 1)
         if local_q_func:
             q_input = tf.concat([obs_ph_n[p_index], act_input_n[p_index]], 1)
-        q = q_func(q_input, 1, scope="q_func", reuse=True, num_units=num_units)[:,0]
+        q = q_func(q_input, 1, scope="q_func", reuse=True, num_units=num_units)[:,0]       #Q値の勾配方向
         pg_loss = -tf.reduce_mean(q)
 
         loss = pg_loss + p_reg * 1e-3
