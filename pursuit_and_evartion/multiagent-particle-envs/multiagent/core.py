@@ -195,6 +195,11 @@ class World(object):
         k = self.contact_margin             #contact_margin = 0.001
         penetration = np.logaddexp(0, -(dist - dist_min)/k)*k       #基本的に負だが、接触すると急激に大きくなる
         force = self.contact_force * delta_pos / dist * penetration #contract_force = 100　　ベクトルに変換
+        # debug
+        """if np.sqrt(np.sum(np.square(force)))>4:
+            if not((isinstance(entity_a, Landmark)) and (isinstance(entity_b, Landmark))):
+                print("{}  and  {} given {}".format(entity_a.name, entity_b.name, force))"""
+        # end
         force_a = +force if entity_a.movable else None
         force_b = -force if entity_b.movable else None
         return [force_a, force_b]

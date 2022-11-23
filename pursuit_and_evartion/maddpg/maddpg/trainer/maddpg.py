@@ -162,7 +162,7 @@ class MADDPGAgentTrainer(AgentTrainer):
 
     def experience(self, obs, act, rew, new_obs, done, terminal):
         # Store transition in the replay buffer.
-        self.replay_buffer.add(obs, act, rew, new_obs, float(done))
+        self.replay_buffer.add(obs, act, rew, new_obs, float(done)) #doneをfloat型としてバッファに格納している
 
     def preupdate(self):
         self.replay_sample_index = None
@@ -179,8 +179,8 @@ class MADDPGAgentTrainer(AgentTrainer):
         obs_next_n = []
         act_n = []
         index = self.replay_sample_index
-        for i in range(self.n):                         #自身の情報だけ得る
-            obs, act, rew, obs_next, done = agents[i].replay_buffer.sample_index(index)
+        for i in range(self.n):                         #自身の情報だけ得る 4回　
+            obs, act, rew, obs_next, done = agents[i].replay_buffer.sample_index(index)     #sample_index バッチサイズの数だけサンプルを入手
             obs_n.append(obs)
             obs_next_n.append(obs_next)
             act_n.append(act)
@@ -190,11 +190,13 @@ class MADDPGAgentTrainer(AgentTrainer):
         num_sample = 1      #sample数
         target_q = 0.0
         for i in range(num_sample):
-            target_act_next_n = [agents[i].p_debug['target_act'](obs_next_n[i]) for i in range(self.n)]     #self.act(obs[None])[0]と同じ
-            target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))   #次の行動と次の観測
-            target_q += rew + self.args.gamma * (1.0 - done) * target_q_next            #Q値の計算 出力は1つ
+            target_act_next_n = [agents[i].p_debug['target_act'](obs_next_n[i]) for i in range(self.n)]     #バッチサイズ分だけ一気に代入している 1024こ分のactionが出てくる
+            target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))   #次の行動と次の観測　バッチサイズ分学習
+            target_q += rew + self.args.gamma * (1.0 - done) * target_q_next            #Q値の計算 出力は1つ　doneが位置の場合は更新しない
         target_q /= num_sample
         q_loss = self.q_train(*(obs_n + act_n + [target_q]))        #target_qを教師として損失関数を導出
+        
+        #pdb.set_trace()
 
         # train p network
         p_loss = self.p_train(*(obs_n + act_n))     #actorの損失関数を導出
