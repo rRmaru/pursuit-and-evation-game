@@ -36,8 +36,6 @@ class MultiAgentEnv(gym.Env):
         # if true, every agent has the same reward
         self.shared_reward = world.collaborative if hasattr(world, 'collaborative') else False              #hasattr=そのオブジェクトが特定の属性を持っているかどうか
         self.time = 0
-        self.record = []
-        self.check = False  #landmarkに当たった時のforceを調べるときに使用
 
         # configure spaces
         self.action_space = [] #出力
@@ -92,7 +90,8 @@ class MultiAgentEnv(gym.Env):
         for i, agent in enumerate(self.agents):
             self._set_action(action_n[i], agent, self.action_space[i])      #action_nは五つの要素を持つリスト　　action_space is Discrete(5)
         # advance world state
-        self.world.step()
+        self.world.step()         #引数を追加11/29
+        #pdb.set_trace()
         # record observation for each agent
         for agent in self.agents:
             obs_n.append(self._get_obs(agent))

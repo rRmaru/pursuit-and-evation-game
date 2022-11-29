@@ -39,7 +39,7 @@ def parse_args():
     parser.add_argument("--benchmark-iters", type=int, default=100000, help="number of iterations run for benchmarking")
     parser.add_argument("--benchmark-dir", type=str, default="./benchmark_files/", help="directory where benchmark data is saved")
     parser.add_argument("--plots-dir", type=str, default="./learning_curves/", help="directory where plot data is saved")
-    return parser.parse_args([])
+    return parser.parse_args()
 
 def mlp_model(input, num_outputs, scope, reuse=False, num_units=64, rnn_cell=None):
     # This model takes as input an observation and returns values of all actions
@@ -192,7 +192,7 @@ def train(arglist):
             flag = False
             if (len(episode_rewards) == 10000) or (len(episode_rewards) == 9999) or (len(episode_rewards) == 30000) or (len(episode_rewards) == 5000):
                 flag = True
-                env.check = True
+                env.world.check = True
             if flag:
                 for i, agent in  enumerate(env.world.agents):
                     agent_pos[i].append(list(agent.state.p_pos))
@@ -204,7 +204,7 @@ def train(arglist):
                     for landmark in env.world.landmarks:
                         print("landmark position:{}".format(landmark.state.p_pos))
                     flag = False
-                    env.check = False
+                    env.world.check = False
                     agent_pos = [[] for _ in range(len(env.world.agents))]
 
             # update all trainers, if not in display or benchmark mode

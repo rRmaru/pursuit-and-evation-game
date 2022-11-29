@@ -101,6 +101,8 @@ class World(object):
         # contact response parameters
         self.contact_force = 1e+2
         self.contact_margin = 1e-3
+        self.record = []
+        self.check = False  #landmarkに当たった時のforceを調べるときに使用
 
     # return all entities in the world
     @property
@@ -128,6 +130,7 @@ class World(object):
         p_force = self.apply_action_force(p_force)
         # apply environment forces
         p_force = self.apply_environment_force(p_force)
+        #pdb.set_trace()
         # integrate physical state
         self.integrate_state(p_force)
         # bound entitiy
@@ -154,10 +157,17 @@ class World(object):
                 [f_a, f_b] = self.get_collision_force(entity_a, entity_b)         #衝突時の力を受ける
                 if(f_a is not None):            #exit f_a
                     if(p_force[a] is None): p_force[a] = 0.0
+                    temp1 = p_force[a]
                     p_force[a] = f_a + p_force[a] 
                 if(f_b is not None):
                     if(p_force[b] is None): p_force[b] = 0.0
-                    p_force[b] = f_b + p_force[b]        
+                    temp2 = p_force[b]
+                    p_force[b] = f_b + p_force[b]  
+                #debug
+                if self.check == True:
+                    with open("learning_curves/debug_file.dat", 'a') as f:
+                        t = "{} and {}   p_force[a]{},p_force[b]{} f_a{},f_b{}\n".format(entity_a.name, entity_b.name, temp1, temp2, f_a, f_b)
+                        f.write(t)  
         return p_force
 
     # integrate physical state

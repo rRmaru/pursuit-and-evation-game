@@ -4,16 +4,16 @@ import matplotlib.pyplot as plt
 import pickle
 import random
 # %%
-x=range(0,10000,1000)
+x=range(0,30000,500)
 with open("learning_curves/None_agrewards.pkl", mode="rb") as f2:
     hoge2=pickle.load(f2)
 
 print(hoge2)
 good_agent = hoge2[4::5]
 adv_agent=hoge2[::5]
+a = hoge2[0]
 #%%
-
-list=[1.2942942942942943, 2.392, 4.796, 18.77, 19.751, 13.121, 12.946, 12.758, 14.27, 13.219]
+list=[]
 fig = plt.figure()
 ax1 = fig.add_subplot(111)
 ln1 = ax1.plot(x,good_agent,color='red',label='evation')
