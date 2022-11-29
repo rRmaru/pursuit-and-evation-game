@@ -36,6 +36,8 @@ class MultiAgentEnv(gym.Env):
         # if true, every agent has the same reward
         self.shared_reward = world.collaborative if hasattr(world, 'collaborative') else False              #hasattr=そのオブジェクトが特定の属性を持っているかどうか
         self.time = 0
+        self.record = []
+        self.check = False  #landmarkに当たった時のforceを調べるときに使用
 
         # configure spaces
         self.action_space = [] #出力

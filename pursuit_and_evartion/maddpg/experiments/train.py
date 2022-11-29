@@ -30,7 +30,7 @@ def parse_args():
     # Checkpointing
     parser.add_argument("--exp-name", type=str, default=None, help="name of the experiment")
     parser.add_argument("--save-dir", type=str, default="/tmp/policy/", help="directory in which training state and model should be saved")
-    parser.add_argument("--save-rate", type=int, default=1000, help="save model once every time this many episodes are completed")
+    parser.add_argument("--save-rate", type=int, default=500, help="save model once every time this many episodes are completed")
     parser.add_argument("--load-dir", type=str, default="", help="directory in which training state and model are loaded")
     # Evaluation
     parser.add_argument("--restore", action="store_true", default=False)
@@ -62,8 +62,8 @@ def make_env(scenario_name, arglist, benchmark=False):
     if benchmark:
         env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation, scenario.benchmark_data)
     else:
-        env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation)        #done_callback=scenario.doneを追加(10/19)
-        #env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation, done_callback=scenario.done)  #episode style
+        #env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation)        #done_callback=scenario.doneを追加(10/19)
+        env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation, done_callback=scenario.done)  #episode style
     return env
 
 def get_trainers(env, num_adversaries, obs_shape_n, arglist):
@@ -122,12 +122,12 @@ def train(arglist):
             # get action    任意のエージェントの観測値を渡してactionを受け取る
             action_n = [agent.action(obs) for agent, obs in zip(trainers,obs_n)]            #何がactionとして与えられているのか？16つの要素を持った一次元配列
             #pdb.set_trace()
+            #action_n = [np.array([0.01,0.01,0.49,0.48,0.1]), np.array([0.01,0.01,0.01,0.96,0.01])]
             # environment step
             new_obs_n, rew_n, done_n, info_n = env.step(action_n)
             #pdb.set_trace()
             episode_step += 1
             done = all(done_n)
-            #pdb.set_trace()
             terminal = (episode_step >= arglist.max_episode_len)
             # collect experience
             for i, agent in enumerate(trainers):
@@ -190,8 +190,9 @@ def train(arglist):
 
             # to display, get position of object
             flag = False
-            if (len(episode_rewards) == 10000) or (len(episode_rewards) == 9999) or (len(episode_rewards) == 4999) or (len(episode_rewards) == 5000):
+            if (len(episode_rewards) == 10000) or (len(episode_rewards) == 9999) or (len(episode_rewards) == 30000) or (len(episode_rewards) == 5000):
                 flag = True
+                env.check = True
             if flag:
                 for i, agent in  enumerate(env.world.agents):
                     agent_pos[i].append(list(agent.state.p_pos))
@@ -203,6 +204,7 @@ def train(arglist):
                     for landmark in env.world.landmarks:
                         print("landmark position:{}".format(landmark.state.p_pos))
                     flag = False
+                    env.check = False
                     agent_pos = [[] for _ in range(len(env.world.agents))]
 
             # update all trainers, if not in display or benchmark mode

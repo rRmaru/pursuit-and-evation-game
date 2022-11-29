@@ -47,8 +47,8 @@ class Scenario(BaseScenario):
         for i, landmark in enumerate(world.landmarks):
             landmark.color = np.array([0.25, 0.25, 0.25])
         # set random initial states
-        for agent in world.agents:
-            agent.state.p_pos = np.random.uniform(-1, +1, world.dim_p)      #positionを-1~1の範囲で設定
+        for i, agent in enumerate(world.agents):
+            agent.state.p_pos = np.array([np.random.uniform(-1,0), np.random.uniform(-1,1)] if agent.adversary else [np.random.uniform(0,1), np.random.uniform(-1,1)])#np.random.uniform(-1, +1, world.dim_p)      #positionを-1~1の範囲で設定
             agent.state.p_vel = np.zeros(world.dim_p)           #速度を二次元で0に設定
             agent.state.c = np.zeros(world.dim_c)
         for i, landmark in enumerate(world.landmarks):
@@ -154,11 +154,11 @@ class Scenario(BaseScenario):
 
     #make sign to end episode when collision with agent and agent
     def done(self, agent, world):
-        agents = self.good_agents(world)       
-        adversaries = self.adversaries(world)   
-        if agent.collide:
-            for ag in agents:
-                for adv in adversaries:
+        agents = self.good_agents(world)       #good_agent(逃亡者)がagents
+        adversaries = self.adversaries(world)   #追跡者がadversaries
+        if agent.collide:   #逃亡者が衝突判定を持っていると
+            for ag in agents:       
+                for adv in adversaries:     #誰かが衝突していれば
                     if self.is_collision(ag, adv):
                         return True         #when pursuit and evasion are collided, return True
         return False
