@@ -1,0 +1,1365 @@
+agent 0 and agent 1   p_force[a][ 2.33305979e-03 -2.97813481e+00],p_force[b][-1.08002988e-03 -2.99357933e+00] f_a[ 4.96846205e-192 -3.08776015e-190],f_b[-4.96846205e-192  3.08776015e-190]
+agent 0 and agent 2   p_force[a][ 2.33305979e-03 -2.97813481e+00],p_force[b][ 1.86152369 -1.09839982] f_a[ 7.11545884e-300 -1.67113391e-299],f_b[-7.11545884e-300  1.67113391e-299]
+agent 0 and agent 3   p_force[a][ 2.33305979e-03 -2.97813481e+00],p_force[b][3.99978328e+00 3.90281684e-06] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and landmark 0   p_force[a][ 2.33305979e-03 -2.97813481e+00],p_force[b][3.99978328e+00 3.90281684e-06] f_a[-2.41887488e-102 -1.79085642e-102],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.33305979e-03 -2.97813481e+00],p_force[b][3.99978328e+00 3.90281684e-06] f_a[5.55626020e-221 3.64311267e-220],f_bNone
+agent 1 and agent 2   p_force[a][-1.08002988e-03 -2.99357933e+00],p_force[b][ 1.86152369 -1.09839982] f_a[ 1.06804910e-96 -6.21896134e-97],f_b[-1.06804910e-96  6.21896134e-97]
+agent 1 and agent 3   p_force[a][-1.08002988e-03 -2.99357933e+00],p_force[b][3.99978328e+00 3.90281684e-06] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][-1.08002988e-03 -2.99357933e+00],p_force[b][3.99978328e+00 3.90281684e-06] f_a[-1.11776041e-100  7.55676082e-101],f_bNone
+agent 1 and landmark 1   p_force[a][-1.08002988e-03 -2.99357933e+00],p_force[b][3.99978328e+00 3.90281684e-06] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 1.86152369 -1.09839982],p_force[b][3.99978328e+00 3.90281684e-06] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 1.86152369 -1.09839982],p_force[b][3.99978328e+00 3.90281684e-06] f_a[-4.89185902e-260  3.10870979e-260],f_bNone
+agent 2 and landmark 1   p_force[a][ 1.86152369 -1.09839982],p_force[b][3.99978328e+00 3.90281684e-06] f_a[-0.  0.],f_bNone
+agent 3 and landmark 0   p_force[a][3.99978328e+00 3.90281684e-06],p_force[b][3.99978328e+00 3.90281684e-06] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][3.99978328e+00 3.90281684e-06],p_force[b][3.99978328e+00 3.90281684e-06] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][3.99978328e+00 3.90281684e-06],p_force[b][3.99978328e+00 3.90281684e-06] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 0.02675115 -2.78102338],p_force[b][ 3.19307335e-04 -2.99908519e+00] f_a[ 5.81756425e-192 -3.60138989e-190],f_b[-5.81756425e-192  3.60138989e-190]
+agent 0 and agent 2   p_force[a][ 0.02675115 -2.78102338],p_force[b][ 2.17594689 -0.76663399] f_a[ 2.08720464e-304 -5.32485031e-304],f_b[-2.08720464e-304  5.32485031e-304]
+agent 0 and agent 3   p_force[a][ 0.02675115 -2.78102338],p_force[b][ 3.99915671e+00 -8.66903974e-07] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and landmark 0   p_force[a][ 0.02675115 -2.78102338],p_force[b][ 3.99915671e+00 -8.66903974e-07] f_a[-2.77188864e-110 -2.25515184e-110],f_bNone
+agent 0 and landmark 1   p_force[a][ 0.02675115 -2.78102338],p_force[b][ 3.99915671e+00 -8.66903974e-07] f_a[3.46897892e-208 2.18601659e-207],f_bNone
+agent 1 and agent 2   p_force[a][ 3.19307335e-04 -2.99908519e+00],p_force[b][ 2.17594689 -0.76663399] f_a[ 2.88078411e-94 -1.96458406e-94],f_b[-2.88078411e-94  1.96458406e-94]
+agent 1 and agent 3   p_force[a][ 3.19307335e-04 -2.99908519e+00],p_force[b][ 3.99915671e+00 -8.66903974e-07] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 3.19307335e-04 -2.99908519e+00],p_force[b][ 3.99915671e+00 -8.66903974e-07] f_a[-1.16240668e-93  7.02278070e-94],f_bNone
+agent 1 and landmark 1   p_force[a][ 3.19307335e-04 -2.99908519e+00],p_force[b][ 3.99915671e+00 -8.66903974e-07] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.17594689 -0.76663399],p_force[b][ 3.99915671e+00 -8.66903974e-07] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.17594689 -0.76663399],p_force[b][ 3.99915671e+00 -8.66903974e-07] f_a[-1.17742942e-250  7.49632423e-251],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.17594689 -0.76663399],p_force[b][ 3.99915671e+00 -8.66903974e-07] f_a[-0.  0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 3.99915671e+00 -8.66903974e-07],p_force[b][ 3.99915671e+00 -8.66903974e-07] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 3.99915671e+00 -8.66903974e-07],p_force[b][ 3.99915671e+00 -8.66903974e-07] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 3.99915671e+00 -8.66903974e-07],p_force[b][ 3.99915671e+00 -8.66903974e-07] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 0.02396317 -2.88981378],p_force[b][ 0.01886622 -2.98082614] f_a[ 5.95331124e-191 -3.56122000e-189],f_b[-5.95331124e-191  3.56122000e-189]
+agent 0 and agent 2   p_force[a][ 0.02396317 -2.88981378],p_force[b][ 2.60157233 -0.35709961] f_a[ 3.21632501e-313 -9.67459077e-313],f_b[-3.21632501e-313  9.67459077e-313]
+agent 0 and agent 3   p_force[a][ 0.02396317 -2.88981378],p_force[b][3.99996233e+00 5.01788691e-08] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and landmark 0   p_force[a][ 0.02396317 -2.88981378],p_force[b][3.99996233e+00 5.01788691e-08] f_a[-1.48741078e-124 -1.39435815e-124],f_bNone
+agent 0 and landmark 1   p_force[a][ 0.02396317 -2.88981378],p_force[b][3.99996233e+00 5.01788691e-08] f_a[1.09657678e-186 6.42586988e-186],f_bNone
+agent 1 and agent 2   p_force[a][ 0.01886622 -2.98082614],p_force[b][ 2.60157233 -0.35709961] f_a[ 5.47717786e-92 -5.00270096e-92],f_b[-5.47717786e-92  5.00270096e-92]
+agent 1 and agent 3   p_force[a][ 0.01886622 -2.98082614],p_force[b][3.99996233e+00 5.01788691e-08] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 0.01886622 -2.98082614],p_force[b][3.99996233e+00 5.01788691e-08] f_a[-8.19799783e-83  3.92044243e-83],f_bNone
+agent 1 and landmark 1   p_force[a][ 0.01886622 -2.98082614],p_force[b][3.99996233e+00 5.01788691e-08] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.60157233 -0.35709961],p_force[b][3.99996233e+00 5.01788691e-08] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.60157233 -0.35709961],p_force[b][3.99996233e+00 5.01788691e-08] f_a[-7.17488694e-234  4.64021693e-234],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.60157233 -0.35709961],p_force[b][3.99996233e+00 5.01788691e-08] f_a[-0.  0.],f_bNone
+agent 3 and landmark 0   p_force[a][3.99996233e+00 5.01788691e-08],p_force[b][3.99996233e+00 5.01788691e-08] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][3.99996233e+00 5.01788691e-08],p_force[b][3.99996233e+00 5.01788691e-08] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][3.99996233e+00 5.01788691e-08],p_force[b][3.99996233e+00 5.01788691e-08] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 0.37220641 -2.5058527 ],p_force[b][ 0.02055045 -2.97724843] f_a[ 8.50546596e-190 -4.92849127e-188],f_b[-8.50546596e-190  4.92849127e-188]
+agent 0 and agent 2   p_force[a][ 0.37220641 -2.5058527 ],p_force[b][ 0.64481445 -2.11945832] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 0.37220641 -2.5058527 ],p_force[b][3.99944186e+00 1.76691765e-06] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and landmark 0   p_force[a][ 0.37220641 -2.5058527 ],p_force[b][3.99944186e+00 1.76691765e-06] f_a[-4.65929038e-145 -5.13540235e-145],f_bNone
+agent 0 and landmark 1   p_force[a][ 0.37220641 -2.5058527 ],p_force[b][3.99944186e+00 1.76691765e-06] f_a[3.00064265e-158 1.58256018e-157],f_bNone
+agent 1 and agent 2   p_force[a][ 0.02055045 -2.97724843],p_force[b][ 0.64481445 -2.11945832] f_a[ 2.37193057e-94 -3.31215884e-94],f_b[-2.37193057e-94  3.31215884e-94]
+agent 1 and agent 3   p_force[a][ 0.02055045 -2.97724843],p_force[b][3.99944186e+00 1.76691765e-06] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 0.02055045 -2.97724843],p_force[b][3.99944186e+00 1.76691765e-06] f_a[-1.05404308e-71  3.29209098e-72],f_bNone
+agent 1 and landmark 1   p_force[a][ 0.02055045 -2.97724843],p_force[b][3.99944186e+00 1.76691765e-06] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 0.64481445 -2.11945832],p_force[b][3.99944186e+00 1.76691765e-06] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 0.64481445 -2.11945832],p_force[b][3.99944186e+00 1.76691765e-06] f_a[-4.92160318e-211  3.32940481e-211],f_bNone
+agent 2 and landmark 1   p_force[a][ 0.64481445 -2.11945832],p_force[b][3.99944186e+00 1.76691765e-06] f_a[-0.  0.],f_bNone
+agent 3 and landmark 0   p_force[a][3.99944186e+00 1.76691765e-06],p_force[b][3.99944186e+00 1.76691765e-06] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][3.99944186e+00 1.76691765e-06],p_force[b][3.99944186e+00 1.76691765e-06] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][3.99944186e+00 1.76691765e-06],p_force[b][3.99944186e+00 1.76691765e-06] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.91047537 -0.08638993],p_force[b][ 0.23541516 -2.75968194] f_a[ 8.77268705e-187 -3.65990919e-185],f_b[-8.77268705e-187  3.65990919e-185]
+agent 0 and agent 2   p_force[a][ 2.91047537 -0.08638993],p_force[b][ 1.36049786 -1.60197616] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 2.91047537 -0.08638993],p_force[b][3.99986744e+00 6.63686205e-06] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and landmark 0   p_force[a][ 2.91047537 -0.08638993],p_force[b][3.99986744e+00 6.63686205e-06] f_a[-5.87499706e-169 -7.63533557e-169],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.91047537 -0.08638993],p_force[b][3.99986744e+00 6.63686205e-06] f_a[1.16793761e-126 5.23816432e-126],f_bNone
+agent 1 and agent 2   p_force[a][ 0.23541516 -2.75968194],p_force[b][ 1.36049786 -1.60197616] f_a[ 1.25087759e-102 -2.60141790e-102],f_b[-1.25087759e-102  2.60141790e-102]
+agent 1 and agent 3   p_force[a][ 0.23541516 -2.75968194],p_force[b][3.99986744e+00 6.63686205e-06] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 0.23541516 -2.75968194],p_force[b][3.99986744e+00 6.63686205e-06] f_a[-3.83611462e-64  4.46232809e-65],f_bNone
+agent 1 and landmark 1   p_force[a][ 0.23541516 -2.75968194],p_force[b][3.99986744e+00 6.63686205e-06] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 1.36049786 -1.60197616],p_force[b][3.99986744e+00 6.63686205e-06] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 1.36049786 -1.60197616],p_force[b][3.99986744e+00 6.63686205e-06] f_a[-1.75538309e-186  1.18246345e-186],f_bNone
+agent 2 and landmark 1   p_force[a][ 1.36049786 -1.60197616],p_force[b][3.99986744e+00 6.63686205e-06] f_a[-0.  0.],f_bNone
+agent 3 and landmark 0   p_force[a][3.99986744e+00 6.63686205e-06],p_force[b][3.99986744e+00 6.63686205e-06] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][3.99986744e+00 6.63686205e-06],p_force[b][3.99986744e+00 6.63686205e-06] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][3.99986744e+00 6.63686205e-06],p_force[b][3.99986744e+00 6.63686205e-06] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.27029055 -0.65731457],p_force[b][ 2.94192249 -0.05621791] f_a[ 3.75564618e-173 -4.68596063e-172],f_b[-3.75564618e-173  4.68596063e-172]
+agent 0 and agent 2   p_force[a][ 2.27029055 -0.65731457],p_force[b][ 2.95308959 -0.04672874] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 2.27029055 -0.65731457],p_force[b][3.99910831e+00 9.37622535e-05] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and landmark 0   p_force[a][ 2.27029055 -0.65731457],p_force[b][3.99910831e+00 9.37622535e-05] f_a[-2.73788503e-181 -4.28959637e-181],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.27029055 -0.65731457],p_force[b][3.99910831e+00 9.37622535e-05] f_a[3.52447274e-106 1.12089680e-105],f_bNone
+agent 1 and agent 2   p_force[a][ 2.94192249 -0.05621791],p_force[b][ 2.95308959 -0.04672874] f_a[ 3.87105411e-115 -1.26860042e-114],f_b[-3.87105411e-115  1.26860042e-114]
+agent 1 and agent 3   p_force[a][ 2.94192249 -0.05621791],p_force[b][3.99910831e+00 9.37622535e-05] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 2.94192249 -0.05621791],p_force[b][3.99910831e+00 9.37622535e-05] f_a[-1.20259237e-62 -1.17663838e-63],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.94192249 -0.05621791],p_force[b][3.99910831e+00 9.37622535e-05] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.95308959 -0.04672874],p_force[b][3.99910831e+00 9.37622535e-05] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.95308959 -0.04672874],p_force[b][3.99910831e+00 9.37622535e-05] f_a[-2.70627729e-159  1.78132657e-159],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.95308959 -0.04672874],p_force[b][3.99910831e+00 9.37622535e-05] f_a[-0.  0.],f_bNone
+agent 3 and landmark 0   p_force[a][3.99910831e+00 9.37622535e-05],p_force[b][3.99910831e+00 9.37622535e-05] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][3.99910831e+00 9.37622535e-05],p_force[b][3.99910831e+00 9.37622535e-05] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][3.99910831e+00 9.37622535e-05],p_force[b][3.99910831e+00 9.37622535e-05] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 1.73846394 -1.21287909],p_force[b][ 1.48430309 -1.49166083] f_a[ 5.94394153e-166 -5.28437748e-165],f_b[-5.94394153e-166  5.28437748e-165]
+agent 0 and agent 2   p_force[a][ 1.73846394 -1.21287909],p_force[b][ 1.41454107 -1.52093053] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 1.73846394 -1.21287909],p_force[b][3.99919033e+00 1.12957423e-07] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and landmark 0   p_force[a][ 1.73846394 -1.21287909],p_force[b][3.99919033e+00 1.12957423e-07] f_a[-7.74614669e-190 -1.50772011e-189],f_bNone
+agent 0 and landmark 1   p_force[a][ 1.73846394 -1.21287909],p_force[b][3.99919033e+00 1.12957423e-07] f_a[2.85055795e-93 6.25511156e-93],f_bNone
+agent 1 and agent 2   p_force[a][ 1.48430309 -1.49166083],p_force[b][ 1.41454107 -1.52093053] f_a[ 5.84232606e-127 -2.93472905e-126],f_b[-5.84232606e-127  2.93472905e-126]
+agent 1 and agent 3   p_force[a][ 1.48430309 -1.49166083],p_force[b][3.99919033e+00 1.12957423e-07] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 1.48430309 -1.49166083],p_force[b][3.99919033e+00 1.12957423e-07] f_a[-1.23469194e-54 -3.47900144e-55],f_bNone
+agent 1 and landmark 1   p_force[a][ 1.48430309 -1.49166083],p_force[b][3.99919033e+00 1.12957423e-07] f_a[7.95693944e-306 5.37924723e-305],f_bNone
+agent 2 and agent 3   p_force[a][ 1.41454107 -1.52093053],p_force[b][3.99919033e+00 1.12957423e-07] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 1.41454107 -1.52093053],p_force[b][3.99919033e+00 1.12957423e-07] f_a[-3.86212025e-128  2.64354296e-128],f_bNone
+agent 2 and landmark 1   p_force[a][ 1.41454107 -1.52093053],p_force[b][3.99919033e+00 1.12957423e-07] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][3.99919033e+00 1.12957423e-07],p_force[b][3.99919033e+00 1.12957423e-07] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][3.99919033e+00 1.12957423e-07],p_force[b][3.99919033e+00 1.12957423e-07] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][3.99919033e+00 1.12957423e-07],p_force[b][3.99919033e+00 1.12957423e-07] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.95514899 -0.02842013],p_force[b][ 1.46849129 -1.52432531] f_a[ 1.12846872e-159 -7.83605100e-159],f_b[-1.12846872e-159  7.83605100e-159]
+agent 0 and agent 2   p_force[a][ 2.95514899 -0.02842013],p_force[b][ 0.12599394 -2.86632246] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 2.95514899 -0.02842013],p_force[b][ 3.99697423e+00 -1.83723954e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and landmark 0   p_force[a][ 2.95514899 -0.02842013],p_force[b][ 3.99697423e+00 -1.83723954e-04] f_a[-6.33362886e-200 -1.58681084e-199],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.95514899 -0.02842013],p_force[b][ 3.99697423e+00 -1.83723954e-04] f_a[2.36192969e-85 3.65203756e-85],f_bNone
+agent 1 and agent 2   p_force[a][ 1.46849129 -1.52432531],p_force[b][ 0.12599394 -2.86632246] f_a[ 6.96558055e-137 -5.26718649e-136],f_b[-6.96558055e-137  5.26718649e-136]
+agent 1 and agent 3   p_force[a][ 1.46849129 -1.52432531],p_force[b][ 3.99697423e+00 -1.83723954e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 1.46849129 -1.52432531],p_force[b][ 3.99697423e+00 -1.83723954e-04] f_a[-2.24911261e-49 -1.13202802e-49],f_bNone
+agent 1 and landmark 1   p_force[a][ 1.46849129 -1.52432531],p_force[b][ 3.99697423e+00 -1.83723954e-04] f_a[1.28699824e-280 6.38899587e-280],f_bNone
+agent 2 and agent 3   p_force[a][ 0.12599394 -2.86632246],p_force[b][ 3.99697423e+00 -1.83723954e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 0.12599394 -2.86632246],p_force[b][ 3.99697423e+00 -1.83723954e-04] f_a[-5.16497009e-96  3.59882392e-96],f_bNone
+agent 2 and landmark 1   p_force[a][ 0.12599394 -2.86632246],p_force[b][ 3.99697423e+00 -1.83723954e-04] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 3.99697423e+00 -1.83723954e-04],p_force[b][ 3.99697423e+00 -1.83723954e-04] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 3.99697423e+00 -1.83723954e-04],p_force[b][ 3.99697423e+00 -1.83723954e-04] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 3.99697423e+00 -1.83723954e-04],p_force[b][ 3.99697423e+00 -1.83723954e-04] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.9663052 -0.0137629],p_force[b][ 0.37516165 -2.62298566] f_a[ 7.65305101e-150 -3.72641355e-149],f_b[-7.65305101e-150  3.72641355e-149]
+agent 0 and agent 2   p_force[a][ 2.9663052 -0.0137629],p_force[b][ 0.39985313 -2.54231805] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 2.9663052 -0.0137629],p_force[b][ 3.99826264e+00 -1.42284017e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and landmark 0   p_force[a][ 2.9663052 -0.0137629],p_force[b][ 3.99826264e+00 -1.42284017e-03] f_a[-1.01028692e-205 -3.58150824e-205],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.9663052 -0.0137629],p_force[b][ 3.99826264e+00 -1.42284017e-03] f_a[9.60303189e-91 1.05687017e-90],f_bNone
+agent 1 and agent 2   p_force[a][ 0.37516165 -2.62298566],p_force[b][ 0.39985313 -2.54231805] f_a[ 1.51310139e-139 -1.27409222e-138],f_b[-1.51310139e-139  1.27409222e-138]
+agent 1 and agent 3   p_force[a][ 0.37516165 -2.62298566],p_force[b][ 3.99826264e+00 -1.42284017e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 0.37516165 -2.62298566],p_force[b][ 3.99826264e+00 -1.42284017e-03] f_a[-1.68639099e-48 -1.33264810e-48],f_bNone
+agent 1 and landmark 1   p_force[a][ 0.37516165 -2.62298566],p_force[b][ 3.99826264e+00 -1.42284017e-03] f_a[1.17689022e-257 4.37299965e-257],f_bNone
+agent 2 and agent 3   p_force[a][ 0.39985313 -2.54231805],p_force[b][ 3.99826264e+00 -1.42284017e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 0.39985313 -2.54231805],p_force[b][ 3.99826264e+00 -1.42284017e-03] f_a[-1.54776987e-64  9.76024768e-65],f_bNone
+agent 2 and landmark 1   p_force[a][ 0.39985313 -2.54231805],p_force[b][ 3.99826264e+00 -1.42284017e-03] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 3.99826264e+00 -1.42284017e-03],p_force[b][ 3.99826264e+00 -1.42284017e-03] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 3.99826264e+00 -1.42284017e-03],p_force[b][ 3.99826264e+00 -1.42284017e-03] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 3.99826264e+00 -1.42284017e-03],p_force[b][ 3.99826264e+00 -1.42284017e-03] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.98172575e+00 -2.11784919e-03],p_force[b][ 2.82478684 -0.1525101 ] f_a[ 3.27299515e-135 -9.87001839e-135],f_b[-3.27299515e-135  9.87001839e-135]
+agent 0 and agent 2   p_force[a][ 2.98172575e+00 -2.11784919e-03],p_force[b][ 2.89560735 -0.07686146] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 2.98172575e+00 -2.11784919e-03],p_force[b][ 3.99840856e+00 -1.01478095e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and landmark 0   p_force[a][ 2.98172575e+00 -2.11784919e-03],p_force[b][ 3.99840856e+00 -1.01478095e-03] f_a[-3.37155577e-210 -2.08074845e-209],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.98172575e+00 -2.11784919e-03],p_force[b][ 3.99840856e+00 -1.01478095e-03] f_a[4.56247593e-108 3.69340844e-108],f_bNone
+agent 1 and agent 2   p_force[a][ 2.82478684 -0.1525101 ],p_force[b][ 2.89560735 -0.07686146] f_a[ 6.56969644e-142 -6.07271777e-141],f_b[-6.56969644e-142  6.07271777e-141]
+agent 1 and agent 3   p_force[a][ 2.82478684 -0.1525101 ],p_force[b][ 3.99840856e+00 -1.01478095e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 2.82478684 -0.1525101 ],p_force[b][ 3.99840856e+00 -1.01478095e-03] f_a[-9.56068797e-60 -1.12936180e-59],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.82478684 -0.1525101 ],p_force[b][ 3.99840856e+00 -1.01478095e-03] f_a[2.88410602e-231 8.39846825e-231],f_bNone
+agent 2 and agent 3   p_force[a][ 2.89560735 -0.07686146],p_force[b][ 3.99840856e+00 -1.01478095e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.89560735 -0.07686146],p_force[b][ 3.99840856e+00 -1.01478095e-03] f_a[-1.52190302e-34  7.51767206e-35],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.89560735 -0.07686146],p_force[b][ 3.99840856e+00 -1.01478095e-03] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 3.99840856e+00 -1.01478095e-03],p_force[b][ 3.99840856e+00 -1.01478095e-03] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 3.99840856e+00 -1.01478095e-03],p_force[b][ 3.99840856e+00 -1.01478095e-03] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 3.99840856e+00 -1.01478095e-03],p_force[b][ 3.99840856e+00 -1.01478095e-03] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.98817986 0.00460941],p_force[b][ 2.98631376 -0.01342588] f_a[ 5.63934632e-126 -1.24958096e-125],f_b[-5.63934632e-126  1.24958096e-125]
+agent 0 and agent 2   p_force[a][2.98817986 0.00460941],p_force[b][ 2.45149988 -0.31449417] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][2.98817986 0.00460941],p_force[b][ 3.99089241 -0.00659677] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and landmark 0   p_force[a][2.98817986 0.00460941],p_force[b][ 3.99089241 -0.00659677] f_a[-5.54159184e-216 -1.42945003e-214],f_bNone
+agent 0 and landmark 1   p_force[a][2.98817986 0.00460941],p_force[b][ 3.99089241 -0.00659677] f_a[5.71505996e-135 3.53407907e-135],f_bNone
+agent 1 and agent 2   p_force[a][ 2.98631376 -0.01342588],p_force[b][ 2.45149988 -0.31449417] f_a[ 5.32000436e-144 -5.38662697e-143],f_b[-5.32000436e-144  5.38662697e-143]
+agent 1 and agent 3   p_force[a][ 2.98631376 -0.01342588],p_force[b][ 3.99089241 -0.00659677] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 2.98631376 -0.01342588],p_force[b][ 3.99089241 -0.00659677] f_a[-1.50605347e-66 -2.66797470e-66],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.98631376 -0.01342588],p_force[b][ 3.99089241 -0.00659677] f_a[7.00491939e-217 1.55461661e-216],f_bNone
+agent 2 and agent 3   p_force[a][ 2.45149988 -0.31449417],p_force[b][ 3.99089241 -0.00659677] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.45149988 -0.31449417],p_force[b][ 3.99089241 -0.00659677] f_a[-0.07103227  0.02872486],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.38046761 -0.28576931],p_force[b][ 3.99089241 -0.00659677] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 3.99089241 -0.00659677],p_force[b][ 3.99089241 -0.00659677] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 3.99089241 -0.00659677],p_force[b][ 3.99089241 -0.00659677] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 3.99089241 -0.00659677],p_force[b][ 3.99089241 -0.00659677] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99530792e+00 6.84196420e-05],p_force[b][ 2.99585813 -0.00403928] f_a[ 1.93790004e-120 -3.48002427e-120],f_b[-1.93790004e-120  3.48002427e-120]
+agent 0 and agent 2   p_force[a][2.99530792e+00 6.84196420e-05],p_force[b][ 1.55945259 -1.27204263] f_a[ 2.3102e-319 -7.6271e-319],f_b[-2.3102e-319  7.6271e-319]
+agent 0 and agent 3   p_force[a][2.99530792e+00 6.84196420e-05],p_force[b][ 3.86646509 -0.05955464] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and landmark 0   p_force[a][2.99530792e+00 6.84196420e-05],p_force[b][ 3.86646509 -0.05955464] f_a[ 1.65835748e-223 -1.89254046e-222],f_bNone
+agent 0 and landmark 1   p_force[a][2.99530792e+00 6.84196420e-05],p_force[b][ 3.86646509 -0.05955464] f_a[6.02540271e-169 2.95004811e-169],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99585813 -0.00403928],p_force[b][ 1.55945259 -1.27204263] f_a[ 1.32192653e-144 -1.25696315e-143],f_b[-1.32192653e-144  1.25696315e-143]
+agent 1 and agent 3   p_force[a][ 2.99585813 -0.00403928],p_force[b][ 3.86646509 -0.05955464] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 2.99585813 -0.00403928],p_force[b][ 3.86646509 -0.05955464] f_a[-2.63933066e-71 -7.95337217e-71],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99585813 -0.00403928],p_force[b][ 3.86646509 -0.05955464] f_a[1.98251120e-214 3.36772601e-214],f_bNone
+agent 2 and agent 3   p_force[a][ 1.55945259 -1.27204263],p_force[b][ 3.86646509 -0.05955464] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 1.55945259 -1.27204263],p_force[b][ 3.86646509 -0.05955464] f_a[-7.48852596  2.45236869],f_bNone
+agent 2 and landmark 1   p_force[a][-5.92907337  1.18032606],p_force[b][ 3.86646509 -0.05955464] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 3.86646509 -0.05955464],p_force[b][ 3.86646509 -0.05955464] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 3.86646509 -0.05955464],p_force[b][ 3.86646509 -0.05955464] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 3.86646509 -0.05955464],p_force[b][ 3.86646509 -0.05955464] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99785495e+00 -1.39472564e-03],p_force[b][ 2.9962635  -0.00359956] f_a[ 4.81670843e-116 -7.57255531e-116],f_b[-4.81670843e-116  7.57255531e-116]
+agent 0 and agent 2   p_force[a][ 2.99785495e+00 -1.39472564e-03],p_force[b][ 2.78762788 -0.20556747] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 2.99785495e+00 -1.39472564e-03],p_force[b][ 3.98594856 -0.01275679] f_a[-8.88939494e-304  1.49244602e-304],f_b[ 8.88939494e-304 -1.49244602e-304]
+agent 0 and landmark 0   p_force[a][ 2.99785495e+00 -1.39472564e-03],p_force[b][ 3.98594856 -0.01275679] f_a[ 2.20564839e-234 -1.04092832e-233],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99785495e+00 -1.39472564e-03],p_force[b][ 3.98594856 -0.01275679] f_a[2.27246233e-206 9.15689002e-207],f_bNone
+agent 1 and agent 2   p_force[a][ 2.9962635  -0.00359956],p_force[b][ 2.78762788 -0.20556747] f_a[ 2.59638824e-157 -8.92183017e-157],f_b[-2.59638824e-157  8.92183017e-157]
+agent 1 and agent 3   p_force[a][ 2.9962635  -0.00359956],p_force[b][ 3.98594856 -0.01275679] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 2.9962635  -0.00359956],p_force[b][ 3.98594856 -0.01275679] f_a[-1.42406295e-77 -1.19102453e-76],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.9962635  -0.00359956],p_force[b][ 3.98594856 -0.01275679] f_a[7.96111837e-223 1.05777683e-222],f_bNone
+agent 2 and agent 3   p_force[a][ 2.78762788 -0.20556747],p_force[b][ 3.98594856 -0.01275679] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.78762788 -0.20556747],p_force[b][ 3.98594856 -0.01275679] f_a[-7.44969678  1.5850112 ],f_bNone
+agent 2 and landmark 1   p_force[a][-4.66206891  1.37944373],p_force[b][ 3.98594856 -0.01275679] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 3.98594856 -0.01275679],p_force[b][ 3.98594856 -0.01275679] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 3.98594856 -0.01275679],p_force[b][ 3.98594856 -0.01275679] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 3.98594856 -0.01275679],p_force[b][ 3.98594856 -0.01275679] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99997711e+00 3.18428897e-06],p_force[b][ 2.94885904 -0.05089063] f_a[ 7.84366706e-112 -1.13934379e-111],f_b[-7.84366706e-112  1.13934379e-111]
+agent 0 and agent 2   p_force[a][2.99997711e+00 3.18428897e-06],p_force[b][ 2.58015329 -0.16181931] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][2.99997711e+00 3.18428897e-06],p_force[b][ 3.99766707e+00 -2.18168716e-03] f_a[-7.87771229e-263  1.41482116e-263],f_b[ 7.87771229e-263 -1.41482116e-263]
+agent 0 and landmark 0   p_force[a][2.99997711e+00 3.18428897e-06],p_force[b][ 3.99766707e+00 -2.18168716e-03] f_a[ 5.44462921e-249 -1.62827123e-248],f_bNone
+agent 0 and landmark 1   p_force[a][2.99997711e+00 3.18428897e-06],p_force[b][ 3.99766707e+00 -2.18168716e-03] f_a[1.02819027e-245 3.51615933e-246],f_bNone
+agent 1 and agent 2   p_force[a][ 2.94885904 -0.05089063],p_force[b][ 2.58015329 -0.16181931] f_a[ 4.25813755e-191 -7.56253497e-191],f_b[-4.25813755e-191  7.56253497e-191]
+agent 1 and agent 3   p_force[a][ 2.94885904 -0.05089063],p_force[b][ 3.99766707e+00 -2.18168716e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 2.94885904 -0.05089063],p_force[b][ 3.99766707e+00 -2.18168716e-03] f_a[ 1.23603767e-87 -1.46583116e-86],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.94885904 -0.05089063],p_force[b][ 3.99766707e+00 -2.18168716e-03] f_a[1.33441134e-240 1.42411280e-240],f_bNone
+agent 2 and agent 3   p_force[a][ 2.58015329 -0.16181931],p_force[b][ 3.99766707e+00 -2.18168716e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.58015329 -0.16181931],p_force[b][ 3.99766707e+00 -2.18168716e-03] f_a[-2.42737442  0.39693417],f_bNone
+agent 2 and landmark 1   p_force[a][0.15277887 0.23511485],p_force[b][ 3.99766707e+00 -2.18168716e-03] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 3.99766707e+00 -2.18168716e-03],p_force[b][ 3.99766707e+00 -2.18168716e-03] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 3.99766707e+00 -2.18168716e-03],p_force[b][ 3.99766707e+00 -2.18168716e-03] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 3.99766707e+00 -2.18168716e-03],p_force[b][ 3.99766707e+00 -2.18168716e-03] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99813479e+00 -4.02500245e-05],p_force[b][ 2.99973428e+00 -2.63185102e-04] f_a[ 1.15529795e-107 -1.60206912e-107],f_b[-1.15529795e-107  1.60206912e-107]
+agent 0 and agent 2   p_force[a][ 2.99813479e+00 -4.02500245e-05],p_force[b][ 2.45799583 -0.35877138] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 2.99813479e+00 -4.02500245e-05],p_force[b][ 3.94385934 -0.05537781] f_a[-7.41185487e-207  1.56089675e-207],f_b[ 7.41185487e-207 -1.56089675e-207]
+agent 0 and landmark 0   p_force[a][ 2.99813479e+00 -4.02500245e-05],p_force[b][ 3.94385934 -0.05537781] f_a[ 3.93280149e-267 -8.62617431e-267],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99813479e+00 -4.02500245e-05],p_force[b][ 3.94385934 -0.05537781] f_a[2.98705016e-286 8.87688015e-287],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99973428e+00 -2.63185102e-04],p_force[b][ 2.45799583 -0.35877138] f_a[ 1.72495813e-231 -2.15931343e-231],f_b[-1.72495813e-231  2.15931343e-231]
+agent 1 and agent 3   p_force[a][ 2.99973428e+00 -2.63185102e-04],p_force[b][ 3.94385934 -0.05537781] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and landmark 0   p_force[a][ 2.99973428e+00 -2.63185102e-04],p_force[b][ 3.94385934 -0.05537781] f_a[ 8.80148982e-103 -3.11299237e-102],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99973428e+00 -2.63185102e-04],p_force[b][ 3.94385934 -0.05537781] f_a[1.35114589e-265 1.19000725e-265],f_bNone
+agent 2 and agent 3   p_force[a][ 2.45799583 -0.35877138],p_force[b][ 3.94385934 -0.05537781] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.45799583 -0.35877138],p_force[b][ 3.94385934 -0.05537781] f_a[-1.91362996e-07  2.82173870e-08],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.45799564 -0.35877136],p_force[b][ 3.94385934 -0.05537781] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 3.94385934 -0.05537781],p_force[b][ 3.94385934 -0.05537781] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 3.94385934 -0.05537781],p_force[b][ 3.94385934 -0.05537781] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 3.94385934 -0.05537781],p_force[b][ 3.94385934 -0.05537781] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99997979e+00 3.86253350e-06],p_force[b][ 2.99838245e+00 -1.56963081e-03] f_a[ 1.22289622e-104 -1.64098356e-104],f_b[-1.22289622e-104  1.64098356e-104]
+agent 0 and agent 2   p_force[a][2.99997979e+00 3.86253350e-06],p_force[b][ 2.88942307 -0.07843401] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][2.99997979e+00 3.86253350e-06],p_force[b][ 3.81157732 -0.18374845] f_a[-3.05577347e-170  7.34527287e-171],f_b[ 3.05577347e-170 -7.34527287e-171]
+agent 0 and landmark 0   p_force[a][2.99997979e+00 3.86253350e-06],p_force[b][ 3.81157732 -0.18374845] f_a[ 1.53044617e-288 -2.65246811e-288],f_bNone
+agent 0 and landmark 1   p_force[a][2.99997979e+00 3.86253350e-06],p_force[b][ 3.81157732 -0.18374845] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99838245e+00 -1.56963081e-03],p_force[b][ 2.88942307 -0.07843401] f_a[ 1.19960833e-264 -1.23260495e-264],f_b[-1.19960833e-264  1.23260495e-264]
+agent 1 and agent 3   p_force[a][ 2.99838245e+00 -1.56963081e-03],p_force[b][ 3.81157732 -0.18374845] f_a[-7.1728281e-315  4.2232733e-315],f_b[ 7.1728281e-315 -4.2232733e-315]
+agent 1 and landmark 0   p_force[a][ 2.99838245e+00 -1.56963081e-03],p_force[b][ 3.81157732 -0.18374845] f_a[ 3.39484877e-123 -7.17488674e-123],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99838245e+00 -1.56963081e-03],p_force[b][ 3.81157732 -0.18374845] f_a[2.43111411e-295 1.81978372e-295],f_bNone
+agent 2 and agent 3   p_force[a][ 2.88942307 -0.07843401],p_force[b][ 3.81157732 -0.18374845] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.88942307 -0.07843401],p_force[b][ 3.81157732 -0.18374845] f_a[-5.72258344e-09  7.85566263e-10],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.88942307 -0.07843401],p_force[b][ 3.81157732 -0.18374845] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 3.81157732 -0.18374845],p_force[b][ 3.81157732 -0.18374845] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 3.81157732 -0.18374845],p_force[b][ 3.81157732 -0.18374845] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 3.81157732 -0.18374845],p_force[b][ 3.81157732 -0.18374845] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99994707e+00 4.24596874e-05],p_force[b][ 2.99850476e+00 -1.45152351e-03] f_a[ 1.88876517e-102 -2.47585509e-102],f_b[-1.88876517e-102  2.47585509e-102]
+agent 0 and agent 2   p_force[a][2.99994707e+00 4.24596874e-05],p_force[b][ 0.49657591 -2.4750697 ] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][2.99994707e+00 4.24596874e-05],p_force[b][ 2.89126992 -1.09814799] f_a[-8.27491009e-123  2.56468367e-123],f_b[ 8.27491009e-123 -2.56468367e-123]
+agent 0 and landmark 0   p_force[a][2.99994707e+00 4.24596874e-05],p_force[b][ 2.89126992 -1.09814799] f_a[ 6.99690664e-313 -1.00256925e-312],f_bNone
+agent 0 and landmark 1   p_force[a][2.99994707e+00 4.24596874e-05],p_force[b][ 2.89126992 -1.09814799] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99850476e+00 -1.45152351e-03],p_force[b][ 0.49657591 -2.4750697 ] f_a[ 1.07064253e-289 -9.77598642e-290],f_b[-1.07064253e-289  9.77598642e-290]
+agent 1 and agent 3   p_force[a][ 2.99850476e+00 -1.45152351e-03],p_force[b][ 2.89126992 -1.09814799] f_a[-6.32566332e-272  4.33424803e-272],f_b[ 6.32566332e-272 -4.33424803e-272]
+agent 1 and landmark 0   p_force[a][ 2.99850476e+00 -1.45152351e-03],p_force[b][ 2.89126992 -1.09814799] f_a[ 5.77051223e-148 -8.75131914e-148],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99850476e+00 -1.45152351e-03],p_force[b][ 2.89126992 -1.09814799] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 0.49657591 -2.4750697 ],p_force[b][ 2.89126992 -1.09814799] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 0.49657591 -2.4750697 ],p_force[b][ 2.89126992 -1.09814799] f_a[-0.93272021  0.1316055 ],f_bNone
+agent 2 and landmark 1   p_force[a][-0.43614431 -2.34346421],p_force[b][ 2.89126992 -1.09814799] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 2.89126992 -1.09814799],p_force[b][ 2.89126992 -1.09814799] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 2.89126992 -1.09814799],p_force[b][ 2.89126992 -1.09814799] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 2.89126992 -1.09814799],p_force[b][ 2.89126992 -1.09814799] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.9999916e+00 3.4035595e-06],p_force[b][ 2.97634953 -0.02334615] f_a[ 7.17760813e-101 -9.25262290e-101],f_b[-7.17760813e-101  9.25262290e-101]
+agent 0 and agent 2   p_force[a][2.9999916e+00 3.4035595e-06],p_force[b][ 0.92596596 -1.17678389] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][2.9999916e+00 3.4035595e-06],p_force[b][ 1.46250129 -2.50348663] f_a[-7.93919336e-81  3.72553246e-81],f_b[ 7.93919336e-81 -3.72553246e-81]
+agent 0 and landmark 0   p_force[a][2.9999916e+00 3.4035595e-06],p_force[b][ 1.46250129 -2.50348663] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][2.9999916e+00 3.4035595e-06],p_force[b][ 1.46250129 -2.50348663] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.97634953 -0.02334615],p_force[b][ 0.92596596 -1.17678389] f_a[ 1.18439530e-312 -9.15615151e-313],f_b[-1.18439530e-312  9.15615151e-313]
+agent 1 and agent 3   p_force[a][ 2.97634953 -0.02334615],p_force[b][ 1.46250129 -2.50348663] f_a[-2.32083724e-236  1.95413041e-236],f_b[ 2.32083724e-236 -1.95413041e-236]
+agent 1 and landmark 0   p_force[a][ 2.97634953 -0.02334615],p_force[b][ 1.46250129 -2.50348663] f_a[ 2.86332019e-176 -3.39418949e-176],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.97634953 -0.02334615],p_force[b][ 1.46250129 -2.50348663] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 0.92596596 -1.17678389],p_force[b][ 1.46250129 -2.50348663] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 0.92596596 -1.17678389],p_force[b][ 1.46250129 -2.50348663] f_a[-2.68404721  0.12724487],f_bNone
+agent 2 and landmark 1   p_force[a][-1.75808124 -1.04953902],p_force[b][ 1.46250129 -2.50348663] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 1.46250129 -2.50348663],p_force[b][ 1.46250129 -2.50348663] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 1.46250129 -2.50348663],p_force[b][ 1.46250129 -2.50348663] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 1.46250129 -2.50348663],p_force[b][ 1.46250129 -2.50348663] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99999982e+00 4.86470810e-08],p_force[b][ 0.13751963 -2.86160159] f_a[ 1.16669262e-99 -1.48490539e-99],f_b[-1.16669262e-99  1.48490539e-99]
+agent 0 and agent 2   p_force[a][2.99999982e+00 4.86470810e-08],p_force[b][ 2.80889887 -0.17258226] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][2.99999982e+00 4.86470810e-08],p_force[b][ 0.06525066 -3.93330526] f_a[-1.93805535e-55  1.70138304e-55],f_b[ 1.93805535e-55 -1.70138304e-55]
+agent 0 and landmark 0   p_force[a][2.99999982e+00 4.86470810e-08],p_force[b][ 0.06525066 -3.93330526] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][2.99999982e+00 4.86470810e-08],p_force[b][ 0.06525066 -3.93330526] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 0.13751963 -2.86160159],p_force[b][ 2.80889887 -0.17258226] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 0.13751963 -2.86160159],p_force[b][ 0.06525066 -3.93330526] f_a[-8.84910613e-217  9.70489301e-217],f_b[ 8.84910613e-217 -9.70489301e-217]
+agent 1 and landmark 0   p_force[a][ 0.13751963 -2.86160159],p_force[b][ 0.06525066 -3.93330526] f_a[ 1.91164115e-207 -1.86219189e-207],f_bNone
+agent 1 and landmark 1   p_force[a][ 0.13751963 -2.86160159],p_force[b][ 0.06525066 -3.93330526] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.80889887 -0.17258226],p_force[b][ 0.06525066 -3.93330526] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.80889887 -0.17258226],p_force[b][ 0.06525066 -3.93330526] f_a[-2.02421719 -0.14150145],f_bNone
+agent 2 and landmark 1   p_force[a][ 0.78468168 -0.31408371],p_force[b][ 0.06525066 -3.93330526] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 0.06525066 -3.93330526],p_force[b][ 0.06525066 -3.93330526] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 0.06525066 -3.93330526],p_force[b][ 0.06525066 -3.93330526] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 0.06525066 -3.93330526],p_force[b][ 0.06525066 -3.93330526] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99999803e+00 -4.74950127e-07],p_force[b][ 0.38845646 -2.60260159] f_a[ 4.09291546e-96 -4.21992098e-96],f_b[-4.09291546e-96  4.21992098e-96]
+agent 0 and agent 2   p_force[a][ 2.99999803e+00 -4.74950127e-07],p_force[b][ 2.97543705 -0.02336139] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 2.99999803e+00 -4.74950127e-07],p_force[b][ 3.78916407 -0.20858885] f_a[-4.53440373e-55  1.10700648e-54],f_b[ 4.53440373e-55 -1.10700648e-54]
+agent 0 and landmark 0   p_force[a][ 2.99999803e+00 -4.74950127e-07],p_force[b][ 3.78916407 -0.20858885] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99999803e+00 -4.74950127e-07],p_force[b][ 3.78916407 -0.20858885] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 0.38845646 -2.60260159],p_force[b][ 2.97543705 -0.02336139] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 0.38845646 -2.60260159],p_force[b][ 3.78916407 -0.20858885] f_a[-3.71238534e-209  5.22954055e-209],f_b[ 3.71238534e-209 -5.22954055e-209]
+agent 1 and landmark 0   p_force[a][ 0.38845646 -2.60260159],p_force[b][ 3.78916407 -0.20858885] f_a[ 3.11159466e-241 -2.81850123e-241],f_bNone
+agent 1 and landmark 1   p_force[a][ 0.38845646 -2.60260159],p_force[b][ 3.78916407 -0.20858885] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.97543705 -0.02336139],p_force[b][ 3.78916407 -0.20858885] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.97543705 -0.02336139],p_force[b][ 3.78916407 -0.20858885] f_a[-2.01226116 -0.3451345 ],f_bNone
+agent 2 and landmark 1   p_force[a][ 0.96317588 -0.36849589],p_force[b][ 3.78916407 -0.20858885] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 3.78916407 -0.20858885],p_force[b][ 3.78916407 -0.20858885] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 3.78916407 -0.20858885],p_force[b][ 3.78916407 -0.20858885] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 3.78916407 -0.20858885],p_force[b][ 3.78916407 -0.20858885] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99999928e+00 4.69029445e-07],p_force[b][ 0.04110165 -2.95641285] f_a[ 1.05894395e-94 -7.68257608e-95],f_b[-1.05894395e-94  7.68257608e-95]
+agent 0 and agent 2   p_force[a][2.99999928e+00 4.69029445e-07],p_force[b][ 2.51355639e-04 -2.99945498e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][2.99999928e+00 4.69029445e-07],p_force[b][ 0.31136227 -3.66281772] f_a[2.77163953e-70 1.45395549e-68],f_b[-2.77163953e-70 -1.45395549e-68]
+agent 0 and landmark 0   p_force[a][2.99999928e+00 4.69029445e-07],p_force[b][ 0.31136227 -3.66281772] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][2.99999928e+00 4.69029445e-07],p_force[b][ 0.31136227 -3.66281772] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 0.04110165 -2.95641285],p_force[b][ 2.51355639e-04 -2.99945498e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 0.04110165 -2.95641285],p_force[b][ 0.31136227 -3.66281772] f_a[-2.02815871e-195  3.45209489e-195],f_b[ 2.02815871e-195 -3.45209489e-195]
+agent 1 and landmark 0   p_force[a][ 0.04110165 -2.95641285],p_force[b][ 0.31136227 -3.66281772] f_a[ 1.38045595e-275 -1.24025250e-275],f_bNone
+agent 1 and landmark 1   p_force[a][ 0.04110165 -2.95641285],p_force[b][ 0.31136227 -3.66281772] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.51355639e-04 -2.99945498e+00],p_force[b][ 0.31136227 -3.66281772] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.51355639e-04 -2.99945498e+00],p_force[b][ 0.31136227 -3.66281772] f_a[-2.62517574 -0.72167207],f_bNone
+agent 2 and landmark 1   p_force[a][-2.62492438 -3.72112704],p_force[b][ 0.31136227 -3.66281772] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 0.31136227 -3.66281772],p_force[b][ 0.31136227 -3.66281772] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 0.31136227 -3.66281772],p_force[b][ 0.31136227 -3.66281772] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 0.31136227 -3.66281772],p_force[b][ 0.31136227 -3.66281772] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99997944e+00 -1.10034846e-05],p_force[b][ 0.16842062 -2.83141887] f_a[ 1.96497251e-37 -1.60854175e-37],f_b[-1.96497251e-37  1.60854175e-37]
+agent 0 and agent 2   p_force[a][ 2.99997944e+00 -1.10034846e-05],p_force[b][ 1.40786320e-04 -2.99981707e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 2.99997944e+00 -1.10034846e-05],p_force[b][ 0.39328799 -3.6008625 ] f_a[-1.38606409e-102  1.43323511e-101],f_b[ 1.38606409e-102 -1.43323511e-101]
+agent 0 and landmark 0   p_force[a][ 2.99997944e+00 -1.10034846e-05],p_force[b][ 0.39328799 -3.6008625 ] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99997944e+00 -1.10034846e-05],p_force[b][ 0.39328799 -3.6008625 ] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 0.16842062 -2.83141887],p_force[b][ 1.40786320e-04 -2.99981707e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 0.16842062 -2.83141887],p_force[b][ 0.39328799 -3.6008625 ] f_a[-1.17250498e-183  2.74740266e-183],f_b[ 1.17250498e-183 -2.74740266e-183]
+agent 1 and landmark 0   p_force[a][ 0.16842062 -2.83141887],p_force[b][ 0.39328799 -3.6008625 ] f_a[ 3.70779690e-310 -3.46420327e-310],f_bNone
+agent 1 and landmark 1   p_force[a][ 0.16842062 -2.83141887],p_force[b][ 0.39328799 -3.6008625 ] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 1.40786320e-04 -2.99981707e+00],p_force[b][ 0.39328799 -3.6008625 ] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 1.40786320e-04 -2.99981707e+00],p_force[b][ 0.39328799 -3.6008625 ] f_a[-3.65894823e-05 -1.71223949e-05],f_bNone
+agent 2 and landmark 1   p_force[a][ 1.04196838e-04 -2.99983420e+00],p_force[b][ 0.39328799 -3.6008625 ] f_a[8.45025217e-312 2.99516313e-311],f_bNone
+agent 3 and landmark 0   p_force[a][ 0.39328799 -3.6008625 ],p_force[b][ 0.39328799 -3.6008625 ] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 0.39328799 -3.6008625 ],p_force[b][ 0.39328799 -3.6008625 ] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 0.39328799 -3.6008625 ],p_force[b][ 0.39328799 -3.6008625 ] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99977666e+00 5.23462404e-05],p_force[b][ 1.23822485e-03 -2.99873990e+00] f_a[ 0.85873407 -0.59870443],f_b[-0.85873407  0.59870443]
+agent 0 and agent 2   p_force[a][ 3.85851073 -0.59865208],p_force[b][ 4.42804943e-04 -2.99950147e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 3.85851073 -0.59865208],p_force[b][ 1.01226115 -2.98397851] f_a[-2.11487186e-143  1.54106108e-142],f_b[ 2.11487186e-143 -1.54106108e-142]
+agent 0 and landmark 0   p_force[a][ 3.85851073 -0.59865208],p_force[b][ 1.01226115 -2.98397851] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][ 3.85851073 -0.59865208],p_force[b][ 1.01226115 -2.98397851] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][-0.85749585 -2.40003547],p_force[b][ 4.42804943e-04 -2.99950147e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][-0.85749585 -2.40003547],p_force[b][ 1.01226115 -2.98397851] f_a[-4.31153159e-181  1.39470905e-180],f_b[ 4.31153159e-181 -1.39470905e-180]
+agent 1 and landmark 0   p_force[a][-0.85749585 -2.40003547],p_force[b][ 1.01226115 -2.98397851] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][-0.85749585 -2.40003547],p_force[b][ 1.01226115 -2.98397851] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 4.42804943e-04 -2.99950147e+00],p_force[b][ 1.01226115 -2.98397851] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 4.42804943e-04 -2.99950147e+00],p_force[b][ 1.01226115 -2.98397851] f_a[-1.43231065e-25 -1.01407446e-25],f_bNone
+agent 2 and landmark 1   p_force[a][ 4.42804943e-04 -2.99950147e+00],p_force[b][ 1.01226115 -2.98397851] f_a[9.53101198e-281 3.28560109e-280],f_bNone
+agent 3 and landmark 0   p_force[a][ 1.01226115 -2.98397851],p_force[b][ 1.01226115 -2.98397851] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 1.01226115 -2.98397851],p_force[b][ 1.01226115 -2.98397851] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 1.01226115 -2.98397851],p_force[b][ 1.01226115 -2.98397851] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99995583e+00 3.88726503e-05],p_force[b][ 0.00495187 -2.99418014] f_a[2.19025463 0.23614885],f_b[-2.19025463 -0.23614885]
+agent 0 and agent 2   p_force[a][5.19021046 0.23618772],p_force[b][ 1.16068911e-03 -2.99881071e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][5.19021046 0.23618772],p_force[b][ 0.52957648 -3.46081376] f_a[-4.04459810e-183  4.12527426e-182],f_b[ 4.04459810e-183 -4.12527426e-182]
+agent 0 and landmark 0   p_force[a][5.19021046 0.23618772],p_force[b][ 0.52957648 -3.46081376] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][5.19021046 0.23618772],p_force[b][ 0.52957648 -3.46081376] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][-2.18530276 -3.23032899],p_force[b][ 1.16068911e-03 -2.99881071e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][-2.18530276 -3.23032899],p_force[b][ 0.52957648 -3.46081376] f_a[-3.50717839e-185  1.36032372e-184],f_b[ 3.50717839e-185 -1.36032372e-184]
+agent 1 and landmark 0   p_force[a][-2.18530276 -3.23032899],p_force[b][ 0.52957648 -3.46081376] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][-2.18530276 -3.23032899],p_force[b][ 0.52957648 -3.46081376] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 1.16068911e-03 -2.99881071e+00],p_force[b][ 0.52957648 -3.46081376] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 1.16068911e-03 -2.99881071e+00],p_force[b][ 0.52957648 -3.46081376] f_a[-4.77869003e-52 -4.68800532e-52],f_bNone
+agent 2 and landmark 1   p_force[a][ 1.16068911e-03 -2.99881071e+00],p_force[b][ 0.52957648 -3.46081376] f_a[5.44572232e-245 1.76738215e-244],f_bNone
+agent 3 and landmark 0   p_force[a][ 0.52957648 -3.46081376],p_force[b][ 0.52957648 -3.46081376] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 0.52957648 -3.46081376],p_force[b][ 0.52957648 -3.46081376] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 0.52957648 -3.46081376],p_force[b][ 0.52957648 -3.46081376] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99992025e+00 -4.65716494e-06],p_force[b][ 2.07031742e-04 -2.99974930e+00] f_a[1.35326083e-14 9.33664437e-15],f_b[-1.35326083e-14 -9.33664437e-15]
+agent 0 and agent 2   p_force[a][ 2.99992025e+00 -4.65716493e-06],p_force[b][ 1.24132214e-03 -2.99835545e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][ 2.99992025e+00 -4.65716493e-06],p_force[b][ 2.961375 -1.022928] f_a[1.03804553e-230 3.02854404e-227],f_b[-1.03804553e-230 -3.02854404e-227]
+agent 0 and landmark 0   p_force[a][ 2.99992025e+00 -4.65716493e-06],p_force[b][ 2.961375 -1.022928] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99992025e+00 -4.65716493e-06],p_force[b][ 2.961375 -1.022928] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.07031742e-04 -2.99974930e+00],p_force[b][ 1.24132214e-03 -2.99835545e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 2.07031742e-04 -2.99974930e+00],p_force[b][ 2.961375 -1.022928] f_a[-2.66218553e-192  9.84266765e-192],f_b[ 2.66218553e-192 -9.84266765e-192]
+agent 1 and landmark 0   p_force[a][ 2.07031742e-04 -2.99974930e+00],p_force[b][ 2.961375 -1.022928] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.07031742e-04 -2.99974930e+00],p_force[b][ 2.961375 -1.022928] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 1.24132214e-03 -2.99835545e+00],p_force[b][ 2.961375 -1.022928] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 1.24132214e-03 -2.99835545e+00],p_force[b][ 2.961375 -1.022928] f_a[-3.83531608e-84 -4.90358353e-84],f_bNone
+agent 2 and landmark 1   p_force[a][ 1.24132214e-03 -2.99835545e+00],p_force[b][ 2.961375 -1.022928] f_a[7.19071390e-206 2.12651892e-205],f_bNone
+agent 3 and landmark 0   p_force[a][ 2.961375 -1.022928],p_force[b][ 2.961375 -1.022928] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 2.961375 -1.022928],p_force[b][ 2.961375 -1.022928] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 2.961375 -1.022928],p_force[b][ 2.961375 -1.022928] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][3.00000000e+00 3.83603183e-09],p_force[b][2.99998212e+00 1.01316937e-06] f_a[8.53287499e-66 7.76733089e-66],f_b[-8.53287499e-66 -7.76733089e-66]
+agent 0 and agent 2   p_force[a][3.00000000e+00 3.83603183e-09],p_force[b][ 3.53977566e-06 -2.99996388e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][3.00000000e+00 3.83603183e-09],p_force[b][ 0.04122333 -3.95784211] f_a[2.69473851e-197 4.39436281e-196],f_b[-2.69473851e-197 -4.39436281e-196]
+agent 0 and landmark 0   p_force[a][3.00000000e+00 3.83603183e-09],p_force[b][ 0.04122333 -3.95784211] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][3.00000000e+00 3.83603183e-09],p_force[b][ 0.04122333 -3.95784211] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][2.99998212e+00 1.01316937e-06],p_force[b][ 3.53977566e-06 -2.99996388e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99998212e+00 1.01316937e-06],p_force[b][ 0.04122333 -3.95784211] f_a[-3.97363343e-128  8.01200708e-128],f_b[ 3.97363343e-128 -8.01200708e-128]
+agent 1 and landmark 0   p_force[a][2.99998212e+00 1.01316937e-06],p_force[b][ 0.04122333 -3.95784211] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99998212e+00 1.01316937e-06],p_force[b][ 0.04122333 -3.95784211] f_a[0. 0.],f_bNone
+agent 2 and agent 3   p_force[a][ 3.53977566e-06 -2.99996388e+00],p_force[b][ 0.04122333 -3.95784211] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 3.53977566e-06 -2.99996388e+00],p_force[b][ 0.04122333 -3.95784211] f_a[-7.38057304e-121 -1.17711079e-120],f_bNone
+agent 2 and landmark 1   p_force[a][ 3.53977566e-06 -2.99996388e+00],p_force[b][ 0.04122333 -3.95784211] f_a[1.64282003e-164 4.27217900e-164],f_bNone
+agent 3 and landmark 0   p_force[a][ 0.04122333 -3.95784211],p_force[b][ 0.04122333 -3.95784211] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 0.04122333 -3.95784211],p_force[b][ 0.04122333 -3.95784211] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 0.04122333 -3.95784211],p_force[b][ 0.04122333 -3.95784211] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99957621e+00 4.06471881e-04],p_force[b][2.99994582e+00 4.59072744e-05] f_a[7.12430779e-77 1.14625713e-76],f_b[-7.12430779e-77 -1.14625713e-76]
+agent 0 and agent 2   p_force[a][2.99957621e+00 4.06471881e-04],p_force[b][ 2.67209016e-05 -2.99997067e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][2.99957621e+00 4.06471881e-04],p_force[b][ 0.00957139 -3.98864079] f_a[-5.42598772e-184  2.27093974e-182],f_b[ 5.42598772e-184 -2.27093974e-182]
+agent 0 and landmark 0   p_force[a][2.99957621e+00 4.06471881e-04],p_force[b][ 0.00957139 -3.98864079] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][2.99957621e+00 4.06471881e-04],p_force[b][ 0.00957139 -3.98864079] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][2.99994582e+00 4.59072744e-05],p_force[b][ 2.67209016e-05 -2.99997067e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99994582e+00 4.59072744e-05],p_force[b][ 0.00957139 -3.98864079] f_a[-1.48944433e-88  2.17754888e-88],f_b[ 1.48944433e-88 -2.17754888e-88]
+agent 1 and landmark 0   p_force[a][2.99994582e+00 4.59072744e-05],p_force[b][ 0.00957139 -3.98864079] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99994582e+00 4.59072744e-05],p_force[b][ 0.00957139 -3.98864079] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.67209016e-05 -2.99997067e+00],p_force[b][ 0.00957139 -3.98864079] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.67209016e-05 -2.99997067e+00],p_force[b][ 0.00957139 -3.98864079] f_a[-1.97968003e-159 -3.78537811e-159],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.67209016e-05 -2.99997067e+00],p_force[b][ 0.00957139 -3.98864079] f_a[9.60128862e-124 2.12034962e-123],f_bNone
+agent 3 and landmark 0   p_force[a][ 0.00957139 -3.98864079],p_force[b][ 0.00957139 -3.98864079] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 0.00957139 -3.98864079],p_force[b][ 0.00957139 -3.98864079] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 0.00957139 -3.98864079],p_force[b][ 0.00957139 -3.98864079] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99847472e+00 1.46247272e-03],p_force[b][ 2.95598567 -0.005729  ] f_a[3.79376940e-91 9.38799868e-91],f_b[-3.79376940e-91 -9.38799868e-91]
+agent 0 and agent 2   p_force[a][2.99847472e+00 1.46247272e-03],p_force[b][-5.27098535e-07 -2.99999928e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][2.99847472e+00 1.46247272e-03],p_force[b][ 1.52519054e-03 -3.99835420e+00] f_a[-1.90237091e-191  1.12161369e-189],f_b[ 1.90237091e-191 -1.12161369e-189]
+agent 0 and landmark 0   p_force[a][2.99847472e+00 1.46247272e-03],p_force[b][ 1.52519054e-03 -3.99835420e+00] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][2.99847472e+00 1.46247272e-03],p_force[b][ 1.52519054e-03 -3.99835420e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.95598567 -0.005729  ],p_force[b][-5.27098535e-07 -2.99999928e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 2.95598567 -0.005729  ],p_force[b][ 1.52519054e-03 -3.99835420e+00] f_a[-4.74189681e-65  7.63165252e-65],f_b[ 4.74189681e-65 -7.63165252e-65]
+agent 1 and landmark 0   p_force[a][ 2.95598567 -0.005729  ],p_force[b][ 1.52519054e-03 -3.99835420e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.95598567 -0.005729  ],p_force[b][ 1.52519054e-03 -3.99835420e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][-5.27098535e-07 -2.99999928e+00],p_force[b][ 1.52519054e-03 -3.99835420e+00] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][-5.27098535e-07 -2.99999928e+00],p_force[b][ 1.52519054e-03 -3.99835420e+00] f_a[-4.35204816e-199 -9.70293967e-199],f_bNone
+agent 2 and landmark 1   p_force[a][-5.27098535e-07 -2.99999928e+00],p_force[b][ 1.52519054e-03 -3.99835420e+00] f_a[2.50836117e-84 4.49912112e-84],f_bNone
+agent 3 and landmark 0   p_force[a][ 1.52519054e-03 -3.99835420e+00],p_force[b][ 1.52519054e-03 -3.99835420e+00] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 1.52519054e-03 -3.99835420e+00],p_force[b][ 1.52519054e-03 -3.99835420e+00] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 1.52519054e-03 -3.99835420e+00],p_force[b][ 1.52519054e-03 -3.99835420e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99749196e+00 2.13798496e-03],p_force[b][-2.90459329e-05 -2.99981457e+00] f_a[3.83074812e-100 2.56006391e-099],f_b[-3.83074812e-100 -2.56006391e-099]
+agent 0 and agent 2   p_force[a][2.99749196e+00 2.13798496e-03],p_force[b][-2.03063422e-07 -2.99999785e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 0 and agent 3   p_force[a][2.99749196e+00 2.13798496e-03],p_force[b][ 0.07086161 -3.92883015] f_a[-1.69421894e-214  1.56395982e-212],f_b[ 1.69421894e-214 -1.56395982e-212]
+agent 0 and landmark 0   p_force[a][2.99749196e+00 2.13798496e-03],p_force[b][ 0.07086161 -3.92883015] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][2.99749196e+00 2.13798496e-03],p_force[b][ 0.07086161 -3.92883015] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][-2.90459329e-05 -2.99981457e+00],p_force[b][-2.03063422e-07 -2.99999785e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][-2.90459329e-05 -2.99981457e+00],p_force[b][ 0.07086161 -3.92883015] f_a[-4.59408265e-56  1.77987500e-55],f_b[ 4.59408265e-56 -1.77987500e-55]
+agent 1 and landmark 0   p_force[a][-2.90459329e-05 -2.99981457e+00],p_force[b][ 0.07086161 -3.92883015] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][-2.90459329e-05 -2.99981457e+00],p_force[b][ 0.07086161 -3.92883015] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][-2.03063422e-07 -2.99999785e+00],p_force[b][ 0.07086161 -3.92883015] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][-2.03063422e-07 -2.99999785e+00],p_force[b][ 0.07086161 -3.92883015] f_a[-1.63357515e-239 -4.16207247e-239],f_bNone
+agent 2 and landmark 1   p_force[a][-2.03063422e-07 -2.99999785e+00],p_force[b][ 0.07086161 -3.92883015] f_a[3.64976867e-47 4.97685610e-47],f_bNone
+agent 3 and landmark 0   p_force[a][ 0.07086161 -3.92883015],p_force[b][ 0.07086161 -3.92883015] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 0.07086161 -3.92883015],p_force[b][ 0.07086161 -3.92883015] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 0.07086161 -3.92883015],p_force[b][ 0.07086161 -3.92883015] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99976575e+00 1.35452123e-04],p_force[b][1.34490883e-05 2.99989378e+00] f_a[6.20005488e-126 4.41125758e-124],f_b[-6.20005488e-126 -4.41125758e-124]
+agent 0 and agent 2   p_force[a][2.99976575e+00 1.35452123e-04],p_force[b][-1.47704020e-04 -2.99966419e+00] f_a[0. 0.],f_b[-0. -0.]
+agent 0 and agent 3   p_force[a][2.99976575e+00 1.35452123e-04],p_force[b][ 0.67843246 -2.63463712] f_a[2.19209857e-214 3.76452477e-212],f_b[-2.19209857e-214 -3.76452477e-212]
+agent 0 and landmark 0   p_force[a][2.99976575e+00 1.35452123e-04],p_force[b][ 0.67843246 -2.63463712] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][2.99976575e+00 1.35452123e-04],p_force[b][ 0.67843246 -2.63463712] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][1.34490883e-05 2.99989378e+00],p_force[b][-1.47704020e-04 -2.99966419e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][1.34490883e-05 2.99989378e+00],p_force[b][ 0.67843246 -2.63463712] f_a[-5.32110234e-27  3.77086914e-25],f_b[ 5.32110234e-27 -3.77086914e-25]
+agent 1 and landmark 0   p_force[a][1.34490883e-05 2.99989378e+00],p_force[b][ 0.67843246 -2.63463712] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][1.34490883e-05 2.99989378e+00],p_force[b][ 0.67843246 -2.63463712] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][-1.47704020e-04 -2.99966419e+00],p_force[b][ 0.67843246 -2.63463712] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][-1.47704020e-04 -2.99966419e+00],p_force[b][ 0.67843246 -2.63463712] f_a[-1.68034086e-280 -4.81818296e-280],f_bNone
+agent 2 and landmark 1   p_force[a][-1.47704020e-04 -2.99966419e+00],p_force[b][ 0.67843246 -2.63463712] f_a[4.06777191e-14 3.75641032e-14],f_bNone
+agent 3 and landmark 0   p_force[a][ 0.67843246 -2.63463712],p_force[b][ 0.67843246 -2.63463712] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 0.67843246 -2.63463712],p_force[b][ 0.67843246 -2.63463712] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 0.67843246 -2.63463712],p_force[b][ 0.67843246 -2.63463712] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99987984e+00 1.17449355e-04],p_force[b][0.01533342 2.97903264] f_a[1.20723530e-133 6.13895892e-131],f_b[-1.20723530e-133 -6.13895892e-131]
+agent 0 and agent 2   p_force[a][2.99987984e+00 1.17449355e-04],p_force[b][-0.16185734 -2.75173223] f_a[0. 0.],f_b[-0. -0.]
+agent 0 and agent 3   p_force[a][2.99987984e+00 1.17449355e-04],p_force[b][ 0.64247298 -2.90414357] f_a[3.55672226e-199 9.25242156e-198],f_b[-3.55672226e-199 -9.25242156e-198]
+agent 0 and landmark 0   p_force[a][2.99987984e+00 1.17449355e-04],p_force[b][ 0.64247298 -2.90414357] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][2.99987984e+00 1.17449355e-04],p_force[b][ 0.64247298 -2.90414357] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][0.01533342 2.97903264],p_force[b][-0.16185734 -2.75173223] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][0.01533342 2.97903264],p_force[b][ 0.64247298 -2.90414357] f_a[3.05037329e-05 1.84627582e-04],f_b[-3.05037329e-05 -1.84627582e-04]
+agent 1 and landmark 0   p_force[a][0.01536393 2.97921726],p_force[b][ 0.64247298 -2.90414357] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][0.01536393 2.97921726],p_force[b][ 0.64247298 -2.90414357] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][-0.16185734 -2.75173223],p_force[b][ 0.64244248 -2.9043282 ] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][-0.16185734 -2.75173223],p_force[b][ 0.64244248 -2.9043282 ] f_a[-5.929e-322 -1.887e-321],f_bNone
+agent 2 and landmark 1   p_force[a][-0.16185734 -2.75173223],p_force[b][ 0.64244248 -2.9043282 ] f_a[2.6482593  1.26257297],f_bNone
+agent 3 and landmark 0   p_force[a][ 0.64244248 -2.9043282 ],p_force[b][ 0.64244248 -2.9043282 ] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 0.64244248 -2.9043282 ],p_force[b][ 0.64244248 -2.9043282 ] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 0.64244248 -2.9043282 ],p_force[b][ 0.64244248 -2.9043282 ] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99843645e+00 1.53705350e-03],p_force[b][ 0.11856942 -2.69288081] f_a[7.69549730e-125 9.73027543e-124],f_b[-7.69549730e-125 -9.73027543e-124]
+agent 0 and agent 2   p_force[a][2.99843645e+00 1.53705350e-03],p_force[b][ 2.68147963 -0.30158957] f_a[0. 0.],f_b[-0. -0.]
+agent 0 and agent 3   p_force[a][2.99843645e+00 1.53705350e-03],p_force[b][ 6.18229315e-05 -3.99971533e+00] f_a[7.23615985e-201 1.98897234e-199],f_b[-7.23615985e-201 -1.98897234e-199]
+agent 0 and landmark 0   p_force[a][2.99843645e+00 1.53705350e-03],p_force[b][ 6.18229315e-05 -3.99971533e+00] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][2.99843645e+00 1.53705350e-03],p_force[b][ 6.18229315e-05 -3.99971533e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 0.11856942 -2.69288081],p_force[b][ 2.68147963 -0.30158957] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 0.11856942 -2.69288081],p_force[b][ 6.18229315e-05 -3.99971533e+00] f_a[-1.79488822e-14  2.10114502e-13],f_b[ 1.79488822e-14 -2.10114502e-13]
+agent 1 and landmark 0   p_force[a][ 0.11856942 -2.69288081],p_force[b][ 6.18229315e-05 -3.99971533e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 0.11856942 -2.69288081],p_force[b][ 6.18229315e-05 -3.99971533e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.68147963 -0.30158957],p_force[b][ 6.18229315e-05 -3.99971533e+00] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.68147963 -0.30158957],p_force[b][ 6.18229315e-05 -3.99971533e+00] f_a[-0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.68147963 -0.30158957],p_force[b][ 6.18229315e-05 -3.99971533e+00] f_a[2.85806923 0.18405823],f_bNone
+agent 3 and landmark 0   p_force[a][ 6.18229315e-05 -3.99971533e+00],p_force[b][ 6.18229315e-05 -3.99971533e+00] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 6.18229315e-05 -3.99971533e+00],p_force[b][ 6.18229315e-05 -3.99971533e+00] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 6.18229315e-05 -3.99971533e+00],p_force[b][ 6.18229315e-05 -3.99971533e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99786943e+00 1.95420283e-03],p_force[b][ 0.19244528 -2.70708793] f_a[1.19744813e-130 1.70557906e-129],f_b[-1.19744813e-130 -1.70557906e-129]
+agent 0 and agent 2   p_force[a][2.99786943e+00 1.95420283e-03],p_force[b][ 2.71985382 -0.27986147] f_a[0. 0.],f_b[-0. -0.]
+agent 0 and agent 3   p_force[a][2.99786943e+00 1.95420283e-03],p_force[b][ 1.73373028e-05 -3.99996781e+00] f_a[-6.40080015e-220  6.46238847e-218],f_b[ 6.40080015e-220 -6.46238847e-218]
+agent 0 and landmark 0   p_force[a][2.99786943e+00 1.95420283e-03],p_force[b][ 1.73373028e-05 -3.99996781e+00] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][2.99786943e+00 1.95420283e-03],p_force[b][ 1.73373028e-05 -3.99996781e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 0.19244528 -2.70708793],p_force[b][ 2.71985382 -0.27986147] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 0.19244528 -2.70708793],p_force[b][ 1.73373028e-05 -3.99996781e+00] f_a[-2.74133479e-28  1.32429532e-27],f_b[ 2.74133479e-28 -1.32429532e-27]
+agent 1 and landmark 0   p_force[a][ 0.19244528 -2.70708793],p_force[b][ 1.73373028e-05 -3.99996781e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 0.19244528 -2.70708793],p_force[b][ 1.73373028e-05 -3.99996781e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.71985382 -0.27986147],p_force[b][ 1.73373028e-05 -3.99996781e+00] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.71985382 -0.27986147],p_force[b][ 1.73373028e-05 -3.99996781e+00] f_a[-0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.71985382 -0.27986147],p_force[b][ 1.73373028e-05 -3.99996781e+00] f_a[ 1.12331867e-22 -1.84580674e-23],f_bNone
+agent 3 and landmark 0   p_force[a][ 1.73373028e-05 -3.99996781e+00],p_force[b][ 1.73373028e-05 -3.99996781e+00] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][ 1.73373028e-05 -3.99996781e+00],p_force[b][ 1.73373028e-05 -3.99996781e+00] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][ 1.73373028e-05 -3.99996781e+00],p_force[b][ 1.73373028e-05 -3.99996781e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99941313e+00 5.81901972e-04],p_force[b][4.04146732e-07 2.99999964e+00] f_a[1.63883508e-147 1.41711785e-146],f_b[-1.63883508e-147 -1.41711785e-146]
+agent 0 and agent 2   p_force[a][2.99941313e+00 5.81901972e-04],p_force[b][ 2.72871888 -0.26180935] f_a[0. 0.],f_b[-0. -0.]
+agent 0 and agent 3   p_force[a][2.99941313e+00 5.81901972e-04],p_force[b][2.92351958e-03 3.99340224e+00] f_a[3.06062145e-211 9.73439728e-209],f_b[-3.06062145e-211 -9.73439728e-209]
+agent 0 and landmark 0   p_force[a][2.99941313e+00 5.81901972e-04],p_force[b][2.92351958e-03 3.99340224e+00] f_a[ 0. -0.],f_bNone
+agent 0 and landmark 1   p_force[a][2.99941313e+00 5.81901972e-04],p_force[b][2.92351958e-03 3.99340224e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][4.04146732e-07 2.99999964e+00],p_force[b][ 2.72871888 -0.26180935] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][4.04146732e-07 2.99999964e+00],p_force[b][2.92351958e-03 3.99340224e+00] f_a[-6.61273315e-06  1.49880694e-05],f_b[ 6.61273315e-06 -1.49880694e-05]
+agent 1 and landmark 0   p_force[a][-6.20858642e-06  3.00001463e+00],p_force[b][2.92351958e-03 3.99340224e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][-6.20858642e-06  3.00001463e+00],p_force[b][2.92351958e-03 3.99340224e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.72871888 -0.26180935],p_force[b][2.93013232e-03 3.99338725e+00] f_a[-0.  0.],f_b[ 0. -0.]
+agent 2 and landmark 0   p_force[a][ 2.72871888 -0.26180935],p_force[b][2.93013232e-03 3.99338725e+00] f_a[-0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.72871888 -0.26180935],p_force[b][2.93013232e-03 3.99338725e+00] f_a[ 1.78820529e-62 -4.74460736e-63],f_bNone
+agent 3 and landmark 0   p_force[a][2.93013232e-03 3.99338725e+00],p_force[b][2.93013232e-03 3.99338725e+00] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][2.93013232e-03 3.99338725e+00],p_force[b][2.93013232e-03 3.99338725e+00] f_a[ 0. -0.],f_bNone
+landmark 0 and landmark 1   p_force[a][2.93013232e-03 3.99338725e+00],p_force[b][2.93013232e-03 3.99338725e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99481636 -0.00380277],p_force[b][ 0.02717607 -2.96815932] f_a[ 2.59768352e-210 -4.95282108e-209],f_b[-2.59768352e-210  4.95282108e-209]
+agent 0 and agent 2   p_force[a][ 2.99481636 -0.00380277],p_force[b][ 2.01689225 -0.9818691 ] f_a[ 3.53973204e-184 -2.92637861e-184],f_b[-3.53973204e-184  2.92637861e-184]
+agent 0 and agent 3   p_force[a][ 2.99481636 -0.00380277],p_force[b][ 2.95870984e-03 -3.99701309e+00] f_a[-3.50444996e-44 -2.16391851e-44],f_b[3.50444996e-44 2.16391851e-44]
+agent 0 and landmark 0   p_force[a][ 2.99481636 -0.00380277],p_force[b][ 2.95870984e-03 -3.99701309e+00] f_a[-2.65344851e-104 -3.69221181e-104],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99481636 -0.00380277],p_force[b][ 2.95870984e-03 -3.99701309e+00] f_a[-1.48e-321 -5.43e-323],f_bNone
+agent 1 and agent 2   p_force[a][ 0.02717607 -2.96815932],p_force[b][ 2.01689225 -0.9818691 ] f_a[4.71186347e-147 3.05551208e-147],f_b[-4.71186347e-147 -3.05551208e-147]
+agent 1 and agent 3   p_force[a][ 0.02717607 -2.96815932],p_force[b][ 2.95870984e-03 -3.99701309e+00] f_a[-2.33905727e-189  5.38088605e-189],f_b[ 2.33905727e-189 -5.38088605e-189]
+agent 1 and landmark 0   p_force[a][ 0.02717607 -2.96815932],p_force[b][ 2.95870984e-03 -3.99701309e+00] f_a[-1.04891800e-52  6.68088299e-53],f_bNone
+agent 1 and landmark 1   p_force[a][ 0.02717607 -2.96815932],p_force[b][ 2.95870984e-03 -3.99701309e+00] f_a[-0.  0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.01689225 -0.9818691 ],p_force[b][ 2.95870984e-03 -3.99701309e+00] f_a[-2.19115175e-240  8.60015812e-241],f_b[ 2.19115175e-240 -8.60015812e-241]
+agent 2 and landmark 0   p_force[a][ 2.01689225 -0.9818691 ],p_force[b][ 2.95870984e-03 -3.99701309e+00] f_a[-6.7392365e-203 -4.7849651e-204],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.01689225 -0.9818691 ],p_force[b][ 2.95870984e-03 -3.99701309e+00] f_a[-0.  0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 2.95870984e-03 -3.99701309e+00],p_force[b][ 2.95870984e-03 -3.99701309e+00] f_a[-1.26000233e-31 -3.43105870e-31],f_bNone
+agent 3 and landmark 1   p_force[a][ 2.95870984e-03 -3.99701309e+00],p_force[b][ 2.95870984e-03 -3.99701309e+00] f_a[-6.20252296e-252  5.97151644e-253],f_bNone
+landmark 0 and landmark 1   p_force[a][ 2.95870984e-03 -3.99701309e+00],p_force[b][ 2.95870984e-03 -3.99701309e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99999195e+00 -2.57712759e-06],p_force[b][ 0.59132123 -2.40393734] f_a[ 3.48496269e-198 -3.32302532e-197],f_b[-3.48496269e-198  3.32302532e-197]
+agent 0 and agent 2   p_force[a][ 2.99999195e+00 -2.57712759e-06],p_force[b][ 2.77971303 -0.2098358 ] f_a[ 8.28756348e-185 -6.52112222e-185],f_b[-8.28756348e-185  6.52112222e-185]
+agent 0 and agent 3   p_force[a][ 2.99999195e+00 -2.57712759e-06],p_force[b][ 1.31165171 -2.68376589] f_a[-2.10911658e-24 -1.01687607e-24],f_b[2.10911658e-24 1.01687607e-24]
+agent 0 and landmark 0   p_force[a][ 2.99999195e+00 -2.57712759e-06],p_force[b][ 1.31165171 -2.68376589] f_a[-5.11210227e-97 -7.90880874e-97],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99999195e+00 -2.57712759e-06],p_force[b][ 1.31165171 -2.68376589] f_a[-1.42441987e-308 -5.40833350e-310],f_bNone
+agent 1 and agent 2   p_force[a][ 0.59132123 -2.40393734],p_force[b][ 2.77971303 -0.2098358 ] f_a[4.02002055e-135 2.53431861e-135],f_b[-4.02002055e-135 -2.53431861e-135]
+agent 1 and agent 3   p_force[a][ 0.59132123 -2.40393734],p_force[b][ 1.31165171 -2.68376589] f_a[-1.98705968e-193  4.66863902e-193],f_b[ 1.98705968e-193 -4.66863902e-193]
+agent 1 and landmark 0   p_force[a][ 0.59132123 -2.40393734],p_force[b][ 1.31165171 -2.68376589] f_a[-5.06950836e-46  2.77635177e-46],f_bNone
+agent 1 and landmark 1   p_force[a][ 0.59132123 -2.40393734],p_force[b][ 1.31165171 -2.68376589] f_a[-0.  0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.77971303 -0.2098358 ],p_force[b][ 1.31165171 -2.68376589] f_a[-1.90225644e-237  8.65952902e-238],f_b[ 1.90225644e-237 -8.65952902e-238]
+agent 2 and landmark 0   p_force[a][ 2.77971303 -0.2098358 ],p_force[b][ 1.31165171 -2.68376589] f_a[-1.67989395e-194 -1.45664837e-195],f_bNone
+agent 2 and landmark 1   p_force[a][ 2.77971303 -0.2098358 ],p_force[b][ 1.31165171 -2.68376589] f_a[-0.  0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 1.31165171 -2.68376589],p_force[b][ 1.31165171 -2.68376589] f_a[-4.41224943e-48 -1.36283759e-47],f_bNone
+agent 3 and landmark 1   p_force[a][ 1.31165171 -2.68376589],p_force[b][ 1.31165171 -2.68376589] f_a[-1.12896078e-250  5.38182420e-252],f_bNone
+landmark 0 and landmark 1   p_force[a][ 1.31165171 -2.68376589],p_force[b][ 1.31165171 -2.68376589] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.97909468e+00 -2.84837915e-04],p_force[b][2.99980026e+00 2.73328951e-05] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][ 2.97909468e+00 -2.84837915e-04],p_force[b][ 2.99784869e+00 -6.72240531e-05] f_a[-4.99357635e-146 -4.04229177e-146],f_b[4.99357635e-146 4.04229177e-146]
+agent 0 and agent 3   p_force[a][ 2.97909468e+00 -2.84837915e-04],p_force[b][3.95026000e-05 3.99995756e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][ 2.97909468e+00 -2.84837915e-04],p_force[b][3.95026000e-05 3.99995756e+00] f_a[-2.8280120e-68 -9.5635458e-68],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.97909468e+00 -2.84837915e-04],p_force[b][3.95026000e-05 3.99995756e+00] f_a[-7.32925684e-198 -1.65378780e-197],f_bNone
+agent 1 and agent 2   p_force[a][2.99980026e+00 2.73328951e-05],p_force[b][ 2.99784869e+00 -6.72240531e-05] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99980026e+00 2.73328951e-05],p_force[b][3.95026000e-05 3.99995756e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99980026e+00 2.73328951e-05],p_force[b][3.95026000e-05 3.99995756e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99980026e+00 2.73328951e-05],p_force[b][3.95026000e-05 3.99995756e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][ 2.99784869e+00 -6.72240531e-05],p_force[b][3.95026000e-05 3.99995756e+00] f_a[-1.89596980e-304 -6.31306022e-305],f_b[1.89596980e-304 6.31306022e-305]
+agent 2 and landmark 0   p_force[a][ 2.99784869e+00 -6.72240531e-05],p_force[b][3.95026000e-05 3.99995756e+00] f_a[ 0.09662566 -0.04085791],f_bNone
+agent 2 and landmark 1   p_force[a][ 3.09447435 -0.04092513],p_force[b][3.95026000e-05 3.99995756e+00] f_a[ 1.77990922e-43 -8.05412273e-43],f_bNone
+agent 3 and landmark 0   p_force[a][3.95026000e-05 3.99995756e+00],p_force[b][3.95026000e-05 3.99995756e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][3.95026000e-05 3.99995756e+00],p_force[b][3.95026000e-05 3.99995756e+00] f_a[ 1.21231989e-268 -1.43391779e-269],f_bNone
+landmark 0 and landmark 1   p_force[a][3.95026000e-05 3.99995756e+00],p_force[b][3.95026000e-05 3.99995756e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.40194446e+00 1.50717970e-03],p_force[b][2.99443316e+00 8.70847784e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][2.40194446e+00 1.50717970e-03],p_force[b][2.99563515e+00 1.35855161e-03] f_a[-2.63183757e-146 -2.12105960e-146],f_b[2.63183757e-146 2.12105960e-146]
+agent 0 and agent 3   p_force[a][2.40194446e+00 1.50717970e-03],p_force[b][3.49930883e-03 3.99648452e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][2.40194446e+00 1.50717970e-03],p_force[b][3.49930883e-03 3.99648452e+00] f_a[-3.81208817e-65 -1.70986362e-64],f_bNone
+agent 0 and landmark 1   p_force[a][2.40194446e+00 1.50717970e-03],p_force[b][3.49930883e-03 3.99648452e+00] f_a[-6.93418452e-193 -1.74104556e-192],f_bNone
+agent 1 and agent 2   p_force[a][2.99443316e+00 8.70847784e-04],p_force[b][2.99563515e+00 1.35855161e-03] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99443316e+00 8.70847784e-04],p_force[b][3.49930883e-03 3.99648452e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99443316e+00 8.70847784e-04],p_force[b][3.49930883e-03 3.99648452e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99443316e+00 8.70847784e-04],p_force[b][3.49930883e-03 3.99648452e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][2.99563515e+00 1.35855161e-03],p_force[b][3.49930883e-03 3.99648452e+00] f_a[-7.08531922e-298 -2.83964329e-298],f_b[7.08531922e-298 2.83964329e-298]
+agent 2 and landmark 0   p_force[a][2.99563515e+00 1.35855161e-03],p_force[b][3.49930883e-03 3.99648452e+00] f_a[ 4.94834252e-14 -1.87127363e-14],f_bNone
+agent 2 and landmark 1   p_force[a][2.99563515e+00 1.35855161e-03],p_force[b][3.49930883e-03 3.99648452e+00] f_a[ 6.12646690e-47 -1.99955502e-46],f_bNone
+agent 3 and landmark 0   p_force[a][3.49930883e-03 3.99648452e+00],p_force[b][3.49930883e-03 3.99648452e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][3.49930883e-03 3.99648452e+00],p_force[b][3.49930883e-03 3.99648452e+00] f_a[ 5.34033113e-267 -3.82859730e-268],f_bNone
+landmark 0 and landmark 1   p_force[a][3.49930883e-03 3.99648452e+00],p_force[b][3.49930883e-03 3.99648452e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99889153e+00 -2.78082887e-04],p_force[b][2.99446481e+00 1.94314234e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][ 2.99889153e+00 -2.78082887e-04],p_force[b][2.99761283e+00 1.61759250e-04] f_a[-1.57655761e-148 -1.24667979e-148],f_b[1.57655761e-148 1.24667979e-148]
+agent 0 and agent 3   p_force[a][ 2.99889153e+00 -2.78082887e-04],p_force[b][1.44633441e-03 3.99854279e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][ 2.99889153e+00 -2.78082887e-04],p_force[b][1.44633441e-03 3.99854279e+00] f_a[-3.84995114e-62 -3.50892728e-61],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99889153e+00 -2.78082887e-04],p_force[b][1.44633441e-03 3.99854279e+00] f_a[-4.41611548e-186 -1.34471467e-185],f_bNone
+agent 1 and agent 2   p_force[a][2.99446481e+00 1.94314234e-04],p_force[b][2.99761283e+00 1.61759250e-04] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99446481e+00 1.94314234e-04],p_force[b][1.44633441e-03 3.99854279e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99446481e+00 1.94314234e-04],p_force[b][1.44633441e-03 3.99854279e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99446481e+00 1.94314234e-04],p_force[b][1.44633441e-03 3.99854279e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][2.99761283e+00 1.61759250e-04],p_force[b][1.44633441e-03 3.99854279e+00] f_a[-7.89211837e-290 -4.20293886e-290],f_b[7.89211837e-290 4.20293886e-290]
+agent 2 and landmark 0   p_force[a][2.99761283e+00 1.61759250e-04],p_force[b][1.44633441e-03 3.99854279e+00] f_a[ 7.07483906e-36 -2.25930390e-36],f_bNone
+agent 2 and landmark 1   p_force[a][2.99761283e+00 1.61759250e-04],p_force[b][1.44633441e-03 3.99854279e+00] f_a[ 4.32447840e-55 -9.54267809e-55],f_bNone
+agent 3 and landmark 0   p_force[a][1.44633441e-03 3.99854279e+00],p_force[b][1.44633441e-03 3.99854279e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][1.44633441e-03 3.99854279e+00],p_force[b][1.44633441e-03 3.99854279e+00] f_a[4.49263133e-266 4.39992128e-268],f_bNone
+landmark 0 and landmark 1   p_force[a][1.44633441e-03 3.99854279e+00],p_force[b][1.44633441e-03 3.99854279e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.86302674 -0.0080678 ],p_force[b][2.99683982e+00 2.35938984e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][ 2.86302674 -0.0080678 ],p_force[b][2.99539733 0.00441135] f_a[-3.32839141e-150 -2.59539876e-150],f_b[3.32839141e-150 2.59539876e-150]
+agent 0 and agent 3   p_force[a][ 2.86302674 -0.0080678 ],p_force[b][2.55410094e-04 3.99940109e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][ 2.86302674 -0.0080678 ],p_force[b][2.55410094e-04 3.99940109e+00] f_a[ 1.24187657e-61 -2.56306494e-60],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.86302674 -0.0080678 ],p_force[b][2.55410094e-04 3.99940109e+00] f_a[-1.17869389e-178 -5.10703871e-178],f_bNone
+agent 1 and agent 2   p_force[a][2.99683982e+00 2.35938984e-04],p_force[b][2.99539733 0.00441135] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99683982e+00 2.35938984e-04],p_force[b][2.55410094e-04 3.99940109e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99683982e+00 2.35938984e-04],p_force[b][2.55410094e-04 3.99940109e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99683982e+00 2.35938984e-04],p_force[b][2.55410094e-04 3.99940109e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][2.99539733 0.00441135],p_force[b][2.55410094e-04 3.99940109e+00] f_a[-1.01955845e-285 -7.54805239e-286],f_b[1.01955845e-285 7.54805239e-286]
+agent 2 and landmark 0   p_force[a][2.99539733 0.00441135],p_force[b][2.55410094e-04 3.99940109e+00] f_a[ 5.02234683e-65 -1.33107724e-65],f_bNone
+agent 2 and landmark 1   p_force[a][2.99539733 0.00441135],p_force[b][2.55410094e-04 3.99940109e+00] f_a[ 1.26147282e-69 -1.95288211e-69],f_bNone
+agent 3 and landmark 0   p_force[a][2.55410094e-04 3.99940109e+00],p_force[b][2.55410094e-04 3.99940109e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][2.55410094e-04 3.99940109e+00],p_force[b][2.55410094e-04 3.99940109e+00] f_a[1.21767657e-268 1.43038532e-269],f_bNone
+landmark 0 and landmark 1   p_force[a][2.55410094e-04 3.99940109e+00],p_force[b][2.55410094e-04 3.99940109e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.27341962 0.68461078],p_force[b][2.99893606e+00 7.20400785e-05] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][2.27341962 0.68461078],p_force[b][1.1559363e-03 2.9987424e+00] f_a[-5.90542741e-152 -4.54385462e-152],f_b[5.90542741e-152 4.54385462e-152]
+agent 0 and agent 3   p_force[a][2.27341962 0.68461078],p_force[b][5.95825026e-04 3.99725842e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][2.27341962 0.68461078],p_force[b][5.95825026e-04 3.99725842e+00] f_a[ 1.05392916e-65 -4.44759053e-65],f_bNone
+agent 0 and landmark 1   p_force[a][2.27341962 0.68461078],p_force[b][5.95825026e-04 3.99725842e+00] f_a[-2.73299085e-173 -2.38848242e-172],f_bNone
+agent 1 and agent 2   p_force[a][2.99893606e+00 7.20400785e-05],p_force[b][1.1559363e-03 2.9987424e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99893606e+00 7.20400785e-05],p_force[b][5.95825026e-04 3.99725842e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.99893606e+00 7.20400785e-05],p_force[b][5.95825026e-04 3.99725842e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99893606e+00 7.20400785e-05],p_force[b][5.95825026e-04 3.99725842e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][1.1559363e-03 2.9987424e+00],p_force[b][5.95825026e-04 3.99725842e+00] f_a[-1.51889471e-290 -1.60140201e-290],f_b[1.51889471e-290 1.60140201e-290]
+agent 2 and landmark 0   p_force[a][1.1559363e-03 2.9987424e+00],p_force[b][5.95825026e-04 3.99725842e+00] f_a[ 8.59233058e-100 -1.89589389e-100],f_bNone
+agent 2 and landmark 1   p_force[a][1.1559363e-03 2.9987424e+00],p_force[b][5.95825026e-04 3.99725842e+00] f_a[ 3.69969092e-91 -4.23671099e-91],f_bNone
+agent 3 and landmark 0   p_force[a][5.95825026e-04 3.99725842e+00],p_force[b][5.95825026e-04 3.99725842e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][5.95825026e-04 3.99725842e+00],p_force[b][5.95825026e-04 3.99725842e+00] f_a[4.11560030e-277 1.00746351e-277],f_bNone
+landmark 0 and landmark 1   p_force[a][5.95825026e-04 3.99725842e+00],p_force[b][5.95825026e-04 3.99725842e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][0.02557586 2.96845955],p_force[b][2.99842966e+00 1.02433929e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][0.02557586 2.96845955],p_force[b][2.09634738e-04 2.99976307e+00] f_a[-5.41030209e-152 -4.70847290e-152],f_b[5.41030209e-152 4.70847290e-152]
+agent 0 and agent 3   p_force[a][0.02557586 2.96845955],p_force[b][-2.15198874e-04  3.99689770e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][0.02557586 2.96845955],p_force[b][-2.15198874e-04  3.99689770e+00] f_a[ 7.48810474e-74 -1.69725474e-73],f_bNone
+agent 0 and landmark 1   p_force[a][0.02557586 2.96845955],p_force[b][-2.15198874e-04  3.99689770e+00] f_a[ 1.14357837e-169 -1.59432043e-167],f_bNone
+agent 1 and agent 2   p_force[a][2.99842966e+00 1.02433929e-03],p_force[b][2.09634738e-04 2.99976307e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99842966e+00 1.02433929e-03],p_force[b][-2.15198874e-04  3.99689770e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.99842966e+00 1.02433929e-03],p_force[b][-2.15198874e-04  3.99689770e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99842966e+00 1.02433929e-03],p_force[b][-2.15198874e-04  3.99689770e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][2.09634738e-04 2.99976307e+00],p_force[b][-2.15198874e-04  3.99689770e+00] f_a[-2.73969372e-304 -3.78386426e-304],f_b[2.73969372e-304 3.78386426e-304]
+agent 2 and landmark 0   p_force[a][2.09634738e-04 2.99976307e+00],p_force[b][-2.15198874e-04  3.99689770e+00] f_a[ 6.86056744e-124 -9.71615140e-125],f_bNone
+agent 2 and landmark 1   p_force[a][2.09634738e-04 2.99976307e+00],p_force[b][-2.15198874e-04  3.99689770e+00] f_a[ 7.27580087e-101 -6.39403555e-101],f_bNone
+agent 3 and landmark 0   p_force[a][-2.15198874e-04  3.99689770e+00],p_force[b][-2.15198874e-04  3.99689770e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-2.15198874e-04  3.99689770e+00],p_force[b][-2.15198874e-04  3.99689770e+00] f_a[4.61665716e-293 1.78582633e-293],f_bNone
+landmark 0 and landmark 1   p_force[a][-2.15198874e-04  3.99689770e+00],p_force[b][-2.15198874e-04  3.99689770e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][0.00819387 2.9915235 ],p_force[b][2.99804413e+00 8.42791360e-06] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][0.00819387 2.9915235 ],p_force[b][-1.61047137e-06  2.99934304e+00] f_a[-1.50086528e-152 -1.43244664e-152],f_b[1.50086528e-152 1.43244664e-152]
+agent 0 and agent 3   p_force[a][0.00819387 2.9915235 ],p_force[b][1.30451808e-05 3.99932861e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][0.00819387 2.9915235 ],p_force[b][1.30451808e-05 3.99932861e+00] f_a[ 5.76539771e-73 -8.89791758e-73],f_bNone
+agent 0 and landmark 1   p_force[a][0.00819387 2.9915235 ],p_force[b][1.30451808e-05 3.99932861e+00] f_a[ 6.94781281e-155 -6.60322236e-154],f_bNone
+agent 1 and agent 2   p_force[a][2.99804413e+00 8.42791360e-06],p_force[b][-1.61047137e-06  2.99934304e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99804413e+00 8.42791360e-06],p_force[b][1.30451808e-05 3.99932861e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.99804413e+00 8.42791360e-06],p_force[b][1.30451808e-05 3.99932861e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99804413e+00 8.42791360e-06],p_force[b][1.30451808e-05 3.99932861e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][-1.61047137e-06  2.99934304e+00],p_force[b][1.30451808e-05 3.99932861e+00] f_a[-1.334e-321 -2.273e-321],f_b[1.334e-321 2.273e-321]
+agent 2 and landmark 0   p_force[a][-1.61047137e-06  2.99934304e+00],p_force[b][1.30451808e-05 3.99932861e+00] f_a[ 7.40337632e-142 -3.17195651e-143],f_bNone
+agent 2 and landmark 1   p_force[a][-1.61047137e-06  2.99934304e+00],p_force[b][1.30451808e-05 3.99932861e+00] f_a[ 5.26088789e-103 -3.46813833e-103],f_bNone
+agent 3 and landmark 0   p_force[a][1.30451808e-05 3.99932861e+00],p_force[b][1.30451808e-05 3.99932861e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][1.30451808e-05 3.99932861e+00],p_force[b][1.30451808e-05 3.99932861e+00] f_a[9.4816830e-317 5.1029733e-317],f_bNone
+landmark 0 and landmark 1   p_force[a][1.30451808e-05 3.99932861e+00],p_force[b][1.30451808e-05 3.99932861e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][1.15851151e-04 2.99987143e+00],p_force[b][2.99909377e+00 1.48303174e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][1.15851151e-04 2.99987143e+00],p_force[b][1.83385145e-03 2.99685019e+00] f_a[-2.89466194e-153 -2.95994392e-153],f_b[2.89466194e-153 2.95994392e-153]
+agent 0 and agent 3   p_force[a][1.15851151e-04 2.99987143e+00],p_force[b][-1.97941059e-04  3.99859834e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][1.15851151e-04 2.99987143e+00],p_force[b][-1.97941059e-04  3.99859834e+00] f_a[ 1.09202733e-65 -1.19931141e-65],f_bNone
+agent 0 and landmark 1   p_force[a][1.15851151e-04 2.99987143e+00],p_force[b][-1.97941059e-04  3.99859834e+00] f_a[ 1.69287496e-133 -8.62598302e-133],f_bNone
+agent 1 and agent 2   p_force[a][2.99909377e+00 1.48303174e-04],p_force[b][1.83385145e-03 2.99685019e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99909377e+00 1.48303174e-04],p_force[b][-1.97941059e-04  3.99859834e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.99909377e+00 1.48303174e-04],p_force[b][-1.97941059e-04  3.99859834e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99909377e+00 1.48303174e-04],p_force[b][-1.97941059e-04  3.99859834e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][1.83385145e-03 2.99685019e+00],p_force[b][-1.97941059e-04  3.99859834e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][1.83385145e-03 2.99685019e+00],p_force[b][-1.97941059e-04  3.99859834e+00] f_a[2.29350898e-157 1.58715246e-158],f_bNone
+agent 2 and landmark 1   p_force[a][1.83385145e-03 2.99685019e+00],p_force[b][-1.97941059e-04  3.99859834e+00] f_a[ 1.45114913e-101 -6.65035610e-102],f_bNone
+agent 3 and landmark 0   p_force[a][-1.97941059e-04  3.99859834e+00],p_force[b][-1.97941059e-04  3.99859834e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-1.97941059e-04  3.99859834e+00],p_force[b][-1.97941059e-04  3.99859834e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-1.97941059e-04  3.99859834e+00],p_force[b][-1.97941059e-04  3.99859834e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][5.52869665e-07 2.99999821e+00],p_force[b][2.99161792e+00 8.02893283e-05] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][5.52869665e-07 2.99999821e+00],p_force[b][-3.46512265e-04  2.99746531e+00] f_a[-5.78176762e-154 -6.22337432e-154],f_b[5.78176762e-154 6.22337432e-154]
+agent 0 and agent 3   p_force[a][5.52869665e-07 2.99999821e+00],p_force[b][-3.54257715e-03  3.98707891e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][5.52869665e-07 2.99999821e+00],p_force[b][-3.54257715e-03  3.98707891e+00] f_a[ 1.71243605e-55 -1.29104480e-55],f_bNone
+agent 0 and landmark 1   p_force[a][5.52869665e-07 2.99999821e+00],p_force[b][-3.54257715e-03  3.98707891e+00] f_a[ 1.83353221e-106 -6.23352280e-106],f_bNone
+agent 1 and agent 2   p_force[a][2.99161792e+00 8.02893283e-05],p_force[b][-3.46512265e-04  2.99746531e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99161792e+00 8.02893283e-05],p_force[b][-3.54257715e-03  3.98707891e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.99161792e+00 8.02893283e-05],p_force[b][-3.54257715e-03  3.98707891e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99161792e+00 8.02893283e-05],p_force[b][-3.54257715e-03  3.98707891e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][-3.46512265e-04  2.99746531e+00],p_force[b][-3.54257715e-03  3.98707891e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][-3.46512265e-04  2.99746531e+00],p_force[b][-3.54257715e-03  3.98707891e+00] f_a[3.29977730e-173 6.30308577e-174],f_bNone
+agent 2 and landmark 1   p_force[a][-3.46512265e-04  2.99746531e+00],p_force[b][-3.54257715e-03  3.98707891e+00] f_a[ 3.49111615e-100 -9.23962006e-101],f_bNone
+agent 3 and landmark 0   p_force[a][-3.54257715e-03  3.98707891e+00],p_force[b][-3.54257715e-03  3.98707891e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-3.54257715e-03  3.98707891e+00],p_force[b][-3.54257715e-03  3.98707891e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-3.54257715e-03  3.98707891e+00],p_force[b][-3.54257715e-03  3.98707891e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.33473008e-06 2.99999052e+00],p_force[b][2.98919624e+00 2.87124730e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][2.33473008e-06 2.99999052e+00],p_force[b][1.15113598e-05 2.99997264e+00] f_a[-1.42388865e-154 -1.59249170e-154],f_b[1.42388865e-154 1.59249170e-154]
+agent 0 and agent 3   p_force[a][2.33473008e-06 2.99999052e+00],p_force[b][-0.0974322   1.28098297] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][2.33473008e-06 2.99999052e+00],p_force[b][-0.0974322   1.28098297] f_a[ 2.43478561e-46 -1.10399542e-46],f_bNone
+agent 0 and landmark 1   p_force[a][2.33473008e-06 2.99999052e+00],p_force[b][-0.0974322   1.28098297] f_a[ 1.27183081e-75 -3.04984787e-75],f_bNone
+agent 1 and agent 2   p_force[a][2.98919624e+00 2.87124730e-03],p_force[b][1.15113598e-05 2.99997264e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.98919624e+00 2.87124730e-03],p_force[b][-0.0974322   1.28098297] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.98919624e+00 2.87124730e-03],p_force[b][-0.0974322   1.28098297] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.98919624e+00 2.87124730e-03],p_force[b][-0.0974322   1.28098297] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][1.15113598e-05 2.99997264e+00],p_force[b][-0.0974322   1.28098297] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][1.15113598e-05 2.99997264e+00],p_force[b][-0.0974322   1.28098297] f_a[2.74939180e-191 8.81088281e-192],f_bNone
+agent 2 and landmark 1   p_force[a][1.15113598e-05 2.99997264e+00],p_force[b][-0.0974322   1.28098297] f_a[ 5.36901586e-102 -3.92850228e-103],f_bNone
+agent 3 and landmark 0   p_force[a][-0.0974322   1.28098297],p_force[b][-0.0974322   1.28098297] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-0.0974322   1.28098297],p_force[b][-0.0974322   1.28098297] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-0.0974322   1.28098297],p_force[b][-0.0974322   1.28098297] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][6.49654663e-09 3.00000000e+00],p_force[b][2.98940742e+00 3.15747864e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][6.49654663e-09 3.00000000e+00],p_force[b][-2.89429954e-05  2.99994421e+00] f_a[-4.41840607e-155 -5.08539935e-155],f_b[4.41840607e-155 5.08539935e-155]
+agent 0 and agent 3   p_force[a][6.49654663e-09 3.00000000e+00],p_force[b][-7.84312724e-04  3.97935843e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][6.49654663e-09 3.00000000e+00],p_force[b][-7.84312724e-04  3.97935843e+00] f_a[ 2.21621583e-42 -3.84125835e-43],f_bNone
+agent 0 and landmark 1   p_force[a][6.49654663e-09 3.00000000e+00],p_force[b][-7.84312724e-04  3.97935843e+00] f_a[ 3.94129629e-43 -6.56777720e-43],f_bNone
+agent 1 and agent 2   p_force[a][2.98940742e+00 3.15747864e-04],p_force[b][-2.89429954e-05  2.99994421e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.98940742e+00 3.15747864e-04],p_force[b][-7.84312724e-04  3.97935843e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.98940742e+00 3.15747864e-04],p_force[b][-7.84312724e-04  3.97935843e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.98940742e+00 3.15747864e-04],p_force[b][-7.84312724e-04  3.97935843e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][-2.89429954e-05  2.99994421e+00],p_force[b][-7.84312724e-04  3.97935843e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][-2.89429954e-05  2.99994421e+00],p_force[b][-7.84312724e-04  3.97935843e+00] f_a[9.98532473e-213 4.55427708e-213],f_bNone
+agent 2 and landmark 1   p_force[a][-2.89429954e-05  2.99994421e+00],p_force[b][-7.84312724e-04  3.97935843e+00] f_a[2.28924663e-109 2.71878958e-110],f_bNone
+agent 3 and landmark 0   p_force[a][-7.84312724e-04  3.97935843e+00],p_force[b][-7.84312724e-04  3.97935843e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-7.84312724e-04  3.97935843e+00],p_force[b][-7.84312724e-04  3.97935843e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-7.84312724e-04  3.97935843e+00],p_force[b][-7.84312724e-04  3.97935843e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][1.69480346e-09 3.00000000e+00],p_force[b][2.99878746e+00 6.48380112e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][1.69480346e-09 3.00000000e+00],p_force[b][-6.36979621e-06  2.99997997e+00] f_a[-3.66685514e-154 -4.27509785e-154],f_b[3.66685514e-154 4.27509785e-154]
+agent 0 and agent 3   p_force[a][1.69480346e-09 3.00000000e+00],p_force[b][2.97608227e-03 3.98922515e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][1.69480346e-09 3.00000000e+00],p_force[b][2.97608227e-03 3.98922515e+00] f_a[5.44024603e-47 5.19089028e-48],f_bNone
+agent 0 and landmark 1   p_force[a][1.69480346e-09 3.00000000e+00],p_force[b][2.97608227e-03 3.98922515e+00] f_a[ 2.73882575e-12 -2.91914622e-12],f_bNone
+agent 1 and agent 2   p_force[a][2.99878746e+00 6.48380112e-04],p_force[b][-6.36979621e-06  2.99997997e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99878746e+00 6.48380112e-04],p_force[b][2.97608227e-03 3.98922515e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.99878746e+00 6.48380112e-04],p_force[b][2.97608227e-03 3.98922515e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99878746e+00 6.48380112e-04],p_force[b][2.97608227e-03 3.98922515e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][-6.36979621e-06  2.99997997e+00],p_force[b][2.97608227e-03 3.98922515e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][-6.36979621e-06  2.99997997e+00],p_force[b][2.97608227e-03 3.98922515e+00] f_a[8.25064083e-237 4.87437358e-237],f_bNone
+agent 2 and landmark 1   p_force[a][-6.36979621e-06  2.99997997e+00],p_force[b][2.97608227e-03 3.98922515e+00] f_a[8.97383886e-123 2.72925536e-123],f_bNone
+agent 3 and landmark 0   p_force[a][2.97608227e-03 3.98922515e+00],p_force[b][2.97608227e-03 3.98922515e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][2.97608227e-03 3.98922515e+00],p_force[b][2.97608227e-03 3.98922515e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][2.97608227e-03 3.98922515e+00],p_force[b][2.97608227e-03 3.98922515e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][7.86967121e-06 2.99986160e+00],p_force[b][2.99877816e+00 2.53858052e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][7.86967121e-06 2.99986160e+00],p_force[b][0.46171336 2.53764635] f_a[-1.78219941e-153 -2.09674940e-153],f_b[1.78219941e-153 2.09674940e-153]
+agent 0 and agent 3   p_force[a][7.86967121e-06 2.99986160e+00],p_force[b][-2.26875409e-06  3.99988985e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][7.86967121e-06 2.99986160e+00],p_force[b][-2.26875409e-06  3.99988985e+00] f_a[1.04502564e-60 3.65158338e-61],f_bNone
+agent 0 and landmark 1   p_force[a][7.86967121e-06 2.99986160e+00],p_force[b][-2.26875409e-06  3.99988985e+00] f_a[ 2.5973589  -1.43336563],f_bNone
+agent 1 and agent 2   p_force[a][2.99877816e+00 2.53858052e-04],p_force[b][0.46171336 2.53764635] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99877816e+00 2.53858052e-04],p_force[b][-2.26875409e-06  3.99988985e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.99877816e+00 2.53858052e-04],p_force[b][-2.26875409e-06  3.99988985e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99877816e+00 2.53858052e-04],p_force[b][-2.26875409e-06  3.99988985e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][0.46171336 2.53764635],p_force[b][-2.26875409e-06  3.99988985e+00] f_a[-7.74857997e-293 -1.76269552e-292],f_b[7.74857997e-293 1.76269552e-292]
+agent 2 and landmark 0   p_force[a][0.46171336 2.53764635],p_force[b][-2.26875409e-06  3.99988985e+00] f_a[2.39189999e-263 1.73396296e-263],f_bNone
+agent 2 and landmark 1   p_force[a][0.46171336 2.53764635],p_force[b][-2.26875409e-06  3.99988985e+00] f_a[1.04600641e-141 5.07816234e-142],f_bNone
+agent 3 and landmark 0   p_force[a][-2.26875409e-06  3.99988985e+00],p_force[b][-2.26875409e-06  3.99988985e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-2.26875409e-06  3.99988985e+00],p_force[b][-2.26875409e-06  3.99988985e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-2.26875409e-06  3.99988985e+00],p_force[b][-2.26875409e-06  3.99988985e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][-1.17826380e-05  2.99993795e+00],p_force[b][2.99677259e+00 1.54498906e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][-1.17826380e-05  2.99993795e+00],p_force[b][2.81816804 0.18145029] f_a[-3.36732512e-150 -4.37640146e-150],f_b[3.36732512e-150 4.37640146e-150]
+agent 0 and agent 3   p_force[a][-1.17826380e-05  2.99993795e+00],p_force[b][-2.16056898e-04  3.99805427e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][-1.17826380e-05  2.99993795e+00],p_force[b][-2.16056898e-04  3.99805427e+00] f_a[5.56664103e-90 2.98212576e-90],f_bNone
+agent 0 and landmark 1   p_force[a][-1.17826380e-05  2.99993795e+00],p_force[b][-2.16056898e-04  3.99805427e+00] f_a[ 2.47761949 -0.28187608],f_bNone
+agent 1 and agent 2   p_force[a][2.99677259e+00 1.54498906e-04],p_force[b][2.81816804 0.18145029] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99677259e+00 1.54498906e-04],p_force[b][-2.16056898e-04  3.99805427e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.99677259e+00 1.54498906e-04],p_force[b][-2.16056898e-04  3.99805427e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99677259e+00 1.54498906e-04],p_force[b][-2.16056898e-04  3.99805427e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][2.81816804 0.18145029],p_force[b][-2.16056898e-04  3.99805427e+00] f_a[-1.83606797e-229 -3.38626356e-229],f_b[1.83606797e-229 3.38626356e-229]
+agent 2 and landmark 0   p_force[a][2.81816804 0.18145029],p_force[b][-2.16056898e-04  3.99805427e+00] f_a[1.36100166e-293 1.16061410e-293],f_bNone
+agent 2 and landmark 1   p_force[a][2.81816804 0.18145029],p_force[b][-2.16056898e-04  3.99805427e+00] f_a[5.38252209e-167 3.54256757e-167],f_bNone
+agent 3 and landmark 0   p_force[a][-2.16056898e-04  3.99805427e+00],p_force[b][-2.16056898e-04  3.99805427e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-2.16056898e-04  3.99805427e+00],p_force[b][-2.16056898e-04  3.99805427e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-2.16056898e-04  3.99805427e+00],p_force[b][-2.16056898e-04  3.99805427e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][-1.57670954e-07  2.99999964e+00],p_force[b][ 2.99916977e+00 -2.18703761e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][-1.57670954e-07  2.99999964e+00],p_force[b][2.99292900e-04 2.99965453e+00] f_a[-3.39572454e-143 -4.43708358e-143],f_b[3.39572454e-143 4.43708358e-143]
+agent 0 and agent 3   p_force[a][-1.57670954e-07  2.99999964e+00],p_force[b][-3.38656100e-05  3.99991846e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][-1.57670954e-07  2.99999964e+00],p_force[b][-3.38656100e-05  3.99991846e+00] f_a[3.27772770e-127 2.20042086e-127],f_bNone
+agent 0 and landmark 1   p_force[a][-1.57670954e-07  2.99999964e+00],p_force[b][-3.38656100e-05  3.99991846e+00] f_a[4.20369934e-13 8.57433867e-14],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99916977e+00 -2.18703761e-04],p_force[b][2.99292900e-04 2.99965453e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 2.99916977e+00 -2.18703761e-04],p_force[b][-3.38656100e-05  3.99991846e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][ 2.99916977e+00 -2.18703761e-04],p_force[b][-3.38656100e-05  3.99991846e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99916977e+00 -2.18703761e-04],p_force[b][-3.38656100e-05  3.99991846e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][2.99292900e-04 2.99965453e+00],p_force[b][-3.38656100e-05  3.99991846e+00] f_a[-1.30025787e-191 -2.33631179e-191],f_b[1.30025787e-191 2.33631179e-191]
+agent 2 and landmark 0   p_force[a][2.99292900e-04 2.99965453e+00],p_force[b][-3.38656100e-05  3.99991846e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][2.99292900e-04 2.99965453e+00],p_force[b][-3.38656100e-05  3.99991846e+00] f_a[7.71994988e-199 5.78042105e-199],f_bNone
+agent 3 and landmark 0   p_force[a][-3.38656100e-05  3.99991846e+00],p_force[b][-3.38656100e-05  3.99991846e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-3.38656100e-05  3.99991846e+00],p_force[b][-3.38656100e-05  3.99991846e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-3.38656100e-05  3.99991846e+00],p_force[b][-3.38656100e-05  3.99991846e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][-1.32583342e-07  2.99999928e+00],p_force[b][2.99446553e+00 2.56538580e-04] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][-1.32583342e-07  2.99999928e+00],p_force[b][5.78137930e-04 2.99931568e+00] f_a[-5.58193441e-139 -7.34929430e-139],f_b[5.58193441e-139 7.34929430e-139]
+agent 0 and agent 3   p_force[a][-1.32583342e-07  2.99999928e+00],p_force[b][-1.18440490e-04  3.99975801e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][-1.32583342e-07  2.99999928e+00],p_force[b][-1.18440490e-04  3.99975801e+00] f_a[1.80532032e-163 1.46750972e-163],f_bNone
+agent 0 and landmark 1   p_force[a][-1.32583342e-07  2.99999928e+00],p_force[b][-1.18440490e-04  3.99975801e+00] f_a[3.18862944e-40 1.49335875e-40],f_bNone
+agent 1 and agent 2   p_force[a][2.99446553e+00 2.56538580e-04],p_force[b][5.78137930e-04 2.99931568e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99446553e+00 2.56538580e-04],p_force[b][-1.18440490e-04  3.99975801e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.99446553e+00 2.56538580e-04],p_force[b][-1.18440490e-04  3.99975801e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99446553e+00 2.56538580e-04],p_force[b][-1.18440490e-04  3.99975801e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][5.78137930e-04 2.99931568e+00],p_force[b][-1.18440490e-04  3.99975801e+00] f_a[-4.87353802e-167 -8.73722462e-167],f_b[4.87353802e-167 8.73722462e-167]
+agent 2 and landmark 0   p_force[a][5.78137930e-04 2.99931568e+00],p_force[b][-1.18440490e-04  3.99975801e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][5.78137930e-04 2.99931568e+00],p_force[b][-1.18440490e-04  3.99975801e+00] f_a[1.02896632e-231 8.83772586e-232],f_bNone
+agent 3 and landmark 0   p_force[a][-1.18440490e-04  3.99975801e+00],p_force[b][-1.18440490e-04  3.99975801e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-1.18440490e-04  3.99975801e+00],p_force[b][-1.18440490e-04  3.99975801e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-1.18440490e-04  3.99975801e+00],p_force[b][-1.18440490e-04  3.99975801e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][-7.86927656e-09  3.00000000e+00],p_force[b][2.99989951e+00 3.18311559e-05] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][-7.86927656e-09  3.00000000e+00],p_force[b][1.42945143e-03 2.99825746e+00] f_a[-2.63584259e-137 -3.51354766e-137],f_b[2.63584259e-137 3.51354766e-137]
+agent 0 and agent 3   p_force[a][-7.86927656e-09  3.00000000e+00],p_force[b][9.28144291e-05 3.98738694e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][-7.86927656e-09  3.00000000e+00],p_force[b][9.28144291e-05 3.98738694e+00] f_a[2.00368119e-199 1.92099519e-199],f_bNone
+agent 0 and landmark 1   p_force[a][-7.86927656e-09  3.00000000e+00],p_force[b][9.28144291e-05 3.98738694e+00] f_a[7.72911235e-71 5.48380834e-71],f_bNone
+agent 1 and agent 2   p_force[a][2.99989951e+00 3.18311559e-05],p_force[b][1.42945143e-03 2.99825746e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99989951e+00 3.18311559e-05],p_force[b][9.28144291e-05 3.98738694e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.99989951e+00 3.18311559e-05],p_force[b][9.28144291e-05 3.98738694e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99989951e+00 3.18311559e-05],p_force[b][9.28144291e-05 3.98738694e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][1.42945143e-03 2.99825746e+00],p_force[b][9.28144291e-05 3.98738694e+00] f_a[-2.03132011e-152 -3.72471034e-152],f_b[2.03132011e-152 3.72471034e-152]
+agent 2 and landmark 0   p_force[a][1.42945143e-03 2.99825746e+00],p_force[b][9.28144291e-05 3.98738694e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][1.42945143e-03 2.99825746e+00],p_force[b][9.28144291e-05 3.98738694e+00] f_a[2.89423527e-266 2.84475998e-266],f_bNone
+agent 3 and landmark 0   p_force[a][9.28144291e-05 3.98738694e+00],p_force[b][9.28144291e-05 3.98738694e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][9.28144291e-05 3.98738694e+00],p_force[b][9.28144291e-05 3.98738694e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][9.28144291e-05 3.98738694e+00],p_force[b][9.28144291e-05 3.98738694e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][3.00825400e-06 2.99999303e+00],p_force[b][ 2.99160987e+00 -1.48541102e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][3.00825400e-06 2.99999303e+00],p_force[b][2.99994475e+00 2.89355903e-05] f_a[-1.06093231e-136 -1.43168312e-136],f_b[1.06093231e-136 1.43168312e-136]
+agent 0 and agent 3   p_force[a][3.00825400e-06 2.99999303e+00],p_force[b][-2.10722228e-05  3.99966788e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][3.00825400e-06 2.99999303e+00],p_force[b][-2.10722228e-05  3.99966788e+00] f_a[1.60476574e-235 1.77841328e-235],f_bNone
+agent 0 and landmark 1   p_force[a][3.00825400e-06 2.99999303e+00],p_force[b][-2.10722228e-05  3.99966788e+00] f_a[5.34589727e-104 5.02748180e-104],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99160987e+00 -1.48541102e-03],p_force[b][2.99994475e+00 2.89355903e-05] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 2.99160987e+00 -1.48541102e-03],p_force[b][-2.10722228e-05  3.99966788e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][ 2.99160987e+00 -1.48541102e-03],p_force[b][-2.10722228e-05  3.99966788e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99160987e+00 -1.48541102e-03],p_force[b][-2.10722228e-05  3.99966788e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][2.99994475e+00 2.89355903e-05],p_force[b][-2.10722228e-05  3.99966788e+00] f_a[-2.17194343e-129 -3.72237712e-129],f_b[2.17194343e-129 3.72237712e-129]
+agent 2 and landmark 0   p_force[a][2.99994475e+00 2.89355903e-05],p_force[b][-2.10722228e-05  3.99966788e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][2.99994475e+00 2.89355903e-05],p_force[b][-2.10722228e-05  3.99966788e+00] f_a[8.75497263e-302 9.75122669e-302],f_bNone
+agent 3 and landmark 0   p_force[a][-2.10722228e-05  3.99966788e+00],p_force[b][-2.10722228e-05  3.99966788e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-2.10722228e-05  3.99966788e+00],p_force[b][-2.10722228e-05  3.99966788e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-2.10722228e-05  3.99966788e+00],p_force[b][-2.10722228e-05  3.99966788e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][-1.47867617e-07  2.99999893e+00],p_force[b][ 2.95582044 -0.02884154] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][-1.47867617e-07  2.99999893e+00],p_force[b][2.97942656 0.01675737] f_a[-6.23019036e-136 -7.10140878e-136],f_b[6.23019036e-136 7.10140878e-136]
+agent 0 and agent 3   p_force[a][-1.47867617e-07  2.99999893e+00],p_force[b][1.07180604e-05 3.99988079e+00] f_a[-5.92342711e-280 -7.57091267e-280],f_b[5.92342711e-280 7.57091267e-280]
+agent 0 and landmark 0   p_force[a][-1.47867617e-07  2.99999893e+00],p_force[b][1.07180604e-05 3.99988079e+00] f_a[5.06696298e-272 6.38894043e-272],f_bNone
+agent 0 and landmark 1   p_force[a][-1.47867617e-07  2.99999893e+00],p_force[b][1.07180604e-05 3.99988079e+00] f_a[4.54072969e-139 5.30081893e-139],f_bNone
+agent 1 and agent 2   p_force[a][ 2.95582044 -0.02884154],p_force[b][2.97942656 0.01675737] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 2.95582044 -0.02884154],p_force[b][1.07180604e-05 3.99988079e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][ 2.95582044 -0.02884154],p_force[b][1.07180604e-05 3.99988079e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.95582044 -0.02884154],p_force[b][1.07180604e-05 3.99988079e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][2.97942656 0.01675737],p_force[b][1.07180604e-05 3.99988079e+00] f_a[-4.29854105e-82 -6.55479301e-82],f_b[4.29854105e-82 6.55479301e-82]
+agent 2 and landmark 0   p_force[a][2.97942656 0.01675737],p_force[b][1.07180604e-05 3.99988079e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][2.97942656 0.01675737],p_force[b][1.07180604e-05 3.99988079e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][1.07180604e-05 3.99988079e+00],p_force[b][1.07180604e-05 3.99988079e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][1.07180604e-05 3.99988079e+00],p_force[b][1.07180604e-05 3.99988079e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][1.07180604e-05 3.99988079e+00],p_force[b][1.07180604e-05 3.99988079e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][-2.67246875e-07  2.99999964e+00],p_force[b][ 2.96008801 -0.01784685] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][-2.67246875e-07  2.99999964e+00],p_force[b][6.64056672e-04 2.99910414e+00] f_a[-1.79175455e-138 -1.52251115e-138],f_b[1.79175455e-138 1.52251115e-138]
+agent 0 and agent 3   p_force[a][-2.67246875e-07  2.99999964e+00],p_force[b][2.28094589e-03 3.99624133e+00] f_a[-2.13685577e-250 -2.41140289e-250],f_b[2.13685577e-250 2.41140289e-250]
+agent 0 and landmark 0   p_force[a][-2.67246875e-07  2.99999964e+00],p_force[b][2.28094589e-03 3.99624133e+00] f_a[4.65747927e-309 6.59717554e-309],f_bNone
+agent 0 and landmark 1   p_force[a][-2.67246875e-07  2.99999964e+00],p_force[b][2.28094589e-03 3.99624133e+00] f_a[1.29914579e-175 1.81037391e-175],f_bNone
+agent 1 and agent 2   p_force[a][ 2.96008801 -0.01784685],p_force[b][6.64056672e-04 2.99910414e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 2.96008801 -0.01784685],p_force[b][2.28094589e-03 3.99624133e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][ 2.96008801 -0.01784685],p_force[b][2.28094589e-03 3.99624133e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.96008801 -0.01784685],p_force[b][2.28094589e-03 3.99624133e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][6.64056672e-04 2.99910414e+00],p_force[b][2.28094589e-03 3.99624133e+00] f_a[-4.05902269e-55 -8.26576796e-55],f_b[4.05902269e-55 8.26576796e-55]
+agent 2 and landmark 0   p_force[a][6.64056672e-04 2.99910414e+00],p_force[b][2.28094589e-03 3.99624133e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][6.64056672e-04 2.99910414e+00],p_force[b][2.28094589e-03 3.99624133e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][2.28094589e-03 3.99624133e+00],p_force[b][2.28094589e-03 3.99624133e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][2.28094589e-03 3.99624133e+00],p_force[b][2.28094589e-03 3.99624133e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][2.28094589e-03 3.99624133e+00],p_force[b][2.28094589e-03 3.99624133e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][1.54056274e-08 3.00000000e+00],p_force[b][ 2.82331556 -0.09253419] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][1.54056274e-08 3.00000000e+00],p_force[b][2.97716975 0.02208136] f_a[-1.86507963e-144 -1.29453825e-144],f_b[1.86507963e-144 1.29453825e-144]
+agent 0 and agent 3   p_force[a][1.54056274e-08 3.00000000e+00],p_force[b][8.60794753e-05 3.99854779e+00] f_a[-3.46495201e-220 -3.27908424e-220],f_b[3.46495201e-220 3.27908424e-220]
+agent 0 and landmark 0   p_force[a][1.54056274e-08 3.00000000e+00],p_force[b][8.60794753e-05 3.99854779e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][1.54056274e-08 3.00000000e+00],p_force[b][8.60794753e-05 3.99854779e+00] f_a[2.58987944e-213 4.19651763e-213],f_bNone
+agent 1 and agent 2   p_force[a][ 2.82331556 -0.09253419],p_force[b][2.97716975 0.02208136] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 2.82331556 -0.09253419],p_force[b][8.60794753e-05 3.99854779e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][ 2.82331556 -0.09253419],p_force[b][8.60794753e-05 3.99854779e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.82331556 -0.09253419],p_force[b][8.60794753e-05 3.99854779e+00] f_a[ 0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][2.97716975 0.02208136],p_force[b][8.60794753e-05 3.99854779e+00] f_a[-2.00274265e-22 -5.04165119e-22],f_b[2.00274265e-22 5.04165119e-22]
+agent 2 and landmark 0   p_force[a][2.97716975 0.02208136],p_force[b][8.60794753e-05 3.99854779e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][2.97716975 0.02208136],p_force[b][8.60794753e-05 3.99854779e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][8.60794753e-05 3.99854779e+00],p_force[b][8.60794753e-05 3.99854779e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][8.60794753e-05 3.99854779e+00],p_force[b][8.60794753e-05 3.99854779e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][8.60794753e-05 3.99854779e+00],p_force[b][8.60794753e-05 3.99854779e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99814838e+00 1.37598885e-03],p_force[b][ 2.99702936e+00 -7.55658344e-04] f_a[-1.59109547e-52  3.23917744e-52],f_b[ 1.59109547e-52 -3.23917744e-52]
+agent 0 and agent 2   p_force[a][2.99814838e+00 1.37598885e-03],p_force[b][2.6511628  0.31885479] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 3   p_force[a][2.99814838e+00 1.37598885e-03],p_force[b][ 3.99917626e+00 -5.22313348e-06] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][2.99814838e+00 1.37598885e-03],p_force[b][ 3.99917626e+00 -5.22313348e-06] f_a[-2.39555455e-108 -5.13066755e-108],f_bNone
+agent 0 and landmark 1   p_force[a][2.99814838e+00 1.37598885e-03],p_force[b][ 3.99917626e+00 -5.22313348e-06] f_a[-0.  0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99702936e+00 -7.55658344e-04],p_force[b][2.6511628  0.31885479] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and agent 3   p_force[a][ 2.99702936e+00 -7.55658344e-04],p_force[b][ 3.99917626e+00 -5.22313348e-06] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][ 2.99702936e+00 -7.55658344e-04],p_force[b][ 3.99917626e+00 -5.22313348e-06] f_a[-3.55942002e-194 -2.44957706e-193],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99702936e+00 -7.55658344e-04],p_force[b][ 3.99917626e+00 -5.22313348e-06] f_a[-0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][2.6511628  0.31885479],p_force[b][ 3.99917626e+00 -5.22313348e-06] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][2.6511628  0.31885479],p_force[b][ 3.99917626e+00 -5.22313348e-06] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][2.6511628  0.31885479],p_force[b][ 3.99917626e+00 -5.22313348e-06] f_a[-0. -0.],f_bNone
+agent 3 and landmark 0   p_force[a][ 3.99917626e+00 -5.22313348e-06],p_force[b][ 3.99917626e+00 -5.22313348e-06] f_a[ 2.54560333e-201 -7.42803196e-202],f_bNone
+agent 3 and landmark 1   p_force[a][ 3.99917626e+00 -5.22313348e-06],p_force[b][ 3.99917626e+00 -5.22313348e-06] f_a[-4.53869548e-153  6.89100613e-153],f_bNone
+landmark 0 and landmark 1   p_force[a][ 3.99917626e+00 -5.22313348e-06],p_force[b][ 3.99917626e+00 -5.22313348e-06] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99721193e+00 -6.49014255e-04],p_force[b][ 2.98057401 -0.01038728] f_a[-1.56842734e-52  3.19362122e-52],f_b[ 1.56842734e-52 -3.19362122e-52]
+agent 0 and agent 2   p_force[a][ 2.99721193e+00 -6.49014255e-04],p_force[b][1.15962195 1.51467097] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 3   p_force[a][ 2.99721193e+00 -6.49014255e-04],p_force[b][3.88022494e+00 1.25190418e-03] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][ 2.99721193e+00 -6.49014255e-04],p_force[b][3.88022494e+00 1.25190418e-03] f_a[-3.34318359e-103 -8.29069672e-103],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99721193e+00 -6.49014255e-04],p_force[b][3.88022494e+00 1.25190418e-03] f_a[-0.  0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.98057401 -0.01038728],p_force[b][1.15962195 1.51467097] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and agent 3   p_force[a][ 2.98057401 -0.01038728],p_force[b][3.88022494e+00 1.25190418e-03] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][ 2.98057401 -0.01038728],p_force[b][3.88022494e+00 1.25190418e-03] f_a[-1.01028869e-192 -9.80671318e-192],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.98057401 -0.01038728],p_force[b][3.88022494e+00 1.25190418e-03] f_a[-0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][1.15962195 1.51467097],p_force[b][3.88022494e+00 1.25190418e-03] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][1.15962195 1.51467097],p_force[b][3.88022494e+00 1.25190418e-03] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][1.15962195 1.51467097],p_force[b][3.88022494e+00 1.25190418e-03] f_a[-0. -0.],f_bNone
+agent 3 and landmark 0   p_force[a][3.88022494e+00 1.25190418e-03],p_force[b][3.88022494e+00 1.25190418e-03] f_a[ 4.99246210e-218 -1.37600351e-218],f_bNone
+agent 3 and landmark 1   p_force[a][3.88022494e+00 1.25190418e-03],p_force[b][3.88022494e+00 1.25190418e-03] f_a[-5.61491443e-144  9.70520834e-144],f_bNone
+landmark 0 and landmark 1   p_force[a][3.88022494e+00 1.25190418e-03],p_force[b][3.88022494e+00 1.25190418e-03] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99978381e+00 -1.60642585e-05],p_force[b][ 2.99864870e+00 -1.08895887e-03] f_a[-1.52758012e-52  3.11659218e-52],f_b[ 1.52758012e-52 -3.11659218e-52]
+agent 0 and agent 2   p_force[a][ 2.99978381e+00 -1.60642585e-05],p_force[b][3.78463708e-04 2.99434179e+00] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 3   p_force[a][ 2.99978381e+00 -1.60642585e-05],p_force[b][ 2.58807516 -0.02952241] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][ 2.99978381e+00 -1.60642585e-05],p_force[b][ 2.58807516 -0.02952241] f_a[-7.41284973e-96 -2.54010847e-95],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99978381e+00 -1.60642585e-05],p_force[b][ 2.58807516 -0.02952241] f_a[-0.  0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99864870e+00 -1.08895887e-03],p_force[b][3.78463708e-04 2.99434179e+00] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and agent 3   p_force[a][ 2.99864870e+00 -1.08895887e-03],p_force[b][ 2.58807516 -0.02952241] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][ 2.99864870e+00 -1.08895887e-03],p_force[b][ 2.58807516 -0.02952241] f_a[-8.12075790e-192 -2.77656612e-190],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99864870e+00 -1.08895887e-03],p_force[b][ 2.58807516 -0.02952241] f_a[-0. -0.],f_bNone
+agent 2 and agent 3   p_force[a][3.78463708e-04 2.99434179e+00],p_force[b][ 2.58807516 -0.02952241] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][3.78463708e-04 2.99434179e+00],p_force[b][ 2.58807516 -0.02952241] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][3.78463708e-04 2.99434179e+00],p_force[b][ 2.58807516 -0.02952241] f_a[-8.9031e-321 -1.4827e-320],f_bNone
+agent 3 and landmark 0   p_force[a][ 2.58807516 -0.02952241],p_force[b][ 2.58807516 -0.02952241] f_a[ 6.44715576e-247 -1.62208144e-247],f_bNone
+agent 3 and landmark 1   p_force[a][ 2.58807516 -0.02952241],p_force[b][ 2.58807516 -0.02952241] f_a[-1.57431278e-130  3.57186863e-130],f_bNone
+landmark 0 and landmark 1   p_force[a][ 2.58807516 -0.02952241],p_force[b][ 2.58807516 -0.02952241] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99993402e+00 1.97105146e-05],p_force[b][2.99681658e+00 9.24806547e-04] f_a[-1.49036864e-52  3.04561399e-52],f_b[ 1.49036864e-52 -3.04561399e-52]
+agent 0 and agent 2   p_force[a][2.99993402e+00 1.97105146e-05],p_force[b][-8.99284525e-04  2.99890029e+00] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 3   p_force[a][2.99993402e+00 1.97105146e-05],p_force[b][2.42619729 0.01965709] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][2.99993402e+00 1.97105146e-05],p_force[b][2.42619729 0.01965709] f_a[-9.62315664e-90 -6.65695852e-89],f_bNone
+agent 0 and landmark 1   p_force[a][2.99993402e+00 1.97105146e-05],p_force[b][2.42619729 0.01965709] f_a[-0.  0.],f_bNone
+agent 1 and agent 2   p_force[a][2.99681658e+00 9.24806547e-04],p_force[b][-8.99284525e-04  2.99890029e+00] f_a[-0.  0.],f_b[ 0. -0.]
+agent 1 and agent 3   p_force[a][2.99681658e+00 9.24806547e-04],p_force[b][2.42619729 0.01965709] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99681658e+00 9.24806547e-04],p_force[b][2.42619729 0.01965709] f_a[ 4.46782814e-192 -6.53542353e-191],f_bNone
+agent 1 and landmark 1   p_force[a][2.99681658e+00 9.24806547e-04],p_force[b][2.42619729 0.01965709] f_a[-6.52643983e-300 -7.39307141e-302],f_bNone
+agent 2 and agent 3   p_force[a][-8.99284525e-04  2.99890029e+00],p_force[b][2.42619729 0.01965709] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][-8.99284525e-04  2.99890029e+00],p_force[b][2.42619729 0.01965709] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][-8.99284525e-04  2.99890029e+00],p_force[b][2.42619729 0.01965709] f_a[-1.90227147e-299 -3.15400357e-299],f_bNone
+agent 3 and landmark 0   p_force[a][2.42619729 0.01965709],p_force[b][2.42619729 0.01965709] f_a[ 1.16240471e-279 -2.66717220e-280],f_bNone
+agent 3 and landmark 1   p_force[a][2.42619729 0.01965709],p_force[b][2.42619729 0.01965709] f_a[-4.06326926e-119  1.42196121e-118],f_bNone
+landmark 0 and landmark 1   p_force[a][2.42619729 0.01965709],p_force[b][2.42619729 0.01965709] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99999124e+00 6.74365788e-06],p_force[b][2.99956226e+00 2.92667115e-04] f_a[-1.49494409e-52  3.05939233e-52],f_b[ 1.49494409e-52 -3.05939233e-52]
+agent 0 and agent 2   p_force[a][2.99999124e+00 6.74365788e-06],p_force[b][9.76914744e-04 2.99891853e+00] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 3   p_force[a][2.99999124e+00 6.74365788e-06],p_force[b][2.00544095 0.04697333] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][2.99999124e+00 6.74365788e-06],p_force[b][2.00544095 0.04697333] f_a[ 2.16694988e-88 -7.31697850e-87],f_bNone
+agent 0 and landmark 1   p_force[a][2.99999124e+00 6.74365788e-06],p_force[b][2.00544095 0.04697333] f_a[-0.  0.],f_bNone
+agent 1 and agent 2   p_force[a][2.99956226e+00 2.92667115e-04],p_force[b][9.76914744e-04 2.99891853e+00] f_a[-2.30949152e-306  4.30509549e-306],f_b[ 2.30949152e-306 -4.30509549e-306]
+agent 1 and agent 3   p_force[a][2.99956226e+00 2.92667115e-04],p_force[b][2.00544095 0.04697333] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99956226e+00 2.92667115e-04],p_force[b][2.00544095 0.04697333] f_a[ 4.04138713e-196 -2.19851469e-195],f_bNone
+agent 1 and landmark 1   p_force[a][2.99956226e+00 2.92667115e-04],p_force[b][2.00544095 0.04697333] f_a[-2.32511592e-264 -2.89498755e-266],f_bNone
+agent 2 and agent 3   p_force[a][9.76914744e-04 2.99891853e+00],p_force[b][2.00544095 0.04697333] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][9.76914744e-04 2.99891853e+00],p_force[b][2.00544095 0.04697333] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][9.76914744e-04 2.99891853e+00],p_force[b][2.00544095 0.04697333] f_a[-2.32278171e-272 -3.69105199e-272],f_bNone
+agent 3 and landmark 0   p_force[a][2.00544095 0.04697333],p_force[b][2.00544095 0.04697333] f_a[ 1.32657281e-314 -2.78012664e-315],f_bNone
+agent 3 and landmark 1   p_force[a][2.00544095 0.04697333],p_force[b][2.00544095 0.04697333] f_a[-2.28097701e-112  1.88984113e-111],f_bNone
+landmark 0 and landmark 1   p_force[a][2.00544095 0.04697333],p_force[b][2.00544095 0.04697333] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99912149e+00 -2.45792849e-04],p_force[b][2.99966866e+00 7.95820779e-06] f_a[-1.50495176e-52  3.08330008e-52],f_b[ 1.50495176e-52 -3.08330008e-52]
+agent 0 and agent 2   p_force[a][ 2.99912149e+00 -2.45792849e-04],p_force[b][3.00469925e-04 2.99930549e+00] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 3   p_force[a][ 2.99912149e+00 -2.45792849e-04],p_force[b][2.61880851 0.06302012] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][ 2.99912149e+00 -2.45792849e-04],p_force[b][2.61880851 0.06302012] f_a[ 1.69418935e-92 -7.56454938e-92],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99912149e+00 -2.45792849e-04],p_force[b][2.61880851 0.06302012] f_a[-2.33385665e-287  5.86309086e-288],f_bNone
+agent 1 and agent 2   p_force[a][2.99966866e+00 7.95820779e-06],p_force[b][3.00469925e-04 2.99930549e+00] f_a[-2.70707496e-261  5.62224085e-261],f_b[ 2.70707496e-261 -5.62224085e-261]
+agent 1 and agent 3   p_force[a][2.99966866e+00 7.95820779e-06],p_force[b][2.61880851 0.06302012] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99966866e+00 7.95820779e-06],p_force[b][2.61880851 0.06302012] f_a[ 1.81877028e-205 -5.81615139e-205],f_bNone
+agent 1 and landmark 1   p_force[a][2.99966866e+00 7.95820779e-06],p_force[b][2.61880851 0.06302012] f_a[-1.13664522e-224 -1.58544363e-226],f_bNone
+agent 2 and agent 3   p_force[a][3.00469925e-04 2.99930549e+00],p_force[b][2.61880851 0.06302012] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][3.00469925e-04 2.99930549e+00],p_force[b][2.61880851 0.06302012] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][3.00469925e-04 2.99930549e+00],p_force[b][2.61880851 0.06302012] f_a[-2.71168891e-241 -3.98457562e-241],f_bNone
+agent 3 and landmark 0   p_force[a][2.61880851 0.06302012],p_force[b][2.61880851 0.06302012] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][2.61880851 0.06302012],p_force[b][2.61880851 0.06302012] f_a[1.22186225e-111 2.82513212e-110],f_bNone
+landmark 0 and landmark 1   p_force[a][2.61880851 0.06302012],p_force[b][2.61880851 0.06302012] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99299264e+00 -1.28700762e-04],p_force[b][2.99881160e+00 5.24671996e-04] f_a[-1.51234219e-52  3.10084948e-52],f_b[ 1.51234219e-52 -3.10084948e-52]
+agent 0 and agent 2   p_force[a][ 2.99299264e+00 -1.28700762e-04],p_force[b][0.04082406 2.95724809] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 3   p_force[a][ 2.99299264e+00 -1.28700762e-04],p_force[b][2.21626449 0.07717577] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][ 2.99299264e+00 -1.28700762e-04],p_force[b][2.21626449 0.07717577] f_a[ 1.49241204e-105 -3.44330399e-105],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99299264e+00 -1.28700762e-04],p_force[b][2.21626449 0.07717577] f_a[-5.67789905e-246  1.60093059e-246],f_bNone
+agent 1 and agent 2   p_force[a][2.99881160e+00 5.24671996e-04],p_force[b][0.04082406 2.95724809] f_a[-5.20794384e-211  1.29529686e-210],f_b[ 5.20794384e-211 -1.29529686e-210]
+agent 1 and agent 3   p_force[a][2.99881160e+00 5.24671996e-04],p_force[b][2.21626449 0.07717577] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99881160e+00 5.24671996e-04],p_force[b][2.21626449 0.07717577] f_a[ 1.36700766e-220 -3.02657479e-220],f_bNone
+agent 1 and landmark 1   p_force[a][2.99881160e+00 5.24671996e-04],p_force[b][2.21626449 0.07717577] f_a[-7.04187889e-182 -1.12581216e-183],f_bNone
+agent 2 and agent 3   p_force[a][0.04082406 2.95724809],p_force[b][2.21626449 0.07717577] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][0.04082406 2.95724809],p_force[b][2.21626449 0.07717577] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][0.04082406 2.95724809],p_force[b][2.21626449 0.07717577] f_a[-6.95675826e-208 -9.10733331e-208],f_bNone
+agent 3 and landmark 0   p_force[a][2.21626449 0.07717577],p_force[b][2.21626449 0.07717577] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][2.21626449 0.07717577],p_force[b][2.21626449 0.07717577] f_a[2.81714001e-116 1.29147586e-115],f_bNone
+landmark 0 and landmark 1   p_force[a][2.21626449 0.07717577],p_force[b][2.21626449 0.07717577] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99722713e+00 -7.71736518e-06],p_force[b][2.99972606e+00 1.25020058e-04] f_a[-1.49091385e-52  3.05711660e-52],f_b[ 1.49091385e-52 -3.05711660e-52]
+agent 0 and agent 2   p_force[a][ 2.99722713e+00 -7.71736518e-06],p_force[b][0.01016891 2.98965204] f_a[-7.23580992e-273  2.03185104e-272],f_b[ 7.23580992e-273 -2.03185104e-272]
+agent 0 and agent 3   p_force[a][ 2.99722713e+00 -7.71736518e-06],p_force[b][0.47187027 0.42101866] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][ 2.99722713e+00 -7.71736518e-06],p_force[b][0.47187027 0.42101866] f_a[ 5.66647064e-126 -8.77414085e-126],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99722713e+00 -7.71736518e-06],p_force[b][0.47187027 0.42101866] f_a[-2.15589874e-204  6.93976138e-205],f_bNone
+agent 1 and agent 2   p_force[a][2.99972606e+00 1.25020058e-04],p_force[b][0.01016891 2.98965204] f_a[-6.73272845e-159  2.30555685e-158],f_b[ 6.73272845e-159 -2.30555685e-158]
+agent 1 and agent 3   p_force[a][2.99972606e+00 1.25020058e-04],p_force[b][0.47187027 0.42101866] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99972606e+00 1.25020058e-04],p_force[b][0.47187027 0.42101866] f_a[ 1.41411631e-240 -2.38597432e-240],f_bNone
+agent 1 and landmark 1   p_force[a][2.99972606e+00 1.25020058e-04],p_force[b][0.47187027 0.42101866] f_a[-1.86414694e-138 -3.49130377e-140],f_bNone
+agent 2 and agent 3   p_force[a][0.01016891 2.98965204],p_force[b][0.47187027 0.42101866] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][0.01016891 2.98965204],p_force[b][0.47187027 0.42101866] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][0.01016891 2.98965204],p_force[b][0.47187027 0.42101866] f_a[-9.20937971e-174 -1.03066949e-173],f_bNone
+agent 3 and landmark 0   p_force[a][0.47187027 0.42101866],p_force[b][0.47187027 0.42101866] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][0.47187027 0.42101866],p_force[b][0.47187027 0.42101866] f_a[9.01221278e-128 2.29629499e-127],f_bNone
+landmark 0 and landmark 1   p_force[a][0.47187027 0.42101866],p_force[b][0.47187027 0.42101866] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][ 2.99752522e+00 -1.61983719e-03],p_force[b][2.99960053e+00 1.18085060e-04] f_a[-1.47747788e-52  3.02969375e-52],f_b[ 1.47747788e-52 -3.02969375e-52]
+agent 0 and agent 2   p_force[a][ 2.99752522e+00 -1.61983719e-03],p_force[b][2.9897958  0.00757838] f_a[-1.85208528e-219  7.04583204e-219],f_b[ 1.85208528e-219 -7.04583204e-219]
+agent 0 and agent 3   p_force[a][ 2.99752522e+00 -1.61983719e-03],p_force[b][0.19650552 1.84787428] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][ 2.99752522e+00 -1.61983719e-03],p_force[b][0.19650552 1.84787428] f_a[ 6.16343429e-152 -7.18177897e-152],f_bNone
+agent 0 and landmark 1   p_force[a][ 2.99752522e+00 -1.61983719e-03],p_force[b][0.19650552 1.84787428] f_a[-2.24863325e-163  8.43277503e-164],f_bNone
+agent 1 and agent 2   p_force[a][2.99960053e+00 1.18085060e-04],p_force[b][2.9897958  0.00757838] f_a[-2.42107537e-108  1.93303187e-107],f_b[ 2.42107537e-108 -1.93303187e-107]
+agent 1 and agent 3   p_force[a][2.99960053e+00 1.18085060e-04],p_force[b][0.19650552 1.84787428] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99960053e+00 1.18085060e-04],p_force[b][0.19650552 1.84787428] f_a[ 1.72425069e-264 -2.35011207e-264],f_bNone
+agent 1 and landmark 1   p_force[a][2.99960053e+00 1.18085060e-04],p_force[b][0.19650552 1.84787428] f_a[-4.90468263e-95 -1.10731362e-96],f_bNone
+agent 2 and agent 3   p_force[a][2.9897958  0.00757838],p_force[b][0.19650552 1.84787428] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][2.9897958  0.00757838],p_force[b][0.19650552 1.84787428] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][2.9897958  0.00757838],p_force[b][0.19650552 1.84787428] f_a[-4.39653361e-141 -3.99125641e-141],f_bNone
+agent 3 and landmark 0   p_force[a][0.19650552 1.84787428],p_force[b][0.19650552 1.84787428] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][0.19650552 1.84787428],p_force[b][0.19650552 1.84787428] f_a[1.44145784e-142 2.73261865e-142],f_bNone
+landmark 0 and landmark 1   p_force[a][0.19650552 1.84787428],p_force[b][0.19650552 1.84787428] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.99963218e+00 2.51844256e-04],p_force[b][2.99989468e+00 6.48517344e-05] f_a[-1.49004422e-52  3.05534170e-52],f_b[ 1.49004422e-52 -3.05534170e-52]
+agent 0 and agent 2   p_force[a][2.99963218e+00 2.51844256e-04],p_force[b][2.74457377 0.25226196] f_a[-1.20083493e-181  6.68228345e-181],f_b[ 1.20083493e-181 -6.68228345e-181]
+agent 0 and agent 3   p_force[a][2.99963218e+00 2.51844256e-04],p_force[b][7.95013155e-04 3.92358065e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][2.99963218e+00 2.51844256e-04],p_force[b][7.95013155e-04 3.92358065e+00] f_a[ 5.40547381e-182 -5.04920947e-182],f_bNone
+agent 0 and landmark 1   p_force[a][2.99963218e+00 2.51844256e-04],p_force[b][7.95013155e-04 3.92358065e+00] f_a[-3.34453073e-123  1.50205825e-123],f_bNone
+agent 1 and agent 2   p_force[a][2.99989468e+00 6.48517344e-05],p_force[b][2.74457377 0.25226196] f_a[4.94354905e-75 9.19280221e-74],f_b[-4.94354905e-75 -9.19280221e-74]
+agent 1 and agent 3   p_force[a][2.99989468e+00 6.48517344e-05],p_force[b][7.95013155e-04 3.92358065e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99989468e+00 6.48517344e-05],p_force[b][7.95013155e-04 3.92358065e+00] f_a[ 1.22737086e-291 -1.40319143e-291],f_bNone
+agent 1 and landmark 1   p_force[a][2.99989468e+00 6.48517344e-05],p_force[b][7.95013155e-04 3.92358065e+00] f_a[-1.27645444e-51 -3.62359193e-53],f_bNone
+agent 2 and agent 3   p_force[a][2.74457377 0.25226196],p_force[b][7.95013155e-04 3.92358065e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][2.74457377 0.25226196],p_force[b][7.95013155e-04 3.92358065e+00] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][2.74457377 0.25226196],p_force[b][7.95013155e-04 3.92358065e+00] f_a[-1.40638066e-108 -1.12536474e-108],f_bNone
+agent 3 and landmark 0   p_force[a][7.95013155e-04 3.92358065e+00],p_force[b][7.95013155e-04 3.92358065e+00] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][7.95013155e-04 3.92358065e+00],p_force[b][7.95013155e-04 3.92358065e+00] f_a[8.62588778e-163 1.41694369e-162],f_bNone
+landmark 0 and landmark 1   p_force[a][7.95013155e-04 3.92358065e+00],p_force[b][7.95013155e-04 3.92358065e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.87495953 0.10897235],p_force[b][2.99652869e+00 1.17120665e-03] f_a[-1.49667952e-52  3.06888398e-52],f_b[ 1.49667952e-52 -3.06888398e-52]
+agent 0 and agent 2   p_force[a][2.87495953 0.10897235],p_force[b][0.8826921  2.11205006] f_a[-1.00446853e-153  9.44760626e-153],f_b[ 1.00446853e-153 -9.44760626e-153]
+agent 0 and agent 3   p_force[a][2.87495953 0.10897235],p_force[b][3.76619073e-03 3.98629165e+00] f_a[-1.0231886e-316 -4.7681124e-317],f_b[1.0231886e-316 4.7681124e-317]
+agent 0 and landmark 0   p_force[a][2.87495953 0.10897235],p_force[b][3.76619073e-03 3.98629165e+00] f_a[ 5.03957323e-215 -3.92821462e-215],f_bNone
+agent 0 and landmark 1   p_force[a][2.87495953 0.10897235],p_force[b][3.76619073e-03 3.98629165e+00] f_a[-2.18527814e-84  1.22314665e-84],f_bNone
+agent 1 and agent 2   p_force[a][2.99652869e+00 1.17120665e-03],p_force[b][0.8826921  2.11205006] f_a[4.54550428e-52 1.82376998e-51],f_b[-4.54550428e-52 -1.82376998e-51]
+agent 1 and agent 3   p_force[a][2.99652869e+00 1.17120665e-03],p_force[b][3.76619073e-03 3.98629165e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99652869e+00 1.17120665e-03],p_force[b][3.76619073e-03 3.98629165e+00] f_a[ 2.115e-321 -2.080e-321],f_bNone
+agent 1 and landmark 1   p_force[a][2.99652869e+00 1.17120665e-03],p_force[b][3.76619073e-03 3.98629165e+00] f_a[-3.24875976e-08 -1.24107795e-09],f_bNone
+agent 2 and agent 3   p_force[a][0.8826921  2.11205006],p_force[b][3.76619073e-03 3.98629165e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][0.8826921  2.11205006],p_force[b][3.76619073e-03 3.98629165e+00] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][0.8826921  2.11205006],p_force[b][3.76619073e-03 3.98629165e+00] f_a[-1.13866272e-74 -8.59081325e-75],f_bNone
+agent 3 and landmark 0   p_force[a][3.76619073e-03 3.98629165e+00],p_force[b][3.76619073e-03 3.98629165e+00] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][3.76619073e-03 3.98629165e+00],p_force[b][3.76619073e-03 3.98629165e+00] f_a[6.58854135e-193 1.06132222e-192],f_bNone
+landmark 0 and landmark 1   p_force[a][3.76619073e-03 3.98629165e+00],p_force[b][3.76619073e-03 3.98629165e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][0.08247304 2.9134444 ],p_force[b][2.99705029e+00 7.86325720e-04] f_a[-5.86417039e-53  1.20759467e-52],f_b[ 5.86417039e-53 -1.20759467e-52]
+agent 0 and agent 2   p_force[a][0.08247304 2.9134444 ],p_force[b][4.60666080e-04 2.99949378e+00] f_a[-3.13073286e-126  1.08376164e-123],f_b[ 3.13073286e-126 -1.08376164e-123]
+agent 0 and agent 3   p_force[a][0.08247304 2.9134444 ],p_force[b][2.23863310e-08 3.99999571e+00] f_a[-3.62726447e-307 -2.27578673e-307],f_b[3.62726447e-307 2.27578673e-307]
+agent 0 and landmark 0   p_force[a][0.08247304 2.9134444 ],p_force[b][2.23863310e-08 3.99999571e+00] f_a[ 5.70183806e-250 -3.80476005e-250],f_bNone
+agent 0 and landmark 1   p_force[a][0.08247304 2.9134444 ],p_force[b][2.23863310e-08 3.99999571e+00] f_a[-3.64842912e-48  2.72199470e-48],f_bNone
+agent 1 and agent 2   p_force[a][2.99705029e+00 7.86325720e-04],p_force[b][4.60666080e-04 2.99949378e+00] f_a[5.98596000e-34 9.91420824e-34],f_b[-5.98596000e-34 -9.91420824e-34]
+agent 1 and agent 3   p_force[a][2.99705029e+00 7.86325720e-04],p_force[b][2.23863310e-08 3.99999571e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99705029e+00 7.86325720e-04],p_force[b][2.23863310e-08 3.99999571e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99705029e+00 7.86325720e-04],p_force[b][2.23863310e-08 3.99999571e+00] f_a[-8.48061644 -0.49437454],f_bNone
+agent 2 and agent 3   p_force[a][4.60666080e-04 2.99949378e+00],p_force[b][2.23863310e-08 3.99999571e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][4.60666080e-04 2.99949378e+00],p_force[b][2.23863310e-08 3.99999571e+00] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][4.60666080e-04 2.99949378e+00],p_force[b][2.23863310e-08 3.99999571e+00] f_a[-5.12015697e-41 -3.38567594e-41],f_bNone
+agent 3 and landmark 0   p_force[a][2.23863310e-08 3.99999571e+00],p_force[b][2.23863310e-08 3.99999571e+00] f_a[ 0. -0.],f_bNone
+agent 3 and landmark 1   p_force[a][2.23863310e-08 3.99999571e+00],p_force[b][2.23863310e-08 3.99999571e+00] f_a[2.54447173e-230 4.30582640e-230],f_bNone
+landmark 0 and landmark 1   p_force[a][2.23863310e-08 3.99999571e+00],p_force[b][2.23863310e-08 3.99999571e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][0.06732859 2.89660925],p_force[b][2.99867213e+00 2.40797584e-04] f_a[-1.15970594e-59  5.25041465e-59],f_b[ 1.15970594e-59 -5.25041465e-59]
+agent 0 and agent 2   p_force[a][0.06732859 2.89660925],p_force[b][0.00500048 2.99337494] f_a[2.95734655e-104 2.96123816e-103],f_b[-2.95734655e-104 -2.96123816e-103]
+agent 0 and agent 3   p_force[a][0.06732859 2.89660925],p_force[b][-2.81735323e-04  3.99967074e+00] f_a[-2.01647406e-306 -1.59053044e-306],f_b[2.01647406e-306 1.59053044e-306]
+agent 0 and landmark 0   p_force[a][0.06732859 2.89660925],p_force[b][-2.81735323e-04  3.99967074e+00] f_a[ 3.22273271e-271 -1.81778741e-271],f_bNone
+agent 0 and landmark 1   p_force[a][0.06732859 2.89660925],p_force[b][-2.81735323e-04  3.99967074e+00] f_a[-1.13853335e-32  1.27731843e-32],f_bNone
+agent 1 and agent 2   p_force[a][2.99867213e+00 2.40797584e-04],p_force[b][0.00500048 2.99337494] f_a[0.10853792 0.11738407],f_b[-0.10853792 -0.11738407]
+agent 1 and agent 3   p_force[a][3.10721005 0.11762486],p_force[b][-2.81735323e-04  3.99967074e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][3.10721005 0.11762486],p_force[b][-2.81735323e-04  3.99967074e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][3.10721005 0.11762486],p_force[b][-2.81735323e-04  3.99967074e+00] f_a[-10.42219235  -0.98282518],f_bNone
+agent 2 and agent 3   p_force[a][-0.10353744  2.87599088],p_force[b][-2.81735323e-04  3.99967074e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][-0.10353744  2.87599088],p_force[b][-2.81735323e-04  3.99967074e+00] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][-0.10353744  2.87599088],p_force[b][-2.81735323e-04  3.99967074e+00] f_a[-2.17871035e-10 -9.96205030e-11],f_bNone
+agent 3 and landmark 0   p_force[a][-2.81735323e-04  3.99967074e+00],p_force[b][-2.81735323e-04  3.99967074e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-2.81735323e-04  3.99967074e+00],p_force[b][-2.81735323e-04  3.99967074e+00] f_a[1.18069726e-273 2.17376000e-273],f_bNone
+landmark 0 and landmark 1   p_force[a][-2.81735323e-04  3.99967074e+00],p_force[b][-2.81735323e-04  3.99967074e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][4.77428097e-04 2.99946499e+00],p_force[b][ 2.99390763e+00 -4.74013039e-04] f_a[1.53761613e-86 9.44541861e-86],f_b[-1.53761613e-86 -9.44541861e-86]
+agent 0 and agent 2   p_force[a][4.77428097e-04 2.99946499e+00],p_force[b][6.29588583e-04 2.99925560e+00] f_a[2.86504468e-90 1.42559606e-89],f_b[-2.86504468e-90 -1.42559606e-89]
+agent 0 and agent 3   p_force[a][4.77428097e-04 2.99946499e+00],p_force[b][-6.51519758e-06  3.99998331e+00] f_a[-1.18819352e-311 -1.12555405e-311],f_b[1.18819352e-311 1.12555405e-311]
+agent 0 and landmark 0   p_force[a][4.77428097e-04 2.99946499e+00],p_force[b][-6.51519758e-06  3.99998331e+00] f_a[ 2.96175133e-283 -1.37399284e-283],f_bNone
+agent 0 and landmark 1   p_force[a][4.77428097e-04 2.99946499e+00],p_force[b][-6.51519758e-06  3.99998331e+00] f_a[-1.55358092e-36  2.78680439e-36],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99390763e+00 -4.74013039e-04],p_force[b][6.29588583e-04 2.99925560e+00] f_a[4.08988385 1.83340734],f_b[-4.08988385 -1.83340734]
+agent 1 and agent 3   p_force[a][7.08379148 1.83293333],p_force[b][-6.51519758e-06  3.99998331e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][7.08379148 1.83293333],p_force[b][-6.51519758e-06  3.99998331e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][7.08379148 1.83293333],p_force[b][-6.51519758e-06  3.99998331e+00] f_a[-4.53025189 -0.56410638],f_bNone
+agent 2 and agent 3   p_force[a][-4.08925426  1.16584826],p_force[b][-6.51519758e-06  3.99998331e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][-4.08925426  1.16584826],p_force[b][-6.51519758e-06  3.99998331e+00] f_a[ 0. -0.],f_bNone
+agent 2 and landmark 1   p_force[a][-4.08925426  1.16584826],p_force[b][-6.51519758e-06  3.99998331e+00] f_a[-3.04415049 -0.43686072],f_bNone
+agent 3 and landmark 0   p_force[a][-6.51519758e-06  3.99998331e+00],p_force[b][-6.51519758e-06  3.99998331e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-6.51519758e-06  3.99998331e+00],p_force[b][-6.51519758e-06  3.99998331e+00] f_a[6.52e-322 1.33e-321],f_bNone
+landmark 0 and landmark 1   p_force[a][-6.51519758e-06  3.99998331e+00],p_force[b][-6.51519758e-06  3.99998331e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.13964886e-05 2.99997336e+00],p_force[b][2.98076123e+00 9.55257216e-04] f_a[8.8986580e-120 3.0877357e-119],f_b[-8.8986580e-120 -3.0877357e-119]
+agent 0 and agent 2   p_force[a][2.13964886e-05 2.99997336e+00],p_force[b][2.910043   0.08974011] f_a[3.49280426e-101 7.23702092e-101],f_b[-3.49280426e-101 -7.23702092e-101]
+agent 0 and agent 3   p_force[a][2.13964886e-05 2.99997336e+00],p_force[b][-2.67080992e-04  3.99806595e+00] f_a[-1.1200e-320 -1.2297e-320],f_b[1.1200e-320 1.2297e-320]
+agent 0 and landmark 0   p_force[a][2.13964886e-05 2.99997336e+00],p_force[b][-2.67080992e-04  3.99806595e+00] f_a[ 3.25886692e-289 -1.18404872e-289],f_bNone
+agent 0 and landmark 1   p_force[a][2.13964886e-05 2.99997336e+00],p_force[b][-2.67080992e-04  3.99806595e+00] f_a[-2.35478859e-56  6.87979688e-56],f_bNone
+agent 1 and agent 2   p_force[a][2.98076123e+00 9.55257216e-04],p_force[b][2.910043   0.08974011] f_a[ 1.41508298 -1.88029522],f_b[-1.41508298  1.88029522]
+agent 1 and agent 3   p_force[a][ 4.39584421 -1.87933996],p_force[b][-2.67080992e-04  3.99806595e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][ 4.39584421 -1.87933996],p_force[b][-2.67080992e-04  3.99806595e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 4.39584421 -1.87933996],p_force[b][-2.67080992e-04  3.99806595e+00] f_a[-2.80211705 -0.28427197],f_bNone
+agent 2 and agent 3   p_force[a][1.49496002 1.97003533],p_force[b][-2.67080992e-04  3.99806595e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][1.49496002 1.97003533],p_force[b][-2.67080992e-04  3.99806595e+00] f_a[ 2.02958861e-305 -1.86775564e-305],f_bNone
+agent 2 and landmark 1   p_force[a][1.49496002 1.97003533],p_force[b][-2.67080992e-04  3.99806595e+00] f_a[-8.82341743e-11  1.15899604e-11],f_bNone
+agent 3 and landmark 0   p_force[a][-2.67080992e-04  3.99806595e+00],p_force[b][-2.67080992e-04  3.99806595e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-2.67080992e-04  3.99806595e+00],p_force[b][-2.67080992e-04  3.99806595e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-2.67080992e-04  3.99806595e+00],p_force[b][-2.67080992e-04  3.99806595e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][6.73496725e-05 2.99989200e+00],p_force[b][ 2.99852836e+00 -9.12796677e-05] f_a[2.64959461e-165 9.13314569e-165],f_b[-2.64959461e-165 -9.13314569e-165]
+agent 0 and agent 2   p_force[a][6.73496725e-05 2.99989200e+00],p_force[b][2.35903609 0.5349838 ] f_a[1.55067311e-115 2.44171312e-115],f_b[-1.55067311e-115 -2.44171312e-115]
+agent 0 and agent 3   p_force[a][6.73496725e-05 2.99989200e+00],p_force[b][1.76008238e-04 3.98965192e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][6.73496725e-05 2.99989200e+00],p_force[b][1.76008238e-04 3.98965192e+00] f_a[ 4.15039120e-292 -1.08439847e-292],f_bNone
+agent 0 and landmark 1   p_force[a][6.73496725e-05 2.99989200e+00],p_force[b][1.76008238e-04 3.98965192e+00] f_a[-5.90493136e-87  2.79590986e-86],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99852836e+00 -9.12796677e-05],p_force[b][2.35903609 0.5349838 ] f_a[ 7.66267819e-13 -1.62908169e-12],f_b[-7.66267819e-13  1.62908169e-12]
+agent 1 and agent 3   p_force[a][ 2.99852836e+00 -9.12796693e-05],p_force[b][1.76008238e-04 3.98965192e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][ 2.99852836e+00 -9.12796693e-05],p_force[b][1.76008238e-04 3.98965192e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99852836e+00 -9.12796693e-05],p_force[b][1.76008238e-04 3.98965192e+00] f_a[-2.7482522  -0.49714004],f_bNone
+agent 2 and agent 3   p_force[a][2.35903609 0.5349838 ],p_force[b][1.76008238e-04 3.98965192e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][2.35903609 0.5349838 ],p_force[b][1.76008238e-04 3.98965192e+00] f_a[ 3.05340175e-276 -2.57729750e-276],f_bNone
+agent 2 and landmark 1   p_force[a][2.35903609 0.5349838 ],p_force[b][1.76008238e-04 3.98965192e+00] f_a[-1.63283938e-28  5.82753771e-29],f_bNone
+agent 3 and landmark 0   p_force[a][1.76008238e-04 3.98965192e+00],p_force[b][1.76008238e-04 3.98965192e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][1.76008238e-04 3.98965192e+00],p_force[b][1.76008238e-04 3.98965192e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][1.76008238e-04 3.98965192e+00],p_force[b][1.76008238e-04 3.98965192e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][9.62614104e-05 2.99984765e+00],p_force[b][2.7760461  0.21671022] f_a[8.29061264e-214 3.06553150e-213],f_b[-8.29061264e-214 -3.06553150e-213]
+agent 0 and agent 2   p_force[a][9.62614104e-05 2.99984765e+00],p_force[b][1.73324870e-03 2.99815321e+00] f_a[9.66312478e-131 1.52422802e-130],f_b[-9.66312478e-131 -1.52422802e-130]
+agent 0 and agent 3   p_force[a][9.62614104e-05 2.99984765e+00],p_force[b][-5.01585127e-05  3.99946761e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][9.62614104e-05 2.99984765e+00],p_force[b][-5.01585127e-05  3.99946761e+00] f_a[ 2.42678591e-294 -3.81861281e-295],f_bNone
+agent 0 and landmark 1   p_force[a][9.62614104e-05 2.99984765e+00],p_force[b][-5.01585127e-05  3.99946761e+00] f_a[-2.24199651e-124  1.69621070e-123],f_bNone
+agent 1 and agent 2   p_force[a][2.7760461  0.21671022],p_force[b][1.73324870e-03 2.99815321e+00] f_a[ 1.60855582e-45 -5.27838808e-45],f_b[-1.60855582e-45  5.27838808e-45]
+agent 1 and agent 3   p_force[a][2.7760461  0.21671022],p_force[b][-5.01585127e-05  3.99946761e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.7760461  0.21671022],p_force[b][-5.01585127e-05  3.99946761e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.7760461  0.21671022],p_force[b][-5.01585127e-05  3.99946761e+00] f_a[-2.7045632  -0.71641011],f_bNone
+agent 2 and agent 3   p_force[a][1.73324870e-03 2.99815321e+00],p_force[b][-5.01585127e-05  3.99946761e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][1.73324870e-03 2.99815321e+00],p_force[b][-5.01585127e-05  3.99946761e+00] f_a[ 1.30812167e-261 -9.80196898e-262],f_bNone
+agent 2 and landmark 1   p_force[a][1.73324870e-03 2.99815321e+00],p_force[b][-5.01585127e-05  3.99946761e+00] f_a[-2.62545409e-37  1.47172507e-37],f_bNone
+agent 3 and landmark 0   p_force[a][-5.01585127e-05  3.99946761e+00],p_force[b][-5.01585127e-05  3.99946761e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-5.01585127e-05  3.99946761e+00],p_force[b][-5.01585127e-05  3.99946761e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-5.01585127e-05  3.99946761e+00],p_force[b][-5.01585127e-05  3.99946761e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][8.01579845e-05 2.99990845e+00],p_force[b][ 2.99117088e+00 -7.86916120e-04] f_a[6.62927886e-265 2.69062257e-264],f_b[-6.62927886e-265 -2.69062257e-264]
+agent 0 and agent 2   p_force[a][8.01579845e-05 2.99990845e+00],p_force[b][9.20798448e-05 2.99989450e+00] f_a[3.78967264e-142 5.98515809e-142],f_b[-3.78967264e-142 -5.98515809e-142]
+agent 0 and agent 3   p_force[a][8.01579845e-05 2.99990845e+00],p_force[b][-5.21341008e-06  3.99987745e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][8.01579845e-05 2.99990845e+00],p_force[b][-5.21341008e-06  3.99987745e+00] f_a[ 8.71745396e-298 -4.48758893e-299],f_bNone
+agent 0 and landmark 1   p_force[a][8.01579845e-05 2.99990845e+00],p_force[b][-5.21341008e-06  3.99987745e+00] f_a[-3.58354914e-166  4.26144274e-165],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99117088e+00 -7.86916120e-04],p_force[b][9.20798448e-05 2.99989450e+00] f_a[ 9.34052399e-86 -4.31931644e-85],f_b[-9.34052399e-86  4.31931644e-85]
+agent 1 and agent 3   p_force[a][ 2.99117088e+00 -7.86916120e-04],p_force[b][-5.21341008e-06  3.99987745e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][ 2.99117088e+00 -7.86916120e-04],p_force[b][-5.21341008e-06  3.99987745e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99117088e+00 -7.86916120e-04],p_force[b][-5.21341008e-06  3.99987745e+00] f_a[-2.45655792 -0.86520575],f_bNone
+agent 2 and agent 3   p_force[a][9.20798448e-05 2.99989450e+00],p_force[b][-5.21341008e-06  3.99987745e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][9.20798448e-05 2.99989450e+00],p_force[b][-5.21341008e-06  3.99987745e+00] f_a[ 2.26364227e-244 -1.44107738e-244],f_bNone
+agent 2 and landmark 1   p_force[a][9.20798448e-05 2.99989450e+00],p_force[b][-5.21341008e-06  3.99987745e+00] f_a[-2.02638804e-54  1.65375797e-54],f_bNone
+agent 3 and landmark 0   p_force[a][-5.21341008e-06  3.99987745e+00],p_force[b][-5.21341008e-06  3.99987745e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-5.21341008e-06  3.99987745e+00],p_force[b][-5.21341008e-06  3.99987745e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-5.21341008e-06  3.99987745e+00],p_force[b][-5.21341008e-06  3.99987745e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][1.24025917 1.75949979],p_force[b][2.99998087e+00 4.52709537e-06] f_a[3.2685842e-317 1.5089434e-316],f_b[-3.2685842e-317 -1.5089434e-316]
+agent 0 and agent 2   p_force[a][1.24025917 1.75949979],p_force[b][2.83749014 0.16133824] f_a[6.96628329e-149 1.09151681e-148],f_b[-6.96628329e-149 -1.09151681e-148]
+agent 0 and agent 3   p_force[a][1.24025917 1.75949979],p_force[b][-2.23392044e-06  3.99996185e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 0 and landmark 0   p_force[a][1.24025917 1.75949979],p_force[b][-2.23392044e-06  3.99996185e+00] f_a[1.82232077e-303 9.40050554e-305],f_bNone
+agent 0 and landmark 1   p_force[a][1.24025917 1.75949979],p_force[b][-2.23392044e-06  3.99996185e+00] f_a[-6.48244070e-209  1.16814687e-207],f_bNone
+agent 1 and agent 2   p_force[a][2.99998087e+00 4.52709537e-06],p_force[b][2.83749014 0.16133824] f_a[ 2.92201644e-133 -1.68063036e-132],f_b[-2.92201644e-133  1.68063036e-132]
+agent 1 and agent 3   p_force[a][2.99998087e+00 4.52709537e-06],p_force[b][-2.23392044e-06  3.99996185e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99998087e+00 4.52709537e-06],p_force[b][-2.23392044e-06  3.99996185e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99998087e+00 4.52709537e-06],p_force[b][-2.23392044e-06  3.99996185e+00] f_a[-2.25994152 -1.05717674],f_bNone
+agent 2 and agent 3   p_force[a][2.83749014 0.16133824],p_force[b][-2.23392044e-06  3.99996185e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][2.83749014 0.16133824],p_force[b][-2.23392044e-06  3.99996185e+00] f_a[ 8.18572909e-227 -4.17917893e-227],f_bNone
+agent 2 and landmark 1   p_force[a][2.83749014 0.16133824],p_force[b][-2.23392044e-06  3.99996185e+00] f_a[-1.38672676e-79  1.54124340e-79],f_bNone
+agent 3 and landmark 0   p_force[a][-2.23392044e-06  3.99996185e+00],p_force[b][-2.23392044e-06  3.99996185e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-2.23392044e-06  3.99996185e+00],p_force[b][-2.23392044e-06  3.99996185e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-2.23392044e-06  3.99996185e+00],p_force[b][-2.23392044e-06  3.99996185e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][0.26180336 2.73788846],p_force[b][ 2.98164439e+00 -1.79846043e-03] f_a[0. 0.],f_b[-0. -0.]
+agent 0 and agent 2   p_force[a][0.26180336 2.73788846],p_force[b][2.66917866 0.32910886] f_a[2.84390125e-156 4.88967530e-156],f_b[-2.84390125e-156 -4.88967530e-156]
+agent 0 and agent 3   p_force[a][0.26180336 2.73788846],p_force[b][5.10206082e-05 3.99964786e+00] f_a[-1.21408721e-283 -1.45888977e-283],f_b[1.21408721e-283 1.45888977e-283]
+agent 0 and landmark 0   p_force[a][0.26180336 2.73788846],p_force[b][5.10206082e-05 3.99964786e+00] f_a[6.0999667e-317 8.7380351e-318],f_bNone
+agent 0 and landmark 1   p_force[a][0.26180336 2.73788846],p_force[b][5.10206082e-05 3.99964786e+00] f_a[-7.91356684e-249  3.44126921e-247],f_bNone
+agent 1 and agent 2   p_force[a][ 2.98164439e+00 -1.79846043e-03],p_force[b][2.66917866 0.32910886] f_a[ 3.37091330e-173 -3.02920742e-172],f_b[-3.37091330e-173  3.02920742e-172]
+agent 1 and agent 3   p_force[a][ 2.98164439e+00 -1.79846043e-03],p_force[b][5.10206082e-05 3.99964786e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][ 2.98164439e+00 -1.79846043e-03],p_force[b][5.10206082e-05 3.99964786e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.98164439e+00 -1.79846043e-03],p_force[b][5.10206082e-05 3.99964786e+00] f_a[-1.98917066 -1.25189912],f_bNone
+agent 2 and agent 3   p_force[a][2.66917866 0.32910886],p_force[b][5.10206082e-05 3.99964786e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][2.66917866 0.32910886],p_force[b][5.10206082e-05 3.99964786e+00] f_a[ 5.26451045e-227 -2.09804563e-227],f_bNone
+agent 2 and landmark 1   p_force[a][2.66917866 0.32910886],p_force[b][5.10206082e-05 3.99964786e+00] f_a[-2.47712093e-94  3.67148205e-94],f_bNone
+agent 3 and landmark 0   p_force[a][5.10206082e-05 3.99964786e+00],p_force[b][5.10206082e-05 3.99964786e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][5.10206082e-05 3.99964786e+00],p_force[b][5.10206082e-05 3.99964786e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][5.10206082e-05 3.99964786e+00],p_force[b][5.10206082e-05 3.99964786e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][0.02201838 2.97796619],p_force[b][2.99539036e+00 2.24213046e-03] f_a[0. 0.],f_b[-0. -0.]
+agent 0 and agent 2   p_force[a][0.02201838 2.97796619],p_force[b][0.0065576  2.99227524] f_a[9.71764312e-167 2.08699813e-166],f_b[-9.71764312e-167 -2.08699813e-166]
+agent 0 and agent 3   p_force[a][0.02201838 2.97796619],p_force[b][3.82384169e-05 3.99947524e+00] f_a[-2.21891460e-246 -2.30072159e-246],f_b[2.21891460e-246 2.30072159e-246]
+agent 0 and landmark 0   p_force[a][0.02201838 2.97796619],p_force[b][3.82384169e-05 3.99947524e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][0.02201838 2.97796619],p_force[b][3.82384169e-05 3.99947524e+00] f_a[-3.47027452e-293  6.19073353e-289],f_bNone
+agent 1 and agent 2   p_force[a][2.99539036e+00 2.24213046e-03],p_force[b][0.0065576  2.99227524] f_a[ 3.34317021e-210 -6.91363752e-209],f_b[-3.34317021e-210  6.91363752e-209]
+agent 1 and agent 3   p_force[a][2.99539036e+00 2.24213046e-03],p_force[b][3.82384169e-05 3.99947524e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99539036e+00 2.24213046e-03],p_force[b][3.82384169e-05 3.99947524e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99539036e+00 2.24213046e-03],p_force[b][3.82384169e-05 3.99947524e+00] f_a[-1.48533044 -1.29114556],f_bNone
+agent 2 and agent 3   p_force[a][0.0065576  2.99227524],p_force[b][3.82384169e-05 3.99947524e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][0.0065576  2.99227524],p_force[b][3.82384169e-05 3.99947524e+00] f_a[ 1.00120728e-239 -3.05793780e-240],f_bNone
+agent 2 and landmark 1   p_force[a][0.0065576  2.99227524],p_force[b][3.82384169e-05 3.99947524e+00] f_a[-9.62030165e-104  1.97507604e-103],f_bNone
+agent 3 and landmark 0   p_force[a][3.82384169e-05 3.99947524e+00],p_force[b][3.82384169e-05 3.99947524e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][3.82384169e-05 3.99947524e+00],p_force[b][3.82384169e-05 3.99947524e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][3.82384169e-05 3.99947524e+00],p_force[b][3.82384169e-05 3.99947524e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][6.37214063e-04 2.99935180e+00],p_force[b][ 2.97841412e+00 -9.65685176e-05] f_a[0. 0.],f_b[-0. -0.]
+agent 0 and agent 2   p_force[a][6.37214063e-04 2.99935180e+00],p_force[b][0.00892329 2.99077803] f_a[2.10604149e-174 5.35433399e-174],f_b[-2.10604149e-174 -5.35433399e-174]
+agent 0 and agent 3   p_force[a][6.37214063e-04 2.99935180e+00],p_force[b][2.11744173e-05 3.99981833e+00] f_a[-1.04475093e-223 -9.75128553e-224],f_b[1.04475093e-223 9.75128553e-224]
+agent 0 and landmark 0   p_force[a][6.37214063e-04 2.99935180e+00],p_force[b][2.11744173e-05 3.99981833e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][6.37214063e-04 2.99935180e+00],p_force[b][2.11744173e-05 3.99981833e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.97841412e+00 -9.65685176e-05],p_force[b][0.00892329 2.99077803] f_a[ 3.77845413e-257 -1.20345579e-255],f_b[-3.77845413e-257  1.20345579e-255]
+agent 1 and agent 3   p_force[a][ 2.97841412e+00 -9.65685176e-05],p_force[b][2.11744173e-05 3.99981833e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][ 2.97841412e+00 -9.65685176e-05],p_force[b][2.11744173e-05 3.99981833e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.97841412e+00 -9.65685176e-05],p_force[b][2.11744173e-05 3.99981833e+00] f_a[-0.80561189 -1.01918058],f_bNone
+agent 2 and agent 3   p_force[a][0.00892329 2.99077803],p_force[b][2.11744173e-05 3.99981833e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][0.00892329 2.99077803],p_force[b][2.11744173e-05 3.99981833e+00] f_a[ 5.97398612e-248 -1.23465475e-248],f_bNone
+agent 2 and landmark 1   p_force[a][0.00892329 2.99077803],p_force[b][2.11744173e-05 3.99981833e+00] f_a[-1.10385712e-125  3.14003139e-125],f_bNone
+agent 3 and landmark 0   p_force[a][2.11744173e-05 3.99981833e+00],p_force[b][2.11744173e-05 3.99981833e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][2.11744173e-05 3.99981833e+00],p_force[b][2.11744173e-05 3.99981833e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][2.11744173e-05 3.99981833e+00],p_force[b][2.11744173e-05 3.99981833e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][1.74134874 1.25690272],p_force[b][ 2.99891961e+00 -5.96974369e-05] f_a[0. 0.],f_b[-0. -0.]
+agent 0 and agent 2   p_force[a][1.74134874 1.25690272],p_force[b][2.94268423 0.05652944] f_a[1.05334482e-178 3.04183660e-178],f_b[-1.05334482e-178 -3.04183660e-178]
+agent 0 and agent 3   p_force[a][1.74134874 1.25690272],p_force[b][2.52162245e-05 3.99912143e+00] f_a[-1.03079256e-197 -7.96835014e-198],f_b[1.03079256e-197 7.96835014e-198]
+agent 0 and landmark 0   p_force[a][1.74134874 1.25690272],p_force[b][2.52162245e-05 3.99912143e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][1.74134874 1.25690272],p_force[b][2.52162245e-05 3.99912143e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99891961e+00 -5.96974369e-05],p_force[b][2.94268423 0.05652944] f_a[ 7.99005651e-310 -1.73910940e-308],f_b[-7.99005651e-310  1.73910940e-308]
+agent 1 and agent 3   p_force[a][ 2.99891961e+00 -5.96974369e-05],p_force[b][2.52162245e-05 3.99912143e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][ 2.99891961e+00 -5.96974369e-05],p_force[b][2.52162245e-05 3.99912143e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99891961e+00 -5.96974369e-05],p_force[b][2.52162245e-05 3.99912143e+00] f_a[-0.16124342 -0.33355758],f_bNone
+agent 2 and agent 3   p_force[a][2.94268423 0.05652944],p_force[b][2.52162245e-05 3.99912143e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][2.94268423 0.05652944],p_force[b][2.52162245e-05 3.99912143e+00] f_a[ 1.42346073e-254 -1.46911147e-255],f_bNone
+agent 2 and landmark 1   p_force[a][2.94268423 0.05652944],p_force[b][2.52162245e-05 3.99912143e+00] f_a[-1.62897278e-156  6.31629458e-156],f_bNone
+agent 3 and landmark 0   p_force[a][2.52162245e-05 3.99912143e+00],p_force[b][2.52162245e-05 3.99912143e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][2.52162245e-05 3.99912143e+00],p_force[b][2.52162245e-05 3.99912143e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][2.52162245e-05 3.99912143e+00],p_force[b][2.52162245e-05 3.99912143e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][0.02397275 2.97571868],p_force[b][2.99879158e+00 8.27128999e-04] f_a[0. 0.],f_b[-0. -0.]
+agent 0 and agent 2   p_force[a][0.02397275 2.97571868],p_force[b][0.06070342 2.9328348 ] f_a[9.76757969e-186 3.43609001e-185],f_b[-9.76757969e-186 -3.43609001e-185]
+agent 0 and agent 3   p_force[a][0.02397275 2.97571868],p_force[b][-1.40616437e-04  3.99837399e+00] f_a[-6.08441969e-165 -3.57847151e-165],f_b[6.08441969e-165 3.57847151e-165]
+agent 0 and landmark 0   p_force[a][0.02397275 2.97571868],p_force[b][-1.40616437e-04  3.99837399e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][0.02397275 2.97571868],p_force[b][-1.40616437e-04  3.99837399e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][2.99879158e+00 8.27128999e-04],p_force[b][0.06070342 2.9328348 ] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99879158e+00 8.27128999e-04],p_force[b][-1.40616437e-04  3.99837399e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99879158e+00 8.27128999e-04],p_force[b][-1.40616437e-04  3.99837399e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99879158e+00 8.27128999e-04],p_force[b][-1.40616437e-04  3.99837399e+00] f_a[-1.28255261e-05 -6.28975185e-05],f_bNone
+agent 2 and agent 3   p_force[a][0.06070342 2.9328348 ],p_force[b][-1.40616437e-04  3.99837399e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][0.06070342 2.9328348 ],p_force[b][-1.40616437e-04  3.99837399e+00] f_a[ 1.02801760e-274 -2.91773763e-276],f_bNone
+agent 2 and landmark 1   p_force[a][0.06070342 2.9328348 ],p_force[b][-1.40616437e-04  3.99837399e+00] f_a[-8.59739876e-179  5.41366793e-178],f_bNone
+agent 3 and landmark 0   p_force[a][-1.40616437e-04  3.99837399e+00],p_force[b][-1.40616437e-04  3.99837399e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-1.40616437e-04  3.99837399e+00],p_force[b][-1.40616437e-04  3.99837399e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-1.40616437e-04  3.99837399e+00],p_force[b][-1.40616437e-04  3.99837399e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][0.41882502 2.57967299],p_force[b][ 2.99151742e+00 -2.03393289e-03] f_a[0. 0.],f_b[-0. -0.]
+agent 0 and agent 2   p_force[a][0.41882502 2.57967299],p_force[b][0.00381895 2.99570489] f_a[1.17353769e-191 4.88007348e-191],f_b[-1.17353769e-191 -4.88007348e-191]
+agent 0 and agent 3   p_force[a][0.41882502 2.57967299],p_force[b][-7.01052661e-04  3.99776196e+00] f_a[-5.14037604e-145 -2.36588793e-145],f_b[5.14037604e-145 2.36588793e-145]
+agent 0 and landmark 0   p_force[a][0.41882502 2.57967299],p_force[b][-7.01052661e-04  3.99776196e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][0.41882502 2.57967299],p_force[b][-7.01052661e-04  3.99776196e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99151742e+00 -2.03393289e-03],p_force[b][0.00381895 2.99570489] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 2.99151742e+00 -2.03393289e-03],p_force[b][-7.01052661e-04  3.99776196e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][ 2.99151742e+00 -2.03393289e-03],p_force[b][-7.01052661e-04  3.99776196e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99151742e+00 -2.03393289e-03],p_force[b][-7.01052661e-04  3.99776196e+00] f_a[ 1.86426629e-14 -2.82960044e-13],f_bNone
+agent 2 and agent 3   p_force[a][0.00381895 2.99570489],p_force[b][-7.01052661e-04  3.99776196e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 2 and landmark 0   p_force[a][0.00381895 2.99570489],p_force[b][-7.01052661e-04  3.99776196e+00] f_a[7.15555196e-292 3.83468070e-293],f_bNone
+agent 2 and landmark 1   p_force[a][0.00381895 2.99570489],p_force[b][-7.01052661e-04  3.99776196e+00] f_a[-9.04544211e-210  9.91764490e-209],f_bNone
+agent 3 and landmark 0   p_force[a][-7.01052661e-04  3.99776196e+00],p_force[b][-7.01052661e-04  3.99776196e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-7.01052661e-04  3.99776196e+00],p_force[b][-7.01052661e-04  3.99776196e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-7.01052661e-04  3.99776196e+00],p_force[b][-7.01052661e-04  3.99776196e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][0.46326403 2.53655308],p_force[b][2.97686881 0.02196892] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][0.46326403 2.53655308],p_force[b][2.99892551e+00 1.00810241e-04] f_a[5.77685237e-195 2.64764043e-194],f_b[-5.77685237e-195 -2.64764043e-194]
+agent 0 and agent 3   p_force[a][0.46326403 2.53655308],p_force[b][-1.88873873e-05  3.99799991e+00] f_a[-6.61978570e-120 -6.43604385e-121],f_b[6.61978570e-120 6.43604385e-121]
+agent 0 and landmark 0   p_force[a][0.46326403 2.53655308],p_force[b][-1.88873873e-05  3.99799991e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][0.46326403 2.53655308],p_force[b][-1.88873873e-05  3.99799991e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][2.97686881 0.02196892],p_force[b][2.99892551e+00 1.00810241e-04] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.97686881 0.02196892],p_force[b][-1.88873873e-05  3.99799991e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.97686881 0.02196892],p_force[b][-1.88873873e-05  3.99799991e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.97686881 0.02196892],p_force[b][-1.88873873e-05  3.99799991e+00] f_a[ 5.61919970e-29 -1.67733827e-28],f_bNone
+agent 2 and agent 3   p_force[a][2.99892551e+00 1.00810241e-04],p_force[b][-1.88873873e-05  3.99799991e+00] f_a[-1.16327204e-298 -1.37917878e-298],f_b[1.16327204e-298 1.37917878e-298]
+agent 2 and landmark 0   p_force[a][2.99892551e+00 1.00810241e-04],p_force[b][-1.88873873e-05  3.99799991e+00] f_a[4.64075425e-308 6.57401739e-309],f_bNone
+agent 2 and landmark 1   p_force[a][2.99892551e+00 1.00810241e-04],p_force[b][-1.88873873e-05  3.99799991e+00] f_a[-6.59776067e-247  1.40120089e-245],f_bNone
+agent 3 and landmark 0   p_force[a][-1.88873873e-05  3.99799991e+00],p_force[b][-1.88873873e-05  3.99799991e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-1.88873873e-05  3.99799991e+00],p_force[b][-1.88873873e-05  3.99799991e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-1.88873873e-05  3.99799991e+00],p_force[b][-1.88873873e-05  3.99799991e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][0.0254384 2.9744761],p_force[b][2.99377370e+00 1.62789953e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][0.0254384 2.9744761],p_force[b][2.95487165 0.04374326] f_a[9.50690266e-206 6.22898007e-205],f_b[-9.50690266e-206 -6.22898007e-205]
+agent 0 and agent 3   p_force[a][0.0254384 2.9744761],p_force[b][-2.91449055e-06  3.99979186e+00] f_a[-1.06429920e-113  1.86150189e-114],f_b[ 1.06429920e-113 -1.86150189e-114]
+agent 0 and landmark 0   p_force[a][0.0254384 2.9744761],p_force[b][-2.91449055e-06  3.99979186e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][0.0254384 2.9744761],p_force[b][-2.91449055e-06  3.99979186e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][2.99377370e+00 1.62789953e-03],p_force[b][2.95487165 0.04374326] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99377370e+00 1.62789953e-03],p_force[b][-2.91449055e-06  3.99979186e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99377370e+00 1.62789953e-03],p_force[b][-2.91449055e-06  3.99979186e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99377370e+00 1.62789953e-03],p_force[b][-2.91449055e-06  3.99979186e+00] f_a[ 1.37097682e-51 -2.25733566e-51],f_bNone
+agent 2 and agent 3   p_force[a][2.95487165 0.04374326],p_force[b][-2.91449055e-06  3.99979186e+00] f_a[-4.81338226e-260 -5.58196096e-260],f_b[4.81338226e-260 5.58196096e-260]
+agent 2 and landmark 0   p_force[a][2.95487165 0.04374326],p_force[b][-2.91449055e-06  3.99979186e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][2.95487165 0.04374326],p_force[b][-2.91449055e-06  3.99979186e+00] f_a[1.99378352e-275 1.45547704e-273],f_bNone
+agent 3 and landmark 0   p_force[a][-2.91449055e-06  3.99979186e+00],p_force[b][-2.91449055e-06  3.99979186e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-2.91449055e-06  3.99979186e+00],p_force[b][-2.91449055e-06  3.99979186e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-2.91449055e-06  3.99979186e+00],p_force[b][-2.91449055e-06  3.99979186e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][1.12899052e-05 2.99995190e+00],p_force[b][2.99989682e+00 1.02583281e-05] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][1.12899052e-05 2.99995190e+00],p_force[b][9.32701427e-04 2.99889868e+00] f_a[4.32973676e-163 5.75355018e-162],f_b[-4.32973676e-163 -5.75355018e-162]
+agent 0 and agent 3   p_force[a][1.12899052e-05 2.99995190e+00],p_force[b][-4.17144765e-05  3.99969816e+00] f_a[-2.77644251e-105 -9.45489535e-107],f_b[2.77644251e-105 9.45489535e-107]
+agent 0 and landmark 0   p_force[a][1.12899052e-05 2.99995190e+00],p_force[b][-4.17144765e-05  3.99969816e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][1.12899052e-05 2.99995190e+00],p_force[b][-4.17144765e-05  3.99969816e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][2.99989682e+00 1.02583281e-05],p_force[b][9.32701427e-04 2.99889868e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99989682e+00 1.02583281e-05],p_force[b][-4.17144765e-05  3.99969816e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99989682e+00 1.02583281e-05],p_force[b][-4.17144765e-05  3.99969816e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99989682e+00 1.02583281e-05],p_force[b][-4.17144765e-05  3.99969816e+00] f_a[ 1.17795391e-80 -1.33810943e-80],f_bNone
+agent 2 and agent 3   p_force[a][9.32701427e-04 2.99889868e+00],p_force[b][-4.17144765e-05  3.99969816e+00] f_a[-2.47475676e-236 -3.26308348e-236],f_b[2.47475676e-236 3.26308348e-236]
+agent 2 and landmark 0   p_force[a][9.32701427e-04 2.99889868e+00],p_force[b][-4.17144765e-05  3.99969816e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][9.32701427e-04 2.99889868e+00],p_force[b][-4.17144765e-05  3.99969816e+00] f_a[1.55327490e-297 1.83006217e-296],f_bNone
+agent 3 and landmark 0   p_force[a][-4.17144765e-05  3.99969816e+00],p_force[b][-4.17144765e-05  3.99969816e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-4.17144765e-05  3.99969816e+00],p_force[b][-4.17144765e-05  3.99969816e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-4.17144765e-05  3.99969816e+00],p_force[b][-4.17144765e-05  3.99969816e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][1.95581997e-05 2.99975359e+00],p_force[b][2.99710000e+00 2.05961539e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][1.95581997e-05 2.99975359e+00],p_force[b][2.93177551 0.04947902] f_a[-2.45985866e-133  6.11323563e-131],f_b[ 2.45985866e-133 -6.11323563e-131]
+agent 0 and agent 3   p_force[a][1.95581997e-05 2.99975359e+00],p_force[b][-1.27346939e-04  3.99191523e+00] f_a[-8.26220612e-101 -3.46710048e-102],f_b[8.26220612e-101 3.46710048e-102]
+agent 0 and landmark 0   p_force[a][1.95581997e-05 2.99975359e+00],p_force[b][-1.27346939e-04  3.99191523e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][1.95581997e-05 2.99975359e+00],p_force[b][-1.27346939e-04  3.99191523e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][2.99710000e+00 2.05961539e-03],p_force[b][2.93177551 0.04947902] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.99710000e+00 2.05961539e-03],p_force[b][-1.27346939e-04  3.99191523e+00] f_a[-0. -0.],f_b[0. 0.]
+agent 1 and landmark 0   p_force[a][2.99710000e+00 2.05961539e-03],p_force[b][-1.27346939e-04  3.99191523e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.99710000e+00 2.05961539e-03],p_force[b][-1.27346939e-04  3.99191523e+00] f_a[ 1.50476146e-113 -1.31097672e-113],f_bNone
+agent 2 and agent 3   p_force[a][2.93177551 0.04947902],p_force[b][-1.27346939e-04  3.99191523e+00] f_a[-1.47566397e-199 -1.94475920e-199],f_b[1.47566397e-199 1.94475920e-199]
+agent 2 and landmark 0   p_force[a][2.93177551 0.04947902],p_force[b][-1.27346939e-04  3.99191523e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][2.93177551 0.04947902],p_force[b][-1.27346939e-04  3.99191523e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][-1.27346939e-04  3.99191523e+00],p_force[b][-1.27346939e-04  3.99191523e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-1.27346939e-04  3.99191523e+00],p_force[b][-1.27346939e-04  3.99191523e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-1.27346939e-04  3.99191523e+00],p_force[b][-1.27346939e-04  3.99191523e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][3.48953932e-07 2.99999321e+00],p_force[b][2.93335766e+00 2.34304945e-03] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][3.48953932e-07 2.99999321e+00],p_force[b][0.00324138 2.99670303] f_a[-9.80615176e-124  6.74000774e-123],f_b[ 9.80615176e-124 -6.74000774e-123]
+agent 0 and agent 3   p_force[a][3.48953932e-07 2.99999321e+00],p_force[b][-6.65804400e-05  3.99832177e+00] f_a[-1.33354857e-97  8.65675389e-99],f_b[ 1.33354857e-97 -8.65675389e-99]
+agent 0 and landmark 0   p_force[a][3.48953932e-07 2.99999321e+00],p_force[b][-6.65804400e-05  3.99832177e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][3.48953932e-07 2.99999321e+00],p_force[b][-6.65804400e-05  3.99832177e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][2.93335766e+00 2.34304945e-03],p_force[b][0.00324138 2.99670303] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.93335766e+00 2.34304945e-03],p_force[b][-6.65804400e-05  3.99832177e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.93335766e+00 2.34304945e-03],p_force[b][-6.65804400e-05  3.99832177e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.93335766e+00 2.34304945e-03],p_force[b][-6.65804400e-05  3.99832177e+00] f_a[ 5.19891458e-149 -3.67901719e-149],f_bNone
+agent 2 and agent 3   p_force[a][0.00324138 2.99670303],p_force[b][-6.65804400e-05  3.99832177e+00] f_a[-3.49455986e-161 -4.96483298e-161],f_b[3.49455986e-161 4.96483298e-161]
+agent 2 and landmark 0   p_force[a][0.00324138 2.99670303],p_force[b][-6.65804400e-05  3.99832177e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][0.00324138 2.99670303],p_force[b][-6.65804400e-05  3.99832177e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][-6.65804400e-05  3.99832177e+00],p_force[b][-6.65804400e-05  3.99832177e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-6.65804400e-05  3.99832177e+00],p_force[b][-6.65804400e-05  3.99832177e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-6.65804400e-05  3.99832177e+00],p_force[b][-6.65804400e-05  3.99832177e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][-7.01292720e-07  2.99999034e+00],p_force[b][ 2.99192333e+00 -2.97792649e-05] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][-7.01292720e-07  2.99999034e+00],p_force[b][1.25570200e-05 2.99997783e+00] f_a[-3.00931394e-94  9.73856713e-94],f_b[ 3.00931394e-94 -9.73856713e-94]
+agent 0 and agent 3   p_force[a][-7.01292720e-07  2.99999034e+00],p_force[b][-2.06172499e-05  3.99891353e+00] f_a[-4.85493219e-95 -3.07827487e-96],f_b[4.85493219e-95 3.07827487e-96]
+agent 0 and landmark 0   p_force[a][-7.01292720e-07  2.99999034e+00],p_force[b][-2.06172499e-05  3.99891353e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][-7.01292720e-07  2.99999034e+00],p_force[b][-2.06172499e-05  3.99891353e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.99192333e+00 -2.97792649e-05],p_force[b][1.25570200e-05 2.99997783e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 2.99192333e+00 -2.97792649e-05],p_force[b][-2.06172499e-05  3.99891353e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][ 2.99192333e+00 -2.97792649e-05],p_force[b][-2.06172499e-05  3.99891353e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.99192333e+00 -2.97792649e-05],p_force[b][-2.06172499e-05  3.99891353e+00] f_a[ 2.97666470e-186 -1.77405973e-186],f_bNone
+agent 2 and agent 3   p_force[a][1.25570200e-05 2.99997783e+00],p_force[b][-2.06172499e-05  3.99891353e+00] f_a[-2.57193093e-136 -4.06555080e-136],f_b[2.57193093e-136 4.06555080e-136]
+agent 2 and landmark 0   p_force[a][1.25570200e-05 2.99997783e+00],p_force[b][-2.06172499e-05  3.99891353e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][1.25570200e-05 2.99997783e+00],p_force[b][-2.06172499e-05  3.99891353e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][-2.06172499e-05  3.99891353e+00],p_force[b][-2.06172499e-05  3.99891353e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-2.06172499e-05  3.99891353e+00],p_force[b][-2.06172499e-05  3.99891353e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-2.06172499e-05  3.99891353e+00],p_force[b][-2.06172499e-05  3.99891353e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][2.46122445e-05 2.99987823e+00],p_force[b][2.66745812 0.0321427 ] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][2.46122445e-05 2.99987823e+00],p_force[b][2.99976844e+00 1.77683414e-04] f_a[-6.24332565e-64  1.13795683e-63],f_b[ 6.24332565e-64 -1.13795683e-63]
+agent 0 and agent 3   p_force[a][2.46122445e-05 2.99987823e+00],p_force[b][-4.39871928e-06  3.22463417e+00] f_a[-5.14655928e-93  2.53812706e-94],f_b[ 5.14655928e-93 -2.53812706e-94]
+agent 0 and landmark 0   p_force[a][2.46122445e-05 2.99987823e+00],p_force[b][-4.39871928e-06  3.22463417e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][2.46122445e-05 2.99987823e+00],p_force[b][-4.39871928e-06  3.22463417e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][2.66745812 0.0321427 ],p_force[b][2.99976844e+00 1.77683414e-04] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][2.66745812 0.0321427 ],p_force[b][-4.39871928e-06  3.22463417e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][2.66745812 0.0321427 ],p_force[b][-4.39871928e-06  3.22463417e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][2.66745812 0.0321427 ],p_force[b][-4.39871928e-06  3.22463417e+00] f_a[ 9.14563718e-225 -4.70704278e-225],f_bNone
+agent 2 and agent 3   p_force[a][2.99976844e+00 1.77683414e-04],p_force[b][-4.39871928e-06  3.22463417e+00] f_a[-1.10560115e-81 -1.36548311e-81],f_b[1.10560115e-81 1.36548311e-81]
+agent 2 and landmark 0   p_force[a][2.99976844e+00 1.77683414e-04],p_force[b][-4.39871928e-06  3.22463417e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][2.99976844e+00 1.77683414e-04],p_force[b][-4.39871928e-06  3.22463417e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][-4.39871928e-06  3.22463417e+00],p_force[b][-4.39871928e-06  3.22463417e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-4.39871928e-06  3.22463417e+00],p_force[b][-4.39871928e-06  3.22463417e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-4.39871928e-06  3.22463417e+00],p_force[b][-4.39871928e-06  3.22463417e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][8.31882267e-06 2.99998516e+00],p_force[b][ 2.98340946 -0.00619046] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][8.31882267e-06 2.99998516e+00],p_force[b][0.43477884 2.56342077] f_a[-1.41607249e-64  1.58409122e-64],f_b[ 1.41607249e-64 -1.58409122e-64]
+agent 0 and agent 3   p_force[a][8.31882267e-06 2.99998516e+00],p_force[b][-1.56899157e-04  3.38433743e+00] f_a[-1.64552177e-93  2.82240440e-94],f_b[ 1.64552177e-93 -2.82240440e-94]
+agent 0 and landmark 0   p_force[a][8.31882267e-06 2.99998516e+00],p_force[b][-1.56899157e-04  3.38433743e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][8.31882267e-06 2.99998516e+00],p_force[b][-1.56899157e-04  3.38433743e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.98340946 -0.00619046],p_force[b][0.43477884 2.56342077] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 2.98340946 -0.00619046],p_force[b][-1.56899157e-04  3.38433743e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][ 2.98340946 -0.00619046],p_force[b][-1.56899157e-04  3.38433743e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.98340946 -0.00619046],p_force[b][-1.56899157e-04  3.38433743e+00] f_a[ 3.63666177e-264 -1.64526132e-264],f_bNone
+agent 2 and agent 3   p_force[a][0.43477884 2.56342077],p_force[b][-1.56899157e-04  3.38433743e+00] f_a[-1.14924912e-39 -1.37861888e-39],f_b[1.14924912e-39 1.37861888e-39]
+agent 2 and landmark 0   p_force[a][0.43477884 2.56342077],p_force[b][-1.56899157e-04  3.38433743e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][0.43477884 2.56342077],p_force[b][-1.56899157e-04  3.38433743e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][-1.56899157e-04  3.38433743e+00],p_force[b][-1.56899157e-04  3.38433743e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-1.56899157e-04  3.38433743e+00],p_force[b][-1.56899157e-04  3.38433743e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-1.56899157e-04  3.38433743e+00],p_force[b][-1.56899157e-04  3.38433743e+00] f_aNone,f_bNone
+agent 0 and agent 1   p_force[a][8.64454705e-06 2.99996191e+00],p_force[b][ 2.86636984 -0.02317379] f_a[-0.  0.],f_b[ 0. -0.]
+agent 0 and agent 2   p_force[a][8.64454705e-06 2.99996191e+00],p_force[b][0.72750333 2.27210265] f_a[-5.19365332e-56  2.78874923e-56],f_b[ 5.19365332e-56 -2.78874923e-56]
+agent 0 and agent 3   p_force[a][8.64454705e-06 2.99996191e+00],p_force[b][-5.12969018e-05  3.78043699e+00] f_a[-1.56653588e-90  8.21229978e-92],f_b[ 1.56653588e-90 -8.21229978e-92]
+agent 0 and landmark 0   p_force[a][8.64454705e-06 2.99996191e+00],p_force[b][-5.12969018e-05  3.78043699e+00] f_a[0. 0.],f_bNone
+agent 0 and landmark 1   p_force[a][8.64454705e-06 2.99996191e+00],p_force[b][-5.12969018e-05  3.78043699e+00] f_a[0. 0.],f_bNone
+agent 1 and agent 2   p_force[a][ 2.86636984 -0.02317379],p_force[b][0.72750333 2.27210265] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and agent 3   p_force[a][ 2.86636984 -0.02317379],p_force[b][-5.12969018e-05  3.78043699e+00] f_a[ 0. -0.],f_b[-0.  0.]
+agent 1 and landmark 0   p_force[a][ 2.86636984 -0.02317379],p_force[b][-5.12969018e-05  3.78043699e+00] f_a[ 0. -0.],f_bNone
+agent 1 and landmark 1   p_force[a][ 2.86636984 -0.02317379],p_force[b][-5.12969018e-05  3.78043699e+00] f_a[ 2.68692848e-304 -1.08424493e-304],f_bNone
+agent 2 and agent 3   p_force[a][0.72750333 2.27210265],p_force[b][-5.12969018e-05  3.78043699e+00] f_a[-9.22416115e-10 -1.19454288e-09],f_b[9.22416115e-10 1.19454288e-09]
+agent 2 and landmark 0   p_force[a][0.72750333 2.27210265],p_force[b][-5.12969018e-05  3.78043699e+00] f_a[0. 0.],f_bNone
+agent 2 and landmark 1   p_force[a][0.72750333 2.27210265],p_force[b][-5.12969018e-05  3.78043699e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 0   p_force[a][-5.12959794e-05  3.78043699e+00],p_force[b][-5.12969018e-05  3.78043699e+00] f_a[0. 0.],f_bNone
+agent 3 and landmark 1   p_force[a][-5.12959794e-05  3.78043699e+00],p_force[b][-5.12969018e-05  3.78043699e+00] f_a[0. 0.],f_bNone
+landmark 0 and landmark 1   p_force[a][-5.12959794e-05  3.78043699e+00],p_force[b][-5.12969018e-05  3.78043699e+00] f_aNone,f_bNone
