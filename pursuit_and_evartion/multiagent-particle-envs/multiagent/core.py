@@ -159,13 +159,14 @@ class World(object):
                     if(p_force[a] is None): p_force[a] = 0.0
                     temp1 = p_force[a]
                     p_force[a] = f_a + p_force[a] 
+                    #pdb.set_trace()
                 if(f_b is not None):
                     if(p_force[b] is None): p_force[b] = 0.0
                     temp2 = p_force[b]
                     p_force[b] = f_b + p_force[b]  
                 #debug
                 if self.check == True:
-                    with open("learning_curves/debug_file.dat", 'a') as f:
+                    with open("learning_curves/debug_element.dat", 'a') as f:
                         t = "{} and {}   p_force[a]{},p_force[b]{} f_a{},f_b{}\n".format(entity_a.name, entity_b.name, temp1, temp2, f_a, f_b)
                         f.write(t)  
         return p_force
@@ -174,6 +175,11 @@ class World(object):
     def integrate_state(self, p_force):
         for i,entity in enumerate(self.entities):      #all entities (agents and landmarks)
             if not entity.movable: continue            # movable is False continue
+            #pdb.set_trace()
+            if self.check == True:
+                with open("learning_curves/debug_file3.dat", 'a') as f:
+                    t = "{}    vel:{}  force:{}\n".format(entity.name, entity.state.p_vel, p_force)
+                    f.write(t)
             entity.state.p_vel = entity.state.p_vel * (1 - self.damping)        #damping = 0.25
             if (p_force[i] is not None):
                 entity.state.p_vel += (p_force[i] / entity.mass) * self.dt      #initial_mas = 1.0
@@ -209,9 +215,12 @@ class World(object):
         #pdb.set_trace()
         force = self.contact_force * delta_pos / dist * penetration #contract_force = 100　　ベクトルに変換
         # debug
-        """if np.sqrt(np.sum(np.square(force)))>4:
-            if not((isinstance(entity_a, Landmark)) and (isinstance(entity_b, Landmark))):
-                print("{}  and  {} given {}".format(entity_a.name, entity_b.name, force))"""
+        if self.check:
+            if np.sqrt(np.sum(np.square(force)))>2:
+                if not((isinstance(entity_a, Landmark)) and (isinstance(entity_b, Landmark))):
+                    with open("learning_curves/debug_file3.dat", 'a') as f:
+                        t = "{}and{} force:{}\n".format(entity_a.name, entity_b.name ,force)
+                        f.write(t)
         # end
         # agentとagentどうしだと反発力を軽減させる
         if entity_a.movable and entity_b.movable:
@@ -226,5 +235,7 @@ class World(object):
             for i, pos in enumerate(entity.state.p_pos):
                 if pos < -1:
                     entity.state.p_pos[i] = -1 - (entity.state.p_pos[i] - (-1))
+                    entity.state.p_vel[i] = -entity.state.p_vel[i]
                 if pos > 1:
                     entity.state.p_pos[i] = 1 - (entity.state.p_pos[i] - 1)
+                    entity.state.p_vel[i] = -entity.state.p_vel[i]

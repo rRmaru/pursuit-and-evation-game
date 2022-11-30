@@ -48,12 +48,14 @@ class Scenario(BaseScenario):
             landmark.color = np.array([0.25, 0.25, 0.25])
         # set random initial states
         for i, agent in enumerate(world.agents):
+            #agent.state.p_pos = np.array([0+i*0.5,-0.8])
             agent.state.p_pos = np.array([np.random.uniform(-1,0), np.random.uniform(-1,1)] if agent.adversary else [np.random.uniform(0,1), np.random.uniform(-1,1)])#np.random.uniform(-1, +1, world.dim_p)      #positionを-1~1の範囲で設定
             agent.state.p_vel = np.zeros(world.dim_p)           #速度を二次元で0に設定
             agent.state.c = np.zeros(world.dim_c)
         for i, landmark in enumerate(world.landmarks):
             if not landmark.boundary:
                 landmark.state.p_pos = np.random.uniform(-0.9, +0.9, world.dim_p)       #landmarkの位置を初期化
+                #landmark.state.p_pos = np.array([0, 0.5])
                 landmark.state.p_vel = np.zeros(world.dim_p)        #速度をゼロで設定
 
 
