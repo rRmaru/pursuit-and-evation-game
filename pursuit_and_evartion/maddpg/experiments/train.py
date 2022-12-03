@@ -242,7 +242,7 @@ def train(arglist):
                     pickle.dump(final_ep_ag_rewards, fp)
                 print('...Finished total of {} episodes.'.format(len(episode_rewards)))
                 print("the number of collision:{}".format(save_collision))
-                plt.hist(step_len)          #step数のヒストグラムを表示
+                print(step_len)          #step数のヒストグラムを表示
                 break
 
 if __name__ == '__main__':
