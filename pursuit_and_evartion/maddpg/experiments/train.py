@@ -18,7 +18,7 @@ def parse_args():
     parser.add_argument("--scenario", type=str, default="pursuit_and_evation", help="name of the scenario script")
     parser.add_argument("--max-episode-len", type=int, default=100, help="maximum episode length")
     parser.add_argument("--num-episodes", type=int, default=10000, help="number of episodes")
-    parser.add_argument("--num-adversaries", type=int, default=0, help="number of adversaries")
+    parser.add_argument("--num-adversaries", type=int, default=3, help="number of adversaries")
     parser.add_argument("--good-policy", type=str, default="maddpg", help="policy for good agents")
     parser.add_argument("--adv-policy", type=str, default="maddpg", help="policy of adversaries")
     # Core training parameters
@@ -38,7 +38,7 @@ def parse_args():
     parser.add_argument("--benchmark-iters", type=int, default=100000, help="number of iterations run for benchmarking")
     parser.add_argument("--benchmark-dir", type=str, default="./benchmark_files/", help="directory where benchmark data is saved")
     parser.add_argument("--plots-dir", type=str, default="./learning_curves/", help="directory where plot data is saved")
-    return parser.parse_args(["--num-episodes", "30000"])
+    return parser.parse_args(["--num-episodes", "20000"])
 
 def mlp_model(input, num_outputs, scope, reuse=False, num_units=64, rnn_cell=None):
     # This model takes as input an observation and returns values of all actions
@@ -189,7 +189,7 @@ def train(arglist):
 
             # to display, get position of object
             flag = False
-            if (len(episode_rewards) == 10000) or (len(episode_rewards) == 4999) or (len(episode_rewards) == 30000) or (len(episode_rewards) == 5000):
+            if (len(episode_rewards) == 10000) or (len(episode_rewards) == 20000) or (len(episode_rewards) == 30000) or (len(episode_rewards) == 5000):
                 flag = True
                 env.world.check = True
             if flag:
@@ -226,6 +226,7 @@ def train(arglist):
                     print("steps: {}, episodes: {}, mean episode reward: {}, agent episode reward: {}, time: {}".format(
                         train_step, len(episode_rewards), np.mean(episode_rewards[-arglist.save_rate:]),
                         [np.mean(rew[-arglist.save_rate:]) for rew in agent_rewards], round(time.time()-t_start, 3 )))
+                    save_collision.append(np.mean(collide_list[-arglist.save_rate:]))
                 t_start = time.time()
                 # Keep track of final episode reward
                 final_ep_rewards.append(np.mean(episode_rewards[-arglist.save_rate:]))
