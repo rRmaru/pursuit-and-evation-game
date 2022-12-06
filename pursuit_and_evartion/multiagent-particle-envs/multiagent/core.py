@@ -165,10 +165,10 @@ class World(object):
                     temp2 = p_force[b]
                     p_force[b] = f_b + p_force[b]  
                 #debug
-                if self.check == True:
+                """if self.check == True:
                     with open("learning_curves/debug_element.dat", 'a') as f:
                         t = "{} and {}   p_force[a]{},p_force[b]{} f_a{},f_b{}\n".format(entity_a.name, entity_b.name, temp1, temp2, f_a, f_b)
-                        f.write(t)  
+                        f.write(t)  """
         return p_force
 
     # integrate physical state
@@ -233,9 +233,9 @@ class World(object):
     def bound(self):
         for entity in self.entities:
             for i, pos in enumerate(entity.state.p_pos):
-                if pos < -1.5:
-                    entity.state.p_pos[i] = -1.5 - (entity.state.p_pos[i] - (-1.5))
+                if pos < -1.2:
+                    entity.state.p_pos[i] = -1.2 - (entity.state.p_pos[i] - (-1.2))
                     entity.state.p_vel[i] = -entity.state.p_vel[i]
-                if pos > 1.5:
-                    entity.state.p_pos[i] = 1.5 - (entity.state.p_pos[i] - 1.5)
+                if pos > 1.2:
+                    entity.state.p_pos[i] = 1.2 - (entity.state.p_pos[i] - 1.2)
                     entity.state.p_vel[i] = -entity.state.p_vel[i]
