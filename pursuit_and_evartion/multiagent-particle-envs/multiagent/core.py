@@ -176,10 +176,10 @@ class World(object):
         for i,entity in enumerate(self.entities):      #all entities (agents and landmarks)
             if not entity.movable: continue            # movable is False continue
             #pdb.set_trace()
-            if self.check == True:
+            """if self.check == True:
                 with open("learning_curves/debug_file3.dat", 'a') as f:
                     t = "{}    vel:{}  force:{}\n".format(entity.name, entity.state.p_vel, p_force)
-                    f.write(t)
+                    f.write(t)"""
             entity.state.p_vel = entity.state.p_vel * (1 - self.damping)        #damping = 0.25
             if (p_force[i] is not None):
                 entity.state.p_vel += (p_force[i] / entity.mass) * self.dt      #initial_mas = 1.0
@@ -215,12 +215,12 @@ class World(object):
         #pdb.set_trace()
         force = self.contact_force * delta_pos / dist * penetration #contract_force = 100　　ベクトルに変換
         # debug
-        if self.check:
+        """if self.check:
             if np.sqrt(np.sum(np.square(force)))>2:
                 if not((isinstance(entity_a, Landmark)) and (isinstance(entity_b, Landmark))):
                     with open("learning_curves/debug_file3.dat", 'a') as f:
                         t = "{}and{} force:{}\n".format(entity_a.name, entity_b.name ,force)
-                        f.write(t)
+                        f.write(t)"""
         # end
         # agentとagentどうしだと反発力を軽減させる
         if entity_a.movable and entity_b.movable:

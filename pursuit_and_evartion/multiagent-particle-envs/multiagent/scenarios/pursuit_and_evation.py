@@ -103,7 +103,7 @@ class Scenario(BaseScenario):
         if agent.collide:
             for a in adversaries:
                 if self.is_collision(a, agent):
-                    rew -= 100
+                    rew -= 75
                     #collide num
                     agent.collide_num += 1
 
@@ -133,7 +133,7 @@ class Scenario(BaseScenario):
             for ag in agents:
                 for adv in adversaries:
                     if self.is_collision(ag, adv):
-                        rew += 100
+                        rew += 75
         return rew
 
     def observation(self, agent, world):            #ちょっとわからない
