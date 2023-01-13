@@ -24,13 +24,13 @@ class ReplayBuffer(object):
 
     def add(self, obs_t, action, reward, obs_tp1, done):           #obs, action, reward, obs_next, done
         data = (obs_t, action, reward, obs_tp1, done)       #tupleを作成
-
+        
         if self._next_idx >= len(self._storage):        #_next_indexの大きさがstorageの大きさと同じかそれ以上
             self._storage.append(data)
         else:
             self._storage[self._next_idx] = data
         self._next_idx = (self._next_idx + 1) % self._maxsize       #indexをひとつ追加するまた、maxsizeを超えると二週目を開始する
-
+        
     def _encode_sample(self, idxes):                #sample indexで呼び出される関数
         obses_t, actions, rewards, obses_tp1, dones = [], [], [], [], []
         for i in idxes:
@@ -43,7 +43,7 @@ class ReplayBuffer(object):
             dones.append(done)
         return np.array(obses_t), np.array(actions), np.array(rewards), np.array(obses_tp1), np.array(dones)
 
-    def make_index(self, batch_size):       #randomにバッファの中から取り出す（バッチサイズの数だけ）
+    def make_index(self, batch_size):       #randomにバッファの中から取り出す（バッチサイズの数だけ）PERではこの部分を変更したい
         return [random.randint(0, len(self._storage) - 1) for _ in range(batch_size)]
 
     def make_latest_index(self, batch_size):
@@ -84,3 +84,13 @@ class ReplayBuffer(object):
 
     def collect(self):
         return self.sample(-1)
+    
+    
+class Prioritiy_ReplayBuffer(ReplayBuffer):
+    def __init__(self, size):
+        super().__init__(size)
+        self.cnt = []
+        
+    def count(self, a):
+        self.cnt.append(a)
+    

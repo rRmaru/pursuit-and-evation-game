@@ -28,7 +28,7 @@ def make_update_exp(vals, target_vals):     #これが謎
     #pdb.set_trace()
     return U.function([], [], updates=[expression])
 
-def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad_norm_clipping=None, local_q_func=False, num_units=64, scope="trainer", reuse=None):
+def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad_norm_clipping=None, local_q_func=False, num_units=64, scope="trainer", reuse=None):    #actor
     with tf.variable_scope(scope, reuse=reuse):         #name space
         # create distribtuions
         act_pdtype_n = [make_pdtype(act_space) for act_space in act_space_n]  #[SoftCategoricalPdType(5)*4]　return 
@@ -78,7 +78,7 @@ def p_train(make_obs_ph_n, act_space_n, p_index, p_func, q_func, optimizer, grad
 
         return act, train, update_target_p, {'p_values': p_values, 'target_act': target_act}
 
-def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_clipping=None, local_q_func=False, scope="trainer", reuse=None, num_units=64):
+def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_clipping=None, local_q_func=False, scope="trainer", reuse=None, num_units=64): #critic
     with tf.variable_scope(scope, reuse=reuse):     #名前空間→trainer  再利用→None
         # create distribtuions分布
         act_pdtype_n = [make_pdtype(act_space) for act_space in act_space_n]   #act_space [Discrete(5)*4]   return SoftCategoricalPdType(5)*4
@@ -154,6 +154,7 @@ class MADDPGAgentTrainer(AgentTrainer):
         )
         # Create experience buffer
         self.replay_buffer = ReplayBuffer(1e6)          #decide replay buffer big
+        #self.TDerror_buffer = Memory_TDerror(1e6)
         self.max_replay_buffer_len = args.batch_size * args.max_episode_len
         self.replay_sample_index = None
 
@@ -162,7 +163,7 @@ class MADDPGAgentTrainer(AgentTrainer):
 
     def experience(self, obs, act, rew, new_obs, done, terminal):
         # Store transition in the replay buffer.
-        self.replay_buffer.add(obs, act, rew, new_obs, float(done)) #doneをfloat型としてバッファに格納している
+        self.replay_buffer.add(obs, act, rew, new_obs, float(done)) #doneをfloat型としてバッファに格納している 
 
     def preupdate(self):
         self.replay_sample_index = None
@@ -173,25 +174,26 @@ class MADDPGAgentTrainer(AgentTrainer):
         if not t % 100 == 0:  # only update every 100 steps  100ごとにupdateする
             return
 
-        self.replay_sample_index = self.replay_buffer.make_index(self.args.batch_size)
+        #pdb.set_trace()
+        self.replay_sample_index = self.replay_buffer.make_index(self.args.batch_size) 
         # collect replay sample from all agents
         obs_n = []
         obs_next_n = []
         act_n = []
         index = self.replay_sample_index
-        for i in range(self.n):                         #自身の情報だけ得る 4回　
+        for i in range(self.n):                         #自身の情報だけ得る 4回
             obs, act, rew, obs_next, done = agents[i].replay_buffer.sample_index(index)     #sample_index バッチサイズの数だけサンプルを入手
             obs_n.append(obs)
             obs_next_n.append(obs_next)
             act_n.append(act)
-        obs, act, rew, obs_next, done = self.replay_buffer.sample_index(index)          #dont know(これいる？)
+        obs, act, rew, obs_next, done = self.replay_buffer.sample_index(index)          #dont know(これいる？)→rewの部分で必要
 
         # train q network
         num_sample = 1      #sample数
         target_q = 0.0
         for i in range(num_sample):
             target_act_next_n = [agents[i].p_debug['target_act'](obs_next_n[i]) for i in range(self.n)]     #バッチサイズ分だけ一気に代入している 1024こ分のactionが出てくる
-            target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))   #次の行動と次の観測　バッチサイズ分学習
+            target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))   #次の行動と次の観測　バッチサイズ分学習 *はアンパック（リストの要素をばらばらにして渡す）
             target_q += rew + self.args.gamma * (1.0 - done) * target_q_next            #Q値の計算 出力は1つ　doneが位置の場合は更新しない
         target_q /= num_sample
         q_loss = self.q_train(*(obs_n + act_n + [target_q]))        #target_qを教師として損失関数を導出
@@ -205,3 +207,15 @@ class MADDPGAgentTrainer(AgentTrainer):
         self.q_update()
 
         return [q_loss, p_loss, np.mean(target_q), np.mean(rew), np.mean(target_q_next), np.std(target_q)]
+    
+    def TDerror(self, agents, j, obs_n, act_n, rew_n, obs_next_n):
+        #pdb.set_trace()
+        pdb.set_trace()
+        target_act_next_n = [agents[i].p_debug['target_act'](np.array([obs_next_n[i]])) for i in range(self.n)]
+        target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))
+        target_q = rew_n[j] + self.args.gamma * target_q_next
+        q_main = self.q_debug['q_values'](*(obs_n + act_n))
+        
+        TD_error = target_q - q_main
+        
+        return TD_error
