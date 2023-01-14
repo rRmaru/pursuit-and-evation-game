@@ -209,13 +209,21 @@ class MADDPGAgentTrainer(AgentTrainer):
         return [q_loss, p_loss, np.mean(target_q), np.mean(rew), np.mean(target_q_next), np.std(target_q)]
     
     def TDerror(self, agents, j, obs_n, act_n, rew_n, obs_next_n):
+        #reshape
+        obs_next_n = self.reshape(obs_next_n)
+        obs_n = self.reshape(obs_n)
+        act_n = self.reshape(act_n)
         #pdb.set_trace()
-        pdb.set_trace()
-        target_act_next_n = [agents[i].p_debug['target_act'](np.array([obs_next_n[i]])) for i in range(self.n)]
+        target_act_next_n = [agents[i].p_debug['target_act'](obs_next_n[i]) for i in range(self.n)]
         target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))
         target_q = rew_n[j] + self.args.gamma * target_q_next
         q_main = self.q_debug['q_values'](*(obs_n + act_n))
         
         TD_error = target_q - q_main
-        
         return TD_error
+    
+    def reshape(self, list):
+        temp = []
+        for i in range(len(list)):
+            temp.append(np.array([list[i]]))
+        return temp
