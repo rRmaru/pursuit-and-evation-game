@@ -132,8 +132,8 @@ def train(arglist):
             terminal = (episode_step >= arglist.max_episode_len)
             # collect experience
             for i, agent in enumerate(trainers):
-                #TD_error = agent.TDerror(trainers, i, obs_n, action_n, rew_n, new_obs_n)
-                agent.experience(obs_n[i], action_n[i], rew_n[i], new_obs_n[i], done_n[i], terminal)    #Dに格納
+                TD_error = agent.TDerror(trainers, i, obs_n, action_n, rew_n, new_obs_n)
+                agent.experience(obs_n[i], action_n[i], rew_n[i], new_obs_n[i], done_n[i], TD_error)    #Dに格納
             obs_n = new_obs_n
 
             for i, rew in enumerate(rew_n):     #報酬値の格納

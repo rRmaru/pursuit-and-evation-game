@@ -7,7 +7,7 @@ import maddpg.common.tf_util as U
 
 from maddpg.common.distributions import make_pdtype
 from maddpg import AgentTrainer
-from maddpg.trainer.replay_buffer import ReplayBuffer
+from maddpg.trainer.replay_buffer import ReplayBuffer, Prioritiy_ReplayBuffer
 
 
 def discount_with_dones(rewards, dones, gamma):
@@ -153,7 +153,7 @@ class MADDPGAgentTrainer(AgentTrainer):
             num_units=args.num_units
         )
         # Create experience buffer
-        self.replay_buffer = ReplayBuffer(1e6)          #decide replay buffer big
+        self.replay_buffer = Prioritiy_ReplayBuffer(1e6)          #decide replay buffer big
         #self.TDerror_buffer = Memory_TDerror(1e6)
         self.max_replay_buffer_len = args.batch_size * args.max_episode_len
         self.replay_sample_index = None
@@ -161,9 +161,9 @@ class MADDPGAgentTrainer(AgentTrainer):
     def action(self, obs):
         return self.act(obs[None])[0]
 
-    def experience(self, obs, act, rew, new_obs, done, terminal):
+    def experience(self, obs, act, rew, new_obs, done, TDerror):
         # Store transition in the replay buffer.
-        self.replay_buffer.add(obs, act, rew, new_obs, float(done)) #doneをfloat型としてバッファに格納している 
+        self.replay_buffer.add(obs, act, rew, new_obs, float(done), TDerror) #doneをfloat型としてバッファに格納している 
 
     def preupdate(self):
         self.replay_sample_index = None

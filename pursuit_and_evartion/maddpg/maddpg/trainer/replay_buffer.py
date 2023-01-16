@@ -22,8 +22,8 @@ class ReplayBuffer(object):
         self._storage = []
         self._next_idx = 0
 
-    def add(self, obs_t, action, reward, obs_tp1, done):           #obs, action, reward, obs_next, done
-        data = (obs_t, action, reward, obs_tp1, done)       #tupleを作成
+    def add(self, obs_t, action, reward, obs_tp1, done, TDerror):           #obs, action, reward, obs_next, done
+        data = (obs_t, action, reward, obs_tp1, done, TDerror)       #tupleを作成
         
         if self._next_idx >= len(self._storage):        #_next_indexの大きさがstorageの大きさと同じかそれ以上
             self._storage.append(data)
@@ -35,7 +35,7 @@ class ReplayBuffer(object):
         obses_t, actions, rewards, obses_tp1, dones = [], [], [], [], []
         for i in idxes:
             data = self._storage[i]        #random番目のデータを取り出す
-            obs_t, action, reward, obs_tp1, done = data
+            obs_t, action, reward, obs_tp1, done, TDerror = data
             obses_t.append(np.array(obs_t, copy=False))
             actions.append(np.array(action, copy=False))
             rewards.append(reward)
@@ -90,7 +90,26 @@ class Prioritiy_ReplayBuffer(ReplayBuffer):
     def __init__(self, size):
         super().__init__(size)
         self.cnt = []
+        self.alpha = 0
         
     def count(self, a):
         self.cnt.append(a)
-    
+        
+    def make_indexTD(self, batch_size):
+        order = []
+        for i in range(len(self._storage)):
+            obs_n, action, reward, obs_tp1, done, TDerror = self._storage[i]
+            order.append([i, TDerror])
+        order = sorted(order, reverse=True, key=lambda x:x[1])
+        probability_D = []
+        index = []
+        for i in range(len(order)):
+            D = 1/(i+1)
+            probability_D.append(D)
+            index.append(order[i][0])
+        
+        sum_D = sum([i**self.alpha for i in probability_D])
+        
+        p_D = [(D**self.alpha)/sum_D for D in probability_D]
+        return [np.random.choice(index, p=p_D) for _ in range(batch_size)]
+        
