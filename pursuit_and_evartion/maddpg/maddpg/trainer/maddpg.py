@@ -1,5 +1,6 @@
 import ipdb as pdb
 
+import time
 import numpy as np
 import random
 import tensorflow as tf
@@ -7,7 +8,7 @@ import maddpg.common.tf_util as U
 
 from maddpg.common.distributions import make_pdtype
 from maddpg import AgentTrainer
-from maddpg.trainer.replay_buffer import ReplayBuffer, Prioritiy_ReplayBuffer
+from maddpg.trainer.replay_buffer import ReplayBuffer, Priority_ReplayBuffer
 
 
 def discount_with_dones(rewards, dones, gamma):
@@ -153,9 +154,9 @@ class MADDPGAgentTrainer(AgentTrainer):
             num_units=args.num_units
         )
         # Create experience buffer
-        self.replay_buffer = Prioritiy_ReplayBuffer(1e6)          #decide replay buffer big
+        self.replay_buffer = Priority_ReplayBuffer(1e5)          #decide replay buffer big
         #self.TDerror_buffer = Memory_TDerror(1e6)
-        self.max_replay_buffer_len = args.batch_size * args.max_episode_len
+        self.max_replay_buffer_len = args.batch_size * args.max_episode_len/2
         self.replay_sample_index = None
 
     def action(self, obs):
@@ -197,7 +198,6 @@ class MADDPGAgentTrainer(AgentTrainer):
             target_q += rew + self.args.gamma * (1.0 - done) * target_q_next            #Q値の計算 出力は1つ　doneが位置の場合は更新しない
         target_q /= num_sample
         q_loss = self.q_train(*(obs_n + act_n + [target_q]))        #target_qを教師として損失関数を導出
-        
         #pdb.set_trace()
 
         # train p network
@@ -205,10 +205,43 @@ class MADDPGAgentTrainer(AgentTrainer):
 
         self.p_update()
         self.q_update()
-
+        
+        s = time.time()
+        idx = np.arange(len(self.replay_buffer._storage))
+        obs_n = []
+        obs_next_n = []
+        act_n = []
+        for i in range(self.n):                         #自身の情報だけ得る 4回
+            obs, act, rew, obs_next, done = agents[i].replay_buffer.sample_index(idx)     #sample_index バッチサイズの数だけサンプルを入手
+            obs_n.append(obs)
+            obs_next_n.append(obs_next)
+            act_n.append(act)
+        obs, act, rew, obs_next, done = self.replay_buffer.sample_index(idx)
+        target_act_next_n = [agents[i].p_debug['target_act'](obs_next_n[i]) for i in range(self.n)]
+        target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))
+        target_q = rew + self.args.gamma * target_q_next
+        TDerror = self.q_debug['q_values'](*(obs_n + act_n))
+        #print("re_TD_error:", time.time() - s)
+        self.replay_buffer.TD_update(obs, act, rew, obs_next, done, TDerror)
+        
         return [q_loss, p_loss, np.mean(target_q), np.mean(rew), np.mean(target_q_next), np.std(target_q)]
     
-    def TDerror(self, agents, j, obs_n, act_n, rew_n, obs_next_n):
+    def re_TD_error(self, replay_buffer, agents):
+        for i in range(len(replay_buffer._storage)):
+            obs_n = []
+            obs_next_n = []
+            act_n = []
+            for j in range(len(agents)):
+                obs, act, rew, obs_next, done, TDerror = agents[j].replay_buffer._storage[i]
+                obs_n.append(obs)
+                obs_next_n.append(obs_next)
+                act_n.append(act)
+            obs, act, rew, obs_next, done, TDerror = replay_buffer._storage[i]
+            TDerror = self.TDerror(agents, obs_n, act_n, rew, obs_n)
+            pdb.set_trace()
+            replay_buffer.TD_update(obs, act, rew, obs_next, done, TDerror)
+    
+    def TDerror(self, agents, obs_n, act_n, rew, obs_next_n):
         #reshape
         obs_next_n = self.reshape(obs_next_n)
         obs_n = self.reshape(obs_n)
@@ -216,9 +249,8 @@ class MADDPGAgentTrainer(AgentTrainer):
         #pdb.set_trace()
         target_act_next_n = [agents[i].p_debug['target_act'](obs_next_n[i]) for i in range(self.n)]
         target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))
-        target_q = rew_n[j] + self.args.gamma * target_q_next
+        target_q = rew + self.args.gamma * target_q_next
         q_main = self.q_debug['q_values'](*(obs_n + act_n))
-        
         TD_error = target_q - q_main
         return TD_error
     

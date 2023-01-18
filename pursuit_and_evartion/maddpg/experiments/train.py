@@ -1,6 +1,7 @@
 #%%
 import ipdb as pdb
 
+import time
 import argparse
 import numpy as np
 import tensorflow as tf
@@ -11,7 +12,6 @@ import matplotlib.pyplot as plt
 import maddpg.common.tf_util as U
 from maddpg.trainer.maddpg import MADDPGAgentTrainer
 import tensorflow.contrib.layers as layers
-from maddpg.trainer.replay_buffer import Prioritiy_ReplayBuffer
 
 def parse_args():
     parser = argparse.ArgumentParser("Reinforcement Learning experiments for multiagent environments")
@@ -39,7 +39,7 @@ def parse_args():
     parser.add_argument("--benchmark-iters", type=int, default=100000, help="number of iterations run for benchmarking")
     parser.add_argument("--benchmark-dir", type=str, default="./benchmark_files/", help="directory where benchmark data is saved")
     parser.add_argument("--plots-dir", type=str, default="./learning_curves/", help="directory where plot data is saved")
-    return parser.parse_args(["--num-episodes", "20000", "--adv-policy", "maddpg", "--exp-name", "maddpg"])
+    return parser.parse_args(["--num-episodes", "20000", "--adv-policy", "maddpg", "--exp-name", "maddpg_TDerror1_18"])
 
 def mlp_model(input, num_outputs, scope, reuse=False, num_units=64, rnn_cell=None):
     # This model takes as input an observation and returns values of all actions
@@ -115,7 +115,6 @@ def train(arglist):
         save_collision = []         #collision回数を記録
         agent_pos = [[] for _ in range(len(env.world.agents))]      #agentのpositionを記録(10/12)
         step_len = []            #record episode len(10/19)
-        PER_buffer = Prioritiy_ReplayBuffer(1e6)
 
 
         print('Starting iterations...')
@@ -132,8 +131,9 @@ def train(arglist):
             terminal = (episode_step >= arglist.max_episode_len)
             # collect experience
             for i, agent in enumerate(trainers):
-                TD_error = agent.TDerror(trainers, i, obs_n, action_n, rew_n, new_obs_n)
-                agent.experience(obs_n[i], action_n[i], rew_n[i], new_obs_n[i], done_n[i], TD_error)    #Dに格納
+                #TD_error = agent.TDerror(trainers, obs_n, action_n, rew_n[i], new_obs_n)
+                TD_error = 1
+                agent.experience(obs_n[i], action_n[i], rew_n[i], new_obs_n[i], done_n[i], abs(TD_error))    #Dに格納
             obs_n = new_obs_n
 
             for i, rew in enumerate(rew_n):     #報酬値の格納

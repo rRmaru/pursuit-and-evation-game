@@ -1,5 +1,58 @@
+import ipdb as pdb
+
+import time
 import numpy as np
 import random
+
+class SumTree:
+
+  def __init__(self, capacity: int):
+    #: 2のべき乗チェック
+    assert capacity & (capacity - 1) == 0
+    self.capacity = capacity
+    self.values = [0 for _ in range(2 * capacity)]
+  
+  def __str__(self):
+    return str(self.values[self.capacity:])
+  
+  def __setitem__(self, idx, val):
+    idx = idx + self.capacity
+    self.values[idx] = val
+
+    current_idx = idx // 2
+    while current_idx >= 1:
+      idx_lchild = 2 * current_idx
+      idx_rchild = 2 * current_idx + 1
+      self.values[current_idx] = self.values[idx_lchild] + self.values[idx_rchild]
+      current_idx //= 2
+
+  def __getitem__(self, idx):
+    idx = idx + self.capacity
+    return self.value[idx]
+  
+  def sum(self):
+    return self.values[1] 
+
+  def sample(self, z=None):
+    z = random.uniform(0, self.sum()) if z is None else z
+    assert 0 <= z <= self.sum()
+    
+    current_idx = 1
+    while current_idx < self.capacity:
+      
+      idx_lchild = 2 * current_idx
+      idx_rchild = 2 * current_idx + 1
+
+      #: 左子ノードよりzが大きい場合は右子ノードへ
+      if z > self.values[idx_lchild]:
+        current_idx = idx_rchild
+        z = z -self.values[idx_lchild]
+      else:
+        current_idx = idx_lchild
+    
+    #: 見かけ上のインデックスにもどす
+    idx = current_idx - self.capacity
+    return idx
 
 class ReplayBuffer(object):
     def __init__(self, size):
@@ -44,6 +97,7 @@ class ReplayBuffer(object):
         return np.array(obses_t), np.array(actions), np.array(rewards), np.array(obses_tp1), np.array(dones)
 
     def make_index(self, batch_size):       #randomにバッファの中から取り出す（バッチサイズの数だけ）PERではこの部分を変更したい
+        a = time.time()
         return [random.randint(0, len(self._storage) - 1) for _ in range(batch_size)]
 
     def make_latest_index(self, batch_size):
@@ -86,30 +140,52 @@ class ReplayBuffer(object):
         return self.sample(-1)
     
     
-class Prioritiy_ReplayBuffer(ReplayBuffer):
+class Priority_ReplayBuffer(ReplayBuffer):
     def __init__(self, size):
         super().__init__(size)
         self.cnt = []
-        self.alpha = 0
+        self.alpha = 0.1
         
     def count(self, a):
         self.cnt.append(a)
         
     def make_indexTD(self, batch_size):
+        a = time.time()
         order = []
         for i in range(len(self._storage)):
             obs_n, action, reward, obs_tp1, done, TDerror = self._storage[i]
             order.append([i, TDerror])
         order = sorted(order, reverse=True, key=lambda x:x[1])
         probability_D = []
-        index = []
+        idx = []
         for i in range(len(order)):
             D = 1/(i+1)
             probability_D.append(D)
-            index.append(order[i][0])
-        
+            idx.append(order[i][0])
+        c = time.time()
         sum_D = sum([i**self.alpha for i in probability_D])
         
         p_D = [(D**self.alpha)/sum_D for D in probability_D]
-        return [np.random.choice(index, p=p_D) for _ in range(batch_size)]
+        """for i in range(len(order)):
+            order[i][1] = p_D[i]
+        order = sorted(order, reverse=False, key=lambda x:x[1])
+        p_D = []
+        for i in range(len(order)):
+            p_D.append(order[i][1])
         
+        
+        sumtree = SumTree(capacity=2**20)
+        for i, priority in enumerate(p_D):
+            sumtree[i] = priority
+            
+        s = time.time()
+        rand = [sumtree.sample() for _ in range(1024)]"""
+        rand = np.random.choice(idx, p=p_D, size=1024)
+        return rand
+    
+    def TD_update(self, obs, act, rew, obs_next, done, TDerror):
+        for i in range(len(obs)):
+            self._storage[i] = (obs[i], act[i], rew[i], obs_next[i], done[i], TDerror[i])
+    
+    
+                
