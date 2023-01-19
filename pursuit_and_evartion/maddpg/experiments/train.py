@@ -2,8 +2,10 @@
 import ipdb as pdb
 
 import time
+import os
 import argparse
 import numpy as np
+import random
 import tensorflow as tf
 import time
 import pickle
@@ -12,6 +14,14 @@ import matplotlib.pyplot as plt
 import maddpg.common.tf_util as U
 from maddpg.trainer.maddpg import MADDPGAgentTrainer
 import tensorflow.contrib.layers as layers
+
+def fix_seed(seed):
+  #Numpy
+  np.random.seed(seed)
+  #Random
+  random.seed(seed)
+  #Tensorflow
+  tf.set_random_seed(seed)
 
 def parse_args():
     parser = argparse.ArgumentParser("Reinforcement Learning experiments for multiagent environments")
@@ -39,7 +49,7 @@ def parse_args():
     parser.add_argument("--benchmark-iters", type=int, default=100000, help="number of iterations run for benchmarking")
     parser.add_argument("--benchmark-dir", type=str, default="./benchmark_files/", help="directory where benchmark data is saved")
     parser.add_argument("--plots-dir", type=str, default="./learning_curves/", help="directory where plot data is saved")
-    return parser.parse_args(["--num-episodes", "20000", "--adv-policy", "maddpg", "--exp-name", "maddpg_TDerror1_18"])
+    return parser.parse_args(["--num-episodes", "10000", "--adv-policy", "maddpg", "--exp-name", "maddpg_seedtest1"])
 
 def mlp_model(input, num_outputs, scope, reuse=False, num_units=64, rnn_cell=None):
     # This model takes as input an observation and returns values of all actions
@@ -250,6 +260,9 @@ def train(arglist):
                 break
 
 if __name__ == '__main__':
+    os.environ['PYTHONHASHSEED'] = '0'
+    SEED = 42
+    fix_seed(SEED)
     arglist = parse_args()
     train(arglist)
 

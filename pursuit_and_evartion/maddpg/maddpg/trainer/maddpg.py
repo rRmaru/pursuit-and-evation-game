@@ -174,7 +174,6 @@ class MADDPGAgentTrainer(AgentTrainer):
             return
         if not t % 100 == 0:  # only update every 100 steps  100ごとにupdateする
             return
-
         #pdb.set_trace()
         self.replay_sample_index = self.replay_buffer.make_index(self.args.batch_size) 
         # collect replay sample from all agents
@@ -206,8 +205,7 @@ class MADDPGAgentTrainer(AgentTrainer):
         self.p_update()
         self.q_update()
         
-        s = time.time()
-        idx = np.arange(len(self.replay_buffer._storage))
+        """idx = np.arange(len(self.replay_buffer._storage))
         obs_n = []
         obs_next_n = []
         act_n = []
@@ -222,7 +220,7 @@ class MADDPGAgentTrainer(AgentTrainer):
         target_q = rew + self.args.gamma * target_q_next
         TDerror = self.q_debug['q_values'](*(obs_n + act_n))
         #print("re_TD_error:", time.time() - s)
-        self.replay_buffer.TD_update(obs, act, rew, obs_next, done, TDerror)
+        self.replay_buffer.TD_update(obs, act, rew, obs_next, done, TDerror)"""
         
         return [q_loss, p_loss, np.mean(target_q), np.mean(rew), np.mean(target_q_next), np.std(target_q)]
     
