@@ -88,6 +88,7 @@ def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_cl
         obs_ph_n = make_obs_ph_n        #placeholder, BatchInput()
         act_ph_n = [act_pdtype_n[i].sample_placeholder([None], name="action"+str(i)) for i in range(len(act_space_n))]    #[Discrete(5)*4] tf.Placeholder(float32, [None, 5], action+i)
         target_ph = tf.placeholder(tf.float32, [None], name="target")  #None→任意のshapeを割り当てる
+        weight_ph = tf.placeholder(tf.float32, [None], name="weight")   #重みに関してのplaceholder
 
         q_input = tf.concat(obs_ph_n + act_ph_n, 1)         #obs_ph_n and act_ph_n二個目の要素を結合　ほかのエージェントの観測値も使用している
         if local_q_func:        #DDPGの場合MADDPGでは使用しない
@@ -97,7 +98,7 @@ def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_cl
         #pdb.set_trace()
         q_func_vars = U.scope_vars(U.absolute_scope_name("q_func"))     #absolute_scope_vars = 名前空間の絶対パスを得る scope_vars = ?
 
-        q_loss = tf.reduce_mean(tf.square(q - target_ph))       #損失関数の設定　与えられたリストに入っている数値の平均値を求める関数 二乗平均誤差
+        q_loss = tf.reduce_mean(tf.square(weight_ph*(q - target_ph)))    #損失関数の設定　与えられたリストに入っている数値の平均値を求める関数 二乗平均誤差
 
         # viscosity solution to Bellman differential equation in place of an initial condition
         q_reg = tf.reduce_mean(tf.square(q))
@@ -106,7 +107,7 @@ def q_train(make_obs_ph_n, act_space_n, q_index, q_func, optimizer, grad_norm_cl
         optimize_expr = U.minimize_and_clip(optimizer, loss, q_func_vars, grad_norm_clipping)
 
         # Create callable functions
-        train = U.function(inputs=obs_ph_n + act_ph_n + [target_ph], outputs=loss, updates=[optimize_expr])
+        train = U.function(inputs=obs_ph_n + act_ph_n + [target_ph] + [weight_ph], outputs=loss, updates=[optimize_expr])
         q_values = U.function(obs_ph_n + act_ph_n, q)
 
         # target network
@@ -158,6 +159,7 @@ class MADDPGAgentTrainer(AgentTrainer):
         #self.TDerror_buffer = Memory_TDerror(1e6)
         self.max_replay_buffer_len = args.batch_size * args.max_episode_len/2
         self.replay_sample_index = None
+        self.per_flag = True
 
     def action(self, obs):
         return self.act(obs[None])[0]
@@ -169,13 +171,21 @@ class MADDPGAgentTrainer(AgentTrainer):
     def preupdate(self):
         self.replay_sample_index = None
 
-    def update(self, agents, t):        #main train part
+    def update(self, agents, t, epi):        #main train part
         if len(self.replay_buffer) < self.max_replay_buffer_len: # replay buffer is not large enough
             return
         if not t % 100 == 0:  # only update every 100 steps  100ごとにupdateする
             return
         #pdb.set_trace()
-        self.replay_sample_index = self.replay_buffer.make_index(self.args.batch_size) 
+        if self.per_flag:
+            self.replay_sample_index, weights = self.replay_buffer.make_indexTD(self.args.batch_size) 
+        else:
+            self.replay_sample_index, weights = self.replay_buffer.make_index(self.args.batch_size)
+        #normalization weight
+        beta = 0.6/15000*epi
+        weights = np.array([1/(weight*(1e5))**beta for weight in weights])
+        w_max = np.amax(weights)
+        weights = weights/w_max
         # collect replay sample from all agents
         obs_n = []
         obs_next_n = []
@@ -196,7 +206,7 @@ class MADDPGAgentTrainer(AgentTrainer):
             target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))   #次の行動と次の観測　バッチサイズ分学習 *はアンパック（リストの要素をばらばらにして渡す）
             target_q += rew + self.args.gamma * (1.0 - done) * target_q_next            #Q値の計算 出力は1つ　doneが位置の場合は更新しない
         target_q /= num_sample
-        q_loss = self.q_train(*(obs_n + act_n + [target_q]))        #target_qを教師として損失関数を導出
+        q_loss = self.q_train(*(obs_n + act_n + [target_q] + [weights]))        #target_qを教師として損失関数を導出
         #pdb.set_trace()
 
         # train p network
@@ -205,22 +215,23 @@ class MADDPGAgentTrainer(AgentTrainer):
         self.p_update()
         self.q_update()
         
-        """idx = np.arange(len(self.replay_buffer._storage))
-        obs_n = []
-        obs_next_n = []
-        act_n = []
-        for i in range(self.n):                         #自身の情報だけ得る 4回
-            obs, act, rew, obs_next, done = agents[i].replay_buffer.sample_index(idx)     #sample_index バッチサイズの数だけサンプルを入手
-            obs_n.append(obs)
-            obs_next_n.append(obs_next)
-            act_n.append(act)
-        obs, act, rew, obs_next, done = self.replay_buffer.sample_index(idx)
-        target_act_next_n = [agents[i].p_debug['target_act'](obs_next_n[i]) for i in range(self.n)]
-        target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))
-        target_q = rew + self.args.gamma * target_q_next
-        TDerror = self.q_debug['q_values'](*(obs_n + act_n))
-        #print("re_TD_error:", time.time() - s)
-        self.replay_buffer.TD_update(obs, act, rew, obs_next, done, TDerror)"""
+        if self.per_flag:
+            idx = np.arange(len(self.replay_buffer._storage))
+            obs_n = []
+            obs_next_n = []
+            act_n = []
+            for i in range(self.n):                         #自身の情報だけ得る 4回
+                obs, act, rew, obs_next, done = agents[i].replay_buffer.sample_index(idx)     #sample_index バッチサイズの数だけサンプルを入手
+                obs_n.append(obs)
+                obs_next_n.append(obs_next)
+                act_n.append(act)
+            obs, act, rew, obs_next, done = self.replay_buffer.sample_index(idx)
+            target_act_next_n = [agents[i].p_debug['target_act'](obs_next_n[i]) for i in range(self.n)]
+            target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))
+            target_q = rew + self.args.gamma * target_q_next
+            TDerror = self.q_debug['q_values'](*(obs_n + act_n))
+            #print("re_TD_error:", time.time() - s)
+            self.replay_buffer.TD_update(obs, act, rew, obs_next, done, TDerror)
         
         return [q_loss, p_loss, np.mean(target_q), np.mean(rew), np.mean(target_q_next), np.std(target_q)]
     

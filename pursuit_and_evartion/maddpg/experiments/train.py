@@ -40,7 +40,7 @@ def parse_args():
     # Checkpointing
     parser.add_argument("--exp-name", type=str, default=None, help="name of the experiment")
     parser.add_argument("--save-dir", type=str, default="/tmp/policy/", help="directory in which training state and model should be saved")
-    parser.add_argument("--save-rate", type=int, default=500, help="save model once every time this many episodes are completed")
+    parser.add_argument("--save-rate", type=int, default=250, help="save model once every time this many episodes are completed")
     parser.add_argument("--load-dir", type=str, default="", help="directory in which training state and model are loaded")
     # Evaluation
     parser.add_argument("--restore", action="store_true", default=False)
@@ -49,7 +49,7 @@ def parse_args():
     parser.add_argument("--benchmark-iters", type=int, default=100000, help="number of iterations run for benchmarking")
     parser.add_argument("--benchmark-dir", type=str, default="./benchmark_files/", help="directory where benchmark data is saved")
     parser.add_argument("--plots-dir", type=str, default="./learning_curves/", help="directory where plot data is saved")
-    return parser.parse_args(["--num-episodes", "10000", "--adv-policy", "maddpg", "--exp-name", "maddpg_seedtest1"])
+    return parser.parse_args(["--num-episodes", "15000", "--adv-policy", "maddpg", "--exp-name", "permaddpg_alpha0.1"])
 
 def mlp_model(input, num_outputs, scope, reuse=False, num_units=64, rnn_cell=None):
     # This model takes as input an observation and returns values of all actions
@@ -141,8 +141,8 @@ def train(arglist):
             terminal = (episode_step >= arglist.max_episode_len)
             # collect experience
             for i, agent in enumerate(trainers):
-                #TD_error = agent.TDerror(trainers, obs_n, action_n, rew_n[i], new_obs_n)
-                TD_error = 1
+                TD_error = agent.TDerror(trainers, obs_n, action_n, rew_n[i], new_obs_n)
+                #TD_error = 1
                 agent.experience(obs_n[i], action_n[i], rew_n[i], new_obs_n[i], done_n[i], abs(TD_error))    #Dに格納
             obs_n = new_obs_n
 
@@ -224,7 +224,7 @@ def train(arglist):
             for agent in trainers:
                 agent.preupdate()           #replay_sample_indexをNoneにするだけ
             for agent in trainers:
-                loss = agent.update(trainers, train_step)       #give one agent and step
+                loss = agent.update(trainers, train_step, len(episode_rewards))       #give one agent and step
 
             # save model, display training output
             if (terminal or done) and (len(episode_rewards) % arglist.save_rate == 0):

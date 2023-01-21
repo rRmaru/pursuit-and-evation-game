@@ -329,7 +329,7 @@ class _Function(object):
         for inpt in self.givens:
             feed_dict[inpt] = feed_dict.get(inpt, self.givens[inpt])
         results = get_session().run(self.outputs_update, feed_dict=feed_dict)[:-1]      #actionではソフトマックス関数を計算する
-        if self.check_nan:
+        if self.check_nan:      #無視していい
             if any(np.isnan(r).any() for r in results):
                 raise RuntimeError("Nan detected")
         return results

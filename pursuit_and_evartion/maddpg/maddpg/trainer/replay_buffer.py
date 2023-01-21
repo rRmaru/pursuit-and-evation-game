@@ -97,8 +97,10 @@ class ReplayBuffer(object):
         return np.array(obses_t), np.array(actions), np.array(rewards), np.array(obses_tp1), np.array(dones)
 
     def make_index(self, batch_size):       #randomにバッファの中から取り出す（バッチサイズの数だけ）PERではこの部分を変更したい
+        selected_p = np.ones(batch_size)
+        selected_p = selected_p/1e5
         rand =  [random.randint(0, len(self._storage) - 1) for _ in range(batch_size)]
-        return rand
+        return rand, selected_p
 
     def make_latest_index(self, batch_size):
         idx = [(self._next_idx - 1 - i) % self._maxsize for i in range(batch_size)]
@@ -144,7 +146,7 @@ class Priority_ReplayBuffer(ReplayBuffer):
     def __init__(self, size):
         super().__init__(size)
         self.cnt = []
-        self.alpha = 0.1
+        self.alpha = 0.5
         
     def count(self, a):
         self.cnt.append(a)
@@ -166,22 +168,12 @@ class Priority_ReplayBuffer(ReplayBuffer):
         sum_D = sum([i**self.alpha for i in probability_D])
         
         p_D = [(D**self.alpha)/sum_D for D in probability_D]
-        """for i in range(len(order)):
-            order[i][1] = p_D[i]
-        order = sorted(order, reverse=False, key=lambda x:x[1])
-        p_D = []
-        for i in range(len(order)):
-            p_D.append(order[i][1])
-        
-        
-        sumtree = SumTree(capacity=2**20)
-        for i, priority in enumerate(p_D):
-            sumtree[i] = priority
+        rand = np.random.choice(idx, p=p_D, size=batch_size)
+        selected_p = []
+        for i in rand:
+            selected_p.append(p_D[i])
             
-        s = time.time()
-        rand = [sumtree.sample() for _ in range(1024)]"""
-        rand = np.random.choice(idx, p=p_D, size=1024)
-        return rand
+        return rand, selected_p
     
     def TD_update(self, obs, act, rew, obs_next, done, TDerror):
         for i in range(len(obs)):
