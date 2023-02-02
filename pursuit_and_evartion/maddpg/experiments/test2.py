@@ -4,12 +4,12 @@ import matplotlib.pyplot as plt
 import pickle
 import random
 x=range(0,15000,250)
-with open("learning_curves/permaddpg_alpha0.2_agrewards.pkl", mode="rb") as f2:
+with open("learning_curves/maddpg_seed42_agrewards.pkl", mode="rb") as f2:
     hoge2=pickle.load(f2)
-with open("learning_curves/maddpg_seedtest1_agrewards.pkl", mode="rb") as f3:
+with open("learning_curves/permaddpg_alpha0.5_agrewards.pkl", mode="rb") as f3:
     hoge3=pickle.load(f3)
-alpha05 = hoge3[3::4]
-adv_agent=hoge3[::4]
+
+alpha05=hoge3[::4]
 
 alpha03 = [-33.02272671195123, -33.94335326753177, -25.072945159249823, -41.12980296504681, 
 -52.42483282714564, -45.716650129708164, -25.80435375304412, 
@@ -49,33 +49,21 @@ adv_agent=hoge2[::4]
 print(len(good_agent))
 print(len(adv_agent))
 
-list=[0.05220883534136546, 0.104, 0.228, 0.304, 0.308, 0.532, 0.48, 0.584, 0.884, 0.96, 0.916, 0.984, 0.996, 0.968, 1.012, 1.012, 1.02, 1.036, 1.012, 1.012, 1.016, 1.004, 1.012, 1.008, 1.024, 0.992, 1.008, 1.02, 0.992, 1.0, 1.0, 1.004, 1.004, 0.988, 1.02, 1.024, 1.028, 1.02, 1.012, 1.028, 0.996, 1.004, 1.0, 0.968, 1.004, 1.008, 0.976, 0.976, 0.968, 0.976, 0.96, 0.984, 0.948, 0.976, 0.968, 0.956, 0.968, 0.96, 0.936, 0.964]
-#%%
 fig = plt.figure()
 ax1 = fig.add_subplot(111)
-ln1 = ax1.plot(x,good_agent,color='red',label='evation')
+ln1 = ax1.plot(x,adv_agent,color='red',label='maddpg')
 ax2 = fig.add_subplot(111)
-ln2 = ax2.plot(x,adv_agent,color='blue',label="pursuit")
+ln2 = ax2.plot(x,alpha01,color='blue',label="permaddpg")
+#ax3 = fig.add_subplot(111)
+#ln3 = ax3.plot(x,alpha03,color='green',label="permaddpg0.3")
+#ax4 = fig.add_subplot(111)
+#ln4 = ax4.plot(x,alpha05,color='cyan',label="permaddpg0.5")
 
-ax3 = ax1.twinx()
-ln3 = ax3.plot(x,list,color='green',label='collision')
 
-h1,l1 = ax1.get_legend_handles_labels()
-h3,l3 = ax3.get_legend_handles_labels()
-ax1.legend(h1+h3,l1+l3)
+ax1.legend()
 
 ax1.set_xlabel('episodes')
 ax1.set_ylabel('reward')
 ax1.set_ylim(-150, 150)
 ax1.grid(True)
-ax3.set_ylabel('collision_num')
-ax3.set_ylim(0.0,25.0)
-
-
-
-# %%
-list = [0.1843687374749499, 0.382, 0.308, 0.368, 0.42, 0.572, 0.47, 0.574, 0.64, 0.822, 0.944, 0.986, 0.932, 0.952, 0.908, 0.832, 0.862, 0.854, 0.864, 0.844, 0.864, 0.892, 0.886, 0.908, 0.892, 0.934, 0.942, 0.96, 0.944, 0.95, 0.934, 0.968, 0.942, 0.942, 0.928, 0.946, 0.972, 0.974, 0.96, 0.948]
-plt.legend()
-plt.plot(x,list,label="step len")
-
 # %%
