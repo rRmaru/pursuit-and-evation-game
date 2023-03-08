@@ -3,10 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pickle
 import random
-x=range(0,15000,250)
-with open("learning_curves/result_agrewards.pkl", mode="rb") as f2:
+x=range(0,15000,500)
+with open("learning_curves/beta8alpha1_agrewards.pkl", mode="rb") as f2:
     hoge2=pickle.load(f2)
-with open("learning_curves/maddpg_seedtest1_agrewards.pkl", mode="rb") as f3:
+with open("learning_curves/permaddpg_alpha0.5_agrewards.pkl", mode="rb") as f3:
     hoge3=pickle.load(f3)
 alpha05 = hoge3[3::4]
 adv_agent=hoge3[::4]
@@ -49,7 +49,7 @@ adv_agent=hoge2[::4]
 print(len(good_agent))
 print(len(adv_agent))
 
-list=[0.30522088353413657, 0.288, 0.292, 0.336, 0.312, 0.384, 0.444, 0.512, 0.56, 0.688, 0.944, 0.936, 0.936, 0.992, 1.008, 1.008, 1.008, 1.008, 1.008, 1.004, 1.02, 1.028, 1.004, 0.996, 1.008, 1.004, 0.996, 1.028, 1.012, 1.028, 1.02, 1.028, 1.016, 1.044, 1.004, 1.032, 1.008, 1.024, 1.036, 0.996, 1.024, 1.02, 1.032, 1.008, 1.004, 1.028, 1.016, 1.016, 1.012, 1.012, 1.02, 0.988, 0.976, 0.968, 0.952, 0.996, 0.96, 0.968, 0.992, 0.94]
+list=[0.2965931863727455, 0.278, 0.322, 0.482, 0.61, 0.85, 0.862, 0.844, 0.854, 0.848, 0.934, 0.952, 0.976, 0.968, 0.938, 0.888, 0.904, 0.914, 0.924, 0.916, 0.932, 0.92, 0.9, 0.862, 0.824, 0.894, 0.892, 0.888, 0.888, 0.874]
 #%%
 fig = plt.figure()
 ax1 = fig.add_subplot(111)

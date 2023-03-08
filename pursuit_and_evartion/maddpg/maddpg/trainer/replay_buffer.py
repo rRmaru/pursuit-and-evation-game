@@ -146,7 +146,7 @@ class Priority_ReplayBuffer(ReplayBuffer):
     def __init__(self, size):
         super().__init__(size)
         self.cnt = []
-        self.alpha = 0.5
+        self.alpha = 0.1
         
     def count(self, a):
         self.cnt.append(a)

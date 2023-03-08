@@ -11,7 +11,7 @@ class Scenario(BaseScenario):
         # set any world properties first
         world.dim_c = 2
         num_good_agents = 1     #evation agent
-        num_adversaries = 3     #pursuit agent
+        num_adversaries = 2     #pursuit agent
         num_agents = num_adversaries + num_good_agents
         num_landmarks = 2
         # add agents

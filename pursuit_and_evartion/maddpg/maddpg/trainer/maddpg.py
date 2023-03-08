@@ -155,11 +155,11 @@ class MADDPGAgentTrainer(AgentTrainer):
             num_units=args.num_units
         )
         # Create experience buffer
-        self.replay_buffer = Priority_ReplayBuffer(1e6)          #decide replay buffer big
+        self.replay_buffer = Priority_ReplayBuffer(1e5)          #decide replay buffer big
         #self.TDerror_buffer = Memory_TDerror(1e6)
         self.max_replay_buffer_len = args.batch_size * args.max_episode_len/2
         self.replay_sample_index = None
-        self.per_flag = False
+        self.per_flag = True
 
     def action(self, obs):
         return self.act(obs[None])[0]
@@ -182,7 +182,7 @@ class MADDPGAgentTrainer(AgentTrainer):
         else:
             self.replay_sample_index, weights = self.replay_buffer.make_index(self.args.batch_size)
         #normalization weight
-        beta = 0.6/15000*epi
+        beta = 0.6/20000*epi + 0.4
         weights = np.array([1/(weight*(1e5))**beta for weight in weights])
         w_max = np.amax(weights)
         weights = weights/w_max
