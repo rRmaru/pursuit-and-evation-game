@@ -159,7 +159,7 @@ class MADDPGAgentTrainer(AgentTrainer):
         #self.TDerror_buffer = Memory_TDerror(1e6)
         self.max_replay_buffer_len = args.batch_size * args.max_episode_len/2
         self.replay_sample_index = None
-        self.per_flag = True
+        self.per_flag = False
 
     def action(self, obs):
         return self.act(obs[None])[0]

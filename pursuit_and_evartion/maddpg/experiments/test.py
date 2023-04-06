@@ -3,10 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pickle
 import random
-x=range(0,15000,500)
-with open("learning_curves/beta8alpha1_agrewards.pkl", mode="rb") as f2:
+x=range(0,20000,500)
+with open("learning_curves/alpha0_1_agrewards.pkl", mode="rb") as f2:
     hoge2=pickle.load(f2)
-with open("learning_curves/permaddpg_alpha0.5_agrewards.pkl", mode="rb") as f3:
+with open("learning_curves/alpha1_1_agrewards.pkl", mode="rb") as f3:
     hoge3=pickle.load(f3)
 alpha05 = hoge3[3::4]
 adv_agent=hoge3[::4]
@@ -44,8 +44,9 @@ alpha01 = [-33.02272671195123, -33.94335326753177, -35.363528050444266, -19.2637
 49.24533488618538, 52.8051193755129, 45.73248904960916, 53.2439729062732, 
 55.4628878256234, 60.35761357493598, 53.46216351812452, 52.333726640078574]
 
-good_agent = hoge2[3::4]
-adv_agent=hoge2[::4]
+good_agent = hoge2[3::3]
+adv_agent1=hoge2[::3]
+adv_agent2=hoge3[::3]
 print(len(good_agent))
 print(len(adv_agent))
 

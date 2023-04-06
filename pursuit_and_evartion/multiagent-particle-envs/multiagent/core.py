@@ -233,9 +233,9 @@ class World(object):
     def bound(self):
         for entity in self.entities:
             for i, pos in enumerate(entity.state.p_pos):
-                if pos < -1.2:
-                    entity.state.p_pos[i] = -1.2 - (entity.state.p_pos[i] - (-1.2))
+                if pos < -1:
+                    entity.state.p_pos[i] = -1 - (entity.state.p_pos[i] - (-1))
                     entity.state.p_vel[i] = -entity.state.p_vel[i]
-                if pos > 1.2:
-                    entity.state.p_pos[i] = 1.2 - (entity.state.p_pos[i] - 1.2)
+                if pos > 1:
+                    entity.state.p_pos[i] = 1 - (entity.state.p_pos[i] - 1)
                     entity.state.p_vel[i] = -entity.state.p_vel[i]
