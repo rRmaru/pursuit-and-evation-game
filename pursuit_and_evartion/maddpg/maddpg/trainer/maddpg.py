@@ -182,7 +182,10 @@ class MADDPGAgentTrainer(AgentTrainer):
         else:
             self.replay_sample_index, weights = self.replay_buffer.make_index(self.args.batch_size)
         #normalization weight
-        beta = 0.6/20000*epi + 0.4
+        #beta = 0.6/20000*epi + 0.4
+        beta = 1
+        if beta > 1:
+            beta = 1
         weights = np.array([1/(weight*(1e5))**beta for weight in weights])
         w_max = np.amax(weights)
         weights = weights/w_max
