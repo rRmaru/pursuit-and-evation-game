@@ -39,9 +39,9 @@ def parse_args():
     parser.add_argument("--num-units", type=int, default=64, help="number of units in the mlp")
     # Checkpointing
     parser.add_argument("--exp-name", type=str, default=None, help="name of the experiment")
-    parser.add_argument("--save-dir", type=str, default="./tmp/alpha0_2_0418_30000/", help="directory in which training state and model should be saved")
+    parser.add_argument("--save-dir", type=str, default="./tmp/test/", help="directory in which training state and model should be saved")
     parser.add_argument("--save-rate", type=int, default=500, help="save model once every time this many episodes are completed")
-    parser.add_argument("--load-dir", type=str, default="./tmp/alpha0_1/", help="directory in which training state and model are loaded")
+    parser.add_argument("--load-dir", type=str, default="./tmp/alpha1_2/", help="directory in which training state and model are loaded")
     # Evaluation
     parser.add_argument("--restore", action="store_true", default=True)
     parser.add_argument("--display", action="store_true", default=False)
@@ -141,8 +141,8 @@ def train(arglist):
             terminal = (episode_step >= arglist.max_episode_len)
             # collect experience
             for i, agent in enumerate(trainers):
-                #TD_error = agent.TDerror(trainers, obs_n, action_n, rew_n[i], new_obs_n)
-                TD_error = 1
+                TD_error = agent.TDerror(trainers, obs_n, action_n, rew_n[i], new_obs_n)
+                #TD_error = 1
                 agent.experience(obs_n[i], action_n[i], rew_n[i], new_obs_n[i], done_n[i], abs(TD_error))    #Dに格納
             obs_n = new_obs_n
 

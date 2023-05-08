@@ -159,7 +159,7 @@ class MADDPGAgentTrainer(AgentTrainer):
         #self.TDerror_buffer = Memory_TDerror(1e6)
         self.max_replay_buffer_len = args.batch_size * args.max_episode_len/2
         self.replay_sample_index = None
-        self.per_flag = False
+        self.per_flag = True
 
     def action(self, obs):
         return self.act(obs[None])[0]
@@ -233,6 +233,12 @@ class MADDPGAgentTrainer(AgentTrainer):
             target_q_next = self.q_debug['target_q_values'](*(obs_next_n + target_act_next_n))
             target_q = rew + self.args.gamma * target_q_next
             TDerror = self.q_debug['q_values'](*(obs_n + act_n))
+            with open('test_TDerror.txt', 'w') as f:
+                for i, e in enumerate(TDerror):
+                    f.write(str(e))
+                    f.write(",")
+                print(i)
+                pdb.set_trace()
             #print("re_TD_error:", time.time() - s)
             self.replay_buffer.TD_update(obs, act, rew, obs_next, done, TDerror)
         
